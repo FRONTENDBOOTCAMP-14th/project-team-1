@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 .product-container {
   display: flex; 
@@ -12,6 +13,33 @@
 }
 
 
+=======
+* {
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+}
+
+
+body {
+  background-color: rgb(255, 255, 255); 
+}
+
+
+.product-container {
+  display: flex; 
+  gap: 35px; 
+}
+
+
+.product-list {
+  width: 249px; 
+  height: 544px;
+  margin-bottom: 16px; 
+}
+
+
+>>>>>>> 632d35d (product 컴포넌트 구현)
 .product-card__image {
   position: relative;
   width: 248px;
