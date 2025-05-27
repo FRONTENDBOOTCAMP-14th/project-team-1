@@ -1,0 +1,105 @@
+body {
+  margin: 3.125rem;
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+div {
+  margin-block: 3.125rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 0.0625rem;
+  height: 0.0625rem;
+  margin: -0.0625rem;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+.input__hint-message {
+  margin-top: 0rem;
+  color: var(--info---error);
+  font-size: var(--label---small);
+}
+
+.input--large .input__field {
+  width: 25rem;
+  height: 3.125rem;
+  padding: 0.75rem 1.25rem;
+  border: 0.0625rem solid var(--gray--300);
+  border-radius: 0.25rem;
+  color: var(--gray--400);
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: var(--heading---medium);
+}
+.input--large .input__field:focus {
+  border: 0.0625rem solid var(--content);
+  outline: none;
+}
+
+.input--small .input__field {
+  width: 25rem;
+  height: 2.75rem;
+  padding: 0.5625rem 1.25rem;
+  border: 0.0625rem solid var(--gray--300);
+  border-radius: 0.25rem;
+  color: var(--gray--400);
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: var(--heading---medium);
+}
+.input--small .input__field:focus {
+  border: 0.0625rem solid var(--content);
+  outline: none;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+.input__search-bar {
+  display: flex;
+  width: 25rem;
+  height: 3.75rem;
+  padding: 1.25rem;
+  border: 0.0625rem solid var(--primary);
+  border-radius: 0.25rem;
+  justify-content: space-between;
+  align-items: center;
+  transition: border-color 0.2s;
+}
+
+.input__search-bar:hover {
+  border-color: var(--blue--500);
+}
+
+.input__search-field {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.input__search-field:focus {
+  outline: none;
+}
+
+.input__search-button {
+  display: flex;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: none;
+  background: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
