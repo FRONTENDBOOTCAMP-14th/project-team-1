@@ -1,0 +1,19 @@
+.icon {
+  fill: currentColor;
+}
+
+.icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3.125rem;
+
+  .icon-ui-wrapper,
+  .icon-controll-wrapper,
+  .icon-sns-wrapper,
+  .icon-menu-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 0.5rem;
+  }
+}
