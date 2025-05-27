@@ -1,0 +1,58 @@
+:root {
+  /* Color styles */
+  --black: rgba(0, 0, 0, 1);
+  --white: rgba(255, 255, 255, 1);
+  --primary: rgba(95, 0, 128, 1);
+  --secondary: rgba(189, 118, 255, 1);
+  --content: rgba(51, 51, 51, 1);
+
+  --gray--50: rgba(249, 249, 249, 1);
+  --gray--100: rgba(225, 225, 225, 1);
+  --gray--200: rgba(196, 196, 196, 1);
+  --gray--300: rgba(166, 166, 166, 1);
+  --gray--400: rgba(137, 137, 137, 1);
+  --gray--500: rgba(107, 107, 107, 1);
+  --gray--600: rgba(86, 86, 86, 1);
+  --gray--700: rgba(64, 64, 64, 1);
+  --gray--800: rgba(43, 43, 43, 1);
+  --gray--900: rgba(21, 21, 21, 1);
+
+  --blue--100: rgba(204, 224, 255, 1);
+  --blue--200: rgba(153, 194, 255, 1);
+  --blue--300: rgba(102, 163, 255, 1);
+  --blue--400: rgba(51, 133, 255, 1);
+  --blue--500: rgba(0, 102, 255, 1);
+  --blue--600: rgba(0, 82, 204, 1);
+  --blue--700: rgba(0, 61, 153, 1);
+  --blue--800: rgba(0, 41, 102, 1);
+  --blue--900: rgba(0, 20, 51, 1);
+
+  --accent--yellow: rgba(250, 98, 47, 1);
+  --info---error: rgba(240, 63, 64, 1);
+
+  /* Text-size styles */
+  /* base size: heading---medium (16px) */
+  --heading---medium: 1rem;
+  --heading---large: 1.33rem;
+  --heading---x-l: 1.78rem;
+  --heading---x-x-l: 2.37rem;
+  --heading---x-x-x-l: 3.16rem;
+  --label---small: 0.75rem;
+  --label---medium: 1rem;
+  --label---large: 1.33rem;
+  --label---x-l: 1.78rem;
+  --label---x-x-l: 2.37rem;
+  --paragraph---small: 0.75rem;
+  --paragraph---medium: 1rem;
+  --paragraph---large: 1.33rem;
+  --paragraph---x-l: 1.78rem;
+
+  /* Effect styles */
+  --text: inset 1px 1px 0px rgba(0, 0, 0, 1);
+  --above---high: 0px -16px 48px rgba(0, 0, 0, 0.3);
+  --above---medium: 0px -8px 36px rgba(0, 0, 0, 0.2);
+  --above---low: 0px -4px 24px rgba(0, 0, 0, 0.1);
+  --below---high: 0px 16px 48px rgba(0, 0, 0, 0.3);
+  --below---medium: 0px 8px 36px rgba(0, 0, 0, 0.2);
+  --below---low: 0px 4px 24px rgba(0, 0, 0, 0.1);
+}
