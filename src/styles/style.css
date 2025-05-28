@@ -1,9 +1,12 @@
+/* common css */
 @import url("../styles/reset.css");
 @import url("../styles/variables.css");
+
+/* components */
 @import url("../components/Notice/notice.css");
 @import url("../components/Product/product.css");
-@import url("../components/Product/badge.css");
-@import url("../components/Product/menu.css");
+@import url("../components/Badge/badge.css");
+@import url("../components/Menu/menu.css");
 @import url("../components/Input/input.css");
 @import url("../components/Button/Button.css");
 @import url("../components/Icon/Icon.css");
