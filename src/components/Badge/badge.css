@@ -1,0 +1,80 @@
+.badge{
+  padding: 3.125rem;
+}
+
+.badge__text-wrapper{
+  font-family: pretendard;
+  font-size: .7502rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.badge__text-border{
+  display: inline-flex;
+  padding: 0 .5rem;
+  align-items: flex-start;
+  border: .0625rem solid #5F0080;
+  background: transparent;
+  color: #5F0080;
+  margin: .625rem;
+}
+
+.badge__text-fill{
+  display: inline-flex;
+  padding: 0 .5rem;
+  align-items: flex-start;
+  border: .0625rem solid #BD76FF;
+  background-color: #BD76FF;
+  color: white;
+  margin: .625rem;
+}
+
+.badge__number-wrapper{
+  font-family: inter;
+  font-size: .75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+padding: .625rem;
+width: 500rem;
+}
+
+.badge__number-default{
+  border: .0625rem solid #E1E1E1 ;
+  display: flex;
+  width: 2.125rem;
+  height: 2.125rem;
+  padding: .25rem;
+  justify-content: center;
+  align-items: center;
+  gap: .25rem;
+  flex-shrink: 0;
+  margin: .625rem;
+}
+
+.badge__number-variant{
+  background: #C4C4C4;
+  display: flex;
+  width: 2.125rem;
+  height: 2.125rem;
+  padding: .25rem;
+  justify-content: center;
+  align-items: center;
+  gap: .25rem;
+  flex-shrink: 0;
+  margin: .625rem;
+}
+
+.badge__number-state{
+  background: #C4C4C4;
+  display: flex;
+  width: 2.125rem;
+  height: 2.125rem;
+  padding: .25rem;
+  justify-content: center;
+  align-items: center;
+  gap: .25rem;
+  flex-shrink: 0;
+  margin: .625rem;
+}
