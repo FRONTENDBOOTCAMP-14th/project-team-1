@@ -2,13 +2,11 @@
 <html lang="ko-KR">
   <head>
     <meta charset="UTF-8" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../styles/variables.css" />
     <link rel="stylesheet" href="../../styles/reset.css" />
+    <link rel="stylesheet" href="../../styles/base.css" />
     <link rel="stylesheet" href="./header.css" />
   </head>
   <body>
@@ -19,9 +17,7 @@
           <li><a href="/">로그인</a></li>
           <li><a href="/">고객센터</a></li>
           <li>
-            <a href="/"
-              ><img src="../../assets/icon_down.svg" alt="공지사항"
-            /></a>
+            <a href="/"><img src="../../assets/icon_down.svg" alt="공지사항" /></a>
           </li>
         </ul>
 
@@ -31,18 +27,14 @@
             <ul>
               <li><a class="purple" href="/">마켓칼리</a></li>
               <li class="new">
-                <a class="gray" href="/"
-                  >뷰티칼리
-                  <img
-                    class="new__icon"
-                    src="../../assets/icon_new.svg"
-                    alt="/"
-                  />
+                <a class="gray" href="/">
+                  뷰티칼리
+                  <img class="new__icon" src="../../assets/icon_new.svg" alt="/" />
                 </a>
               </li>
             </ul>
           </div>
-          <div class="search__bar">
+          <div class="input__search-bar">
             <label for="input-search" class="sr-only"></label>
             <input
               type="text"
@@ -52,13 +44,7 @@
               class="search__field"
             />
             <button type="submit" class="search__button">
-              <svg
-                width="19"
-                height="19"
-                viewBox="0 0 19 19"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+              <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M18.0806 18.0811L13.9606 13.9611M8.46661 15.3341C9.3684 15.3341 10.2614 15.1565 11.0945 14.8114C11.9276 14.4663 12.6847 13.9605 13.3223 13.3228C13.96 12.6851 14.4658 11.9281 14.8109 11.095C15.156 10.2618 15.3336 9.36888 15.3336 8.4671C15.3336 7.56531 15.156 6.67235 14.8109 5.83921C14.4658 5.00607 13.96 4.24905 13.3223 3.61139C12.6847 2.97373 11.9276 2.46792 11.0945 2.12282C10.2614 1.77772 9.3684 1.6001 8.46661 1.6001C6.64537 1.6001 4.89872 2.32358 3.61091 3.61139C2.32309 4.89921 1.59961 6.64585 1.59961 8.4671C1.59961 10.2883 2.32309 12.035 3.61091 13.3228C4.89872 14.6106 6.64537 15.3341 8.46661 15.3341V15.3341Z"
                   stroke="#5F0080"
@@ -85,13 +71,7 @@
         <ul>
           <li class="main-nav__hamburger">
             <a href="/">
-              <svg
-                width="16"
-                height="14"
-                viewBox="0 0 16 14"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+              <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_42_624)">
                   <path
                     fill-rule="evenodd"
@@ -106,17 +86,18 @@
                   </clipPath>
                 </defs>
               </svg>
-              <span>카테고리</span></a
-            >
+              <span>카테고리</span>
+            </a>
           </li>
           <li><a href="/">신상품</a></li>
           <li><a href="/">베스트</a></li>
           <li><a href="/">알뜰쇼핑</a></li>
           <li><a href="/">특가/혜택</a></li>
           <li>
-            <a class="notice" href="/"
-              ><span class="purple">샛별.낮</span> 배송안내</a
-            >
+            <a class="notice" href="/">
+              <span class="purple">샛별.낮</span>
+              배송안내
+            </a>
           </li>
         </ul>
       </nav>

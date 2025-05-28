@@ -23,7 +23,6 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  font-family: Pretendard;
   font-size: 1rem;
   font-weight: 600;
 
@@ -54,7 +53,6 @@
   flex: 1 1 auto;
   border: none;
   outline: none;
-  font-family: Pretendard;
   font-size: 0.75rem;
   color: var(--gray--400);
   min-width: 0;
@@ -73,8 +71,4 @@
   display: flex;
   align-items: center;
   gap: 1.25rem;
-}
-
-.user__utils li {
-  list-style: none;
 }
