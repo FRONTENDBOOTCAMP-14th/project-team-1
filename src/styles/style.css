@@ -1,5 +1,8 @@
+/* common css */
 @import url("../styles/reset.css");
 @import url("../styles/variables.css");
+
+/* components */
 @import url("../components/Notice/notice.css");
 @import url("../components/Product/product.css");
 @import url("../components/Input/input.css");
