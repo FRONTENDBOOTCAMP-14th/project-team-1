@@ -93,6 +93,11 @@ button {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
