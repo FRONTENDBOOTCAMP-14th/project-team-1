@@ -1,0 +1,258 @@
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 카데고리 */
+
+.category {
+  padding: 1rem;
+  display: inline-block;
+}
+
+.category__dropdown {
+  position: relative;
+  display: inline-block;
+  width: max-content;
+}
+
+.category__list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  z-index: 100;
+  border: 0.0625rem solid #ddd;
+  width: max-content;
+  padding: 1rem;
+}
+
+.category__dropdown:hover .category__list {
+  display: block;
+}
+
+.category__header {
+  pointer-events: auto;
+  cursor: default;
+  user-select: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  height: 2rem;
+  width: 13.5rem;
+}
+
+.category__title {
+  font-weight: 600;
+}
+
+.category__dropdown:hover .category__title {
+  color: var(--primary);
+}
+
+.category__dropdown:hover .category__header svg {
+  transform: rotate(180deg);
+}
+
+.category__checkbox {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+
+  input {
+    position: absolute;
+    inline-size: auto;
+    block-size: auto;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    margin: 0;
+    opacity: 0;
+  }
+
+  input:checked + label {
+    .checkbox__area {
+      fill: var(--primary);
+    }
+    .checkbox__border {
+      fill: var(--primary);
+    }
+    .checkbox__marker {
+      fill: var(--white);
+    }
+  }
+
+  label {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    column-gap: 0.375rem;
+  }
+}
+
+.category__checkbox:hover {
+  color: var(--primary);
+  background: var(--gray--100);
+}
+
+.category__count {
+  font-size: var(--label---small);
+  color: var(--gray--300);
+}
+
+.category__more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem 0;
+  font-size: var(--label---small);
+  color: var(--gray--300);
+}
+
+.category__more a {
+  display: inline-flex; /* 텍스트와 아이콘을 한 줄에 배치 */
+  align-items: center; /* 세로 중앙 정렬 */
+}
+
+/* 장바구니 */
+.cart {
+  width: 42rem;
+  padding: 1rem;
+  display: inline-block;
+}
+
+.cart__checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.625rem 0;
+  border-bottom: 0.0625rem solid var(--gray--100);
+}
+
+.cart__checkbox > svg {
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.cart__checkbox {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+
+  input {
+    position: absolute;
+    inline-size: auto;
+    block-size: auto;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    margin: 0;
+    opacity: 0;
+  }
+
+  input:checked + label {
+    .checkbox__area {
+      fill: var(--primary);
+    }
+    .checkbox__border {
+      fill: var(--primary);
+    }
+    .checkbox__marker {
+      fill: var(--white);
+    }
+  }
+
+  label {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    column-gap: 0.375rem;
+  }
+}
+
+.cart__quantity-control {
+  display: inline-flex;
+  align-items: center;
+  border: 0.0625rem solid #ccc;
+  overflow: hidden;
+}
+
+.cart__quantity-control button,
+.cart__quantity-control .cart__quantity {
+  width: 1.75rem;
+  height: 1.75rem;
+  border: none;
+  background: transparent;
+  text-align: center;
+  line-height: 1.75rem;
+}
+
+.cart__quantity-control button {
+  cursor: pointer;
+}
+
+.cart__quantity-control button:hover {
+  background: var(--gray--100);
+}
+
+.cart__left-section {
+  display: flex;
+  align-items: center;
+  width: 24rem;
+}
+
+.cart__right-section {
+  display: flex;
+  align-items: center;
+  width: 20rem;
+
+  .cart__quantity-control {
+    margin-right: 5rem;
+  }
+
+  .cancel {
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+.cart__product-type {
+  pointer-events: auto;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  border-bottom: 0.0625rem solid var(--black);
+  padding: 0.5rem 0;
+  height: 3rem;
+  width: 46.875rem;
+}
+
+.cart__list {
+  display: none;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  z-index: 100;
+  border: 0.0625rem solid #ddd;
+  width: max-content;
+  padding: 1rem;
+}
+
+.cart__dropdown {
+  display: none;
+}
+
+.cart__dropdown:checked + .cart__product-type + .cart__list {
+  display: block;
+}
