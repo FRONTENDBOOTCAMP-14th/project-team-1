@@ -13,9 +13,9 @@
   display: inline-flex;
   padding: 0 0.5rem;
   align-items: flex-start;
-  border: 0.0625rem solid #5f0080;
+  border: 0.0625rem solid var(--primary);
   background: transparent;
-  color: #5f0080;
+  color: var(--primary);
   margin: 0.625rem;
 }
 
@@ -23,9 +23,9 @@
   display: inline-flex;
   padding: 0 0.5rem;
   align-items: flex-start;
-  border: 0.0625rem solid #bd76ff;
-  background-color: #bd76ff;
-  color: white;
+  border: 0.0625rem solid var(--secondary);
+  background-color: var(--secondary);
+  color: var(--white);
   margin: 0.625rem;
 }
 
@@ -39,7 +39,7 @@
 }
 
 .badge__number-default {
-  border: 0.0625rem solid #e1e1e1;
+  border: 0.0625rem solid var(--gray--100);
   display: flex;
   width: 2.125rem;
   height: 2.125rem;
@@ -53,7 +53,7 @@
 
 .badge__number-variant {
   display: flex;
-  background: #c4c4c4;
+  background: var(--gray--200);
   width: 2.125rem;
   height: 2.125rem;
   padding: 0.25rem;
@@ -66,7 +66,7 @@
 
 .badge__number-state {
   display: flex;
-  background: #c4c4c4;
+  background: var(--gray--200);
   width: 2.125rem;
   height: 2.125rem;
   padding: 0.25rem;
