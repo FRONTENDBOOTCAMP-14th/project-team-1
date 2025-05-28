@@ -1,0 +1,161 @@
+
+
+.popup-review-container {
+  width: 793px;
+  height: 630px;
+  padding: 32px;
+  background-color: var(--white);
+  font-family: 'Pretendard', sans-serif;
+  border-radius:16px;
+
+
+}
+
+.popup-review-title__box {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 729px;
+  height: 60px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--gray--100);
+}
+
+.popup-review__review {
+  font-weight: 700;
+  font-size: 28.43px;
+  line-height: 1.4;
+
+}
+
+.popup-review-title__xmark {}
+
+.popup-image {
+  width: 72px;
+  height: 72px;
+}
+
+.popup-review-product {
+  width: 729px;
+  height: 104px;
+  padding-block: 16px;
+  border-bottom: 1px solid var(--gray--100);
+  margin-bottom: 16px;
+
+}
+
+.popup-image {
+  margin-right: 24px;
+
+
+}
+
+.popup-review-product__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.popup-image__info {
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+
+}
+
+.popup-review__title {
+  display: inline-block;
+  padding: 8px 64px 10px 8px;
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+
+}
+
+.popup-review-itle__info {
+  display: inline-block;
+  width: 629px;
+  height: 44px;
+  padding-inline: 20px;
+  padding-block: 9px 9px;
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  appearance: none;
+  border: 1px solid black;
+  border-radius: 4px;
+
+}
+
+.pop-review-title__container {
+  width: 729px;
+  height: 44px;
+  margin-bottom: 12px;
+}
+
+.popup-review-info-title {
+  width: 100px;
+  height: 42px;
+  padding: 8px 64px 10px 8px;
+}
+
+.popup-review___info {
+  width: 629px;
+  height: 198px;
+  position: absolute;
+  padding: 16px 16px 0px 16px;
+
+
+
+}
+
+.popup-review__notice {
+  width: 629px;
+  height: 198px;
+  padding: 16px;
+
+
+}
+
+.popup-review-info__wapper {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.popup-review-info__mini-wapper {
+
+  position: relative;
+}
+
+.popup-review__ex {
+  font-family: 'Pretendard ', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--gray--400);
+  margin-bottom:12px;
+  width: 597px;
+  height: 38px;
+}
+
+.popup-review__list{
+  list-style: disc;
+  margin: 0;
+  padding: 0;
+   font-family: 'Pretendard ', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--gray--400);
+}
+
+.popup-review__caution {
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--gray--400);
+
+}

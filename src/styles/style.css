@@ -12,3 +12,6 @@
 @import url("../components/Text/text.css");
 @import url("../components/Header/header.css");
 @import url("../components/Header/smallheader.css");
+@import url("../components/popup/buble.css");
+@import url("../components/popup/popup-review.css");
+@import url("../components/popup/popup-inquiry.css");
