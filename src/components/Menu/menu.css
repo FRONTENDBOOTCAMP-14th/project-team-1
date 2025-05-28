@@ -1,18 +1,17 @@
-.menu-wrapper{
-border: .0625rem solid #333;
-padding: 3.125rem;
+.menu-wrapper {
+  border: 0.0625rem solid #333;
+  padding: 3.125rem;
 }
 
-.hamburger{
-color: #333;
-font-family: Pretendard;
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: 150%;
-display: flex;
-align-items: center;
-gap: .75rem;
+.hamburger {
+  color: #333;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
 .hamburger svg {
@@ -21,44 +20,42 @@ gap: .75rem;
 }
 
 .hamburger:hover {
-  color: #5F0080;
+  color: #5f0080;
 }
 
-.menu{
-color:#333;
-font-family: Pretendard;
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: 150%;
-display: flex;
-width: 150px;
-padding: 8px 0px;
-justify-content: center;
-align-items: flex-end;
-gap: 4px;
+.menu {
+  color: #333;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  display: flex;
+  width: 150px;
+  padding: 8px 0px;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 4px;
 }
 
-.menu:hover{
- border-bottom: 1px solid #5F0080;
+.menu:hover {
+  border-bottom: 1px solid #5f0080;
 }
 
-.giftbox{
-color: #333;
-background-color: #fff;
-font-family: Pretendard;
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: 150%;
-display: flex;
-width: 247px;
-padding: 8px 0px 8px 12px;
-align-items: flex-start;
-gap: 8px;
+.giftbox {
+  color: #333;
+  background-color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  display: flex;
+  width: 247px;
+  padding: 8px 0px 8px 12px;
+  align-items: flex-start;
+  gap: 8px;
 }
 
-.giftbox:hover{
-  background-color: #E1E1E1 ;
-  color: #5F0080;
+.giftbox:hover {
+  background-color: #e1e1e1;
+  color: #5f0080;
 }
