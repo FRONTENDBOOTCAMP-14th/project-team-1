@@ -1,0 +1,61 @@
+.menu-wrapper {
+  border: 0.0625rem solid var(--content);
+  padding: 3.125rem;
+}
+
+.hamburger {
+  color: var(--content);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.hamburger svg {
+  fill: currentColor;
+  transition: fill 0.3s ease;
+}
+
+.hamburger:hover {
+  color: var(--primary);
+}
+
+.menu {
+  color: var(--content);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  display: flex;
+  width: 150px;
+  padding: 8px 0px;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.menu:hover {
+  border-bottom: 1px solid var(--primary);
+}
+
+.giftbox {
+  color: var(--content);
+  background-color: var(--white);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  display: flex;
+  width: 247px;
+  padding: 8px 0px 8px 12px;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.giftbox:hover {
+  background-color: var(--gray--100);
+  color: var(--primary);
+}

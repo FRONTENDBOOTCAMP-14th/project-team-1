@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Components</title>
+    <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/public/favicon.ico" type="image/svg" />
+    <link rel="stylesheet" href="../../styles/variables.css" />
+    <link rel="stylesheet" href="../../styles/reset.css" />
+    <link rel="stylesheet" href="../../styles/base.css" />
+    <link rel="stylesheet" href="/src/components/Text/text.css" />
+  </head>
+  <body>
+    <h1>Text Components</h1>
+
+    <!-- email button component -->
+    <div class="text__wrapper">
+      <a class="support" href="mailto:help@karlycorp.com?subject=문의사항"></a>
+        <span class="support__text">help@karlycorp.com</span>
+        <svg
+          class="support__icon"
+          width="6"
+          height="11"
+          viewBox="0 0 6 11"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g clip-path="url(#clip0_42_2330)">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M1 11L6 5.5L1 0L0 1.1L4 5.5L0 9.9L1 11Z"
+              fill="var(--primary)"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_42_2330">
+              <rect width="6" height="11" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </a>
+      <!-- label component -->
+      <div class="label__row label__row--large">
+        <span class="label__text">Label</span>
+        <span class="label__required">*</span>
+      </div>
+      <div class="label__row label__row--small">
+        <span class="label__text">Label</span>
+        <span class="label__required">*</span>
+      </div>
+
+      <!-- sort component -->
+      <div class="sort__option--selected">
+        <input type="radio" id="sort-recommend" />
+        <label for="sort-recommend">추천순</label>
+      </div>
+
+      <div class="sort__option">
+        <input type="radio" id="sort-recommend" />
+        <label for="sort-recommend">추천순</label>
+      </div>
+    </div>
+  </body>
+</html>
