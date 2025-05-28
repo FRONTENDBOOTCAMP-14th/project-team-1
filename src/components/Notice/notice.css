@@ -4,8 +4,6 @@
   height: 3.625rem;
   padding: 1.0625rem 1.25rem;
   border-bottom: 0.0625rem solid var(--gray--100);
-
-  font-family: "Pretendard", sans-serif;
 }
 
 .notice__left {
@@ -28,12 +26,7 @@
 
 .notice__info {
   margin-right: 1.8125rem;
-
-  /* 폰트 관련 */
-  font-family: "Pretendard", sans-serif;
   font-weight: 600;
-  font-size: 1rem;
-  line-height: 1.5;
   letter-spacing: normal;
   color: #898989;
 }
@@ -52,14 +45,12 @@
 
   background-color: var(--white);
 
-  font-family: "Pretendard", sans-serif;
   font-weight: 600;
   font-size: 0.75rem;
   line-height: 1.5;
 }
 
 .notice__title {
-  font-family: "Pretendard", sans-serif;
   font-weight: 600;
   font-size: 1rem;
   line-height: 1.5;
