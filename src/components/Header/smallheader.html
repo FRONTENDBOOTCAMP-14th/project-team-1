@@ -1,61 +1,94 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko-KR">
   <head>
     <meta charset="UTF-8" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles/variables.css" />
+    <link rel="stylesheet" href="../../styles/reset.css" />
     <link rel="stylesheet" href="./smallheader.css" />
   </head>
   <body>
-
-<div class="small-header__wrapper">
-<nav class="main-nav">
+    <div class="small-header">
+      <nav class="main-nav">
+        <!-- 메뉴 리스트 -->
         <ul>
-<li class="main-nav__hamburger"><a href="/">
-<svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_42_624)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V1.7H0V0ZM0 6.15H16V7.85H0V6.15ZM0 12.3H16V14H0V12.3Z" fill="currentColor"/>
-</g>
-<defs>
-<clipPath id="clip0_42_624">
-<rect width="16" height="14" fill="white"/>
-</clipPath>
-</defs>
-</svg>
-    <span>카테고리</span></a></li>
+          <li class="main-nav__hamburger">
+            <a href="/">
+              <svg
+                width="16"
+                height="14"
+                viewBox="0 0 16 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_42_624)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0 0H16V1.7H0V0ZM0 6.15H16V7.85H0V6.15ZM0 12.3H16V14H0V12.3Z"
+                    fill="currentColor"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_42_624">
+                    <rect width="16" height="14" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span>카테고리</span>
+            </a>
+          </li>
           <li><a href="/">신상품</a></li>
           <li><a href="/">베스트</a></li>
           <li><a href="/">알뜰쇼핑</a></li>
           <li><a href="/">특가/혜택</a></li>
-          <div class="search__bar">
-        <label for="input-search" class="sr-only"></label>
-        <input
-          type="text"
-          id="input-search"
-          name="input-search"
-          placeholder="검색어를 입력해주세요"
-          class="search__field"
-        />
-        <button type="submit" class="search__button">
-          <svg
-            width="19"
-            height="19"
-            viewBox="0 0 19 19"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-                      <path
-              d="M18.0806 18.0811L13.9606 13.9611M8.46661 15.3341C9.3684 15.3341 10.2614 15.1565 11.0945 14.8114C11.9276 14.4663 12.6847 13.9605 13.3223 13.3228C13.96 12.6851 14.4658 11.9281 14.8109 11.095C15.156 10.2618 15.3336 9.36888 15.3336 8.4671C15.3336 7.56531 15.156 6.67235 14.8109 5.83921C14.4658 5.00607 13.96 4.24905 13.3223 3.61139C12.6847 2.97373 11.9276 2.46792 11.0945 2.12282C10.2614 1.77772 9.3684 1.6001 8.46661 1.6001C6.64537 1.6001 4.89872 2.32358 3.61091 3.61139C2.32309 4.89921 1.59961 6.64585 1.59961 8.4671C1.59961 10.2883 2.32309 12.035 3.61091 13.3228C4.89872 14.6106 6.64537 15.3341 8.46661 15.3341V15.3341Z"
-              stroke="#5F0080"
-              stroke-width="1.7"
-              stroke-linecap="round"
-            /></svg></button></div>
-       <ul class="user__utils">
-<li><a href="/"><img src="../../assets/location.svg" alt="/" /></a></li>
-<li><a href="/"><img src="../../assets/heart.svg" alt="/" /></a></li>
-<li><a href="/"><img src="../../assets/cart.svg" alt="/" /></a></li>
-</ul>
+        </ul>
+
+        <!-- 검색창 -->
+        <div class="search__bar">
+          <label for="input-search" class="sr-only">검색창</label>
+          <input
+            type="text"
+            id="input-search"
+            name="input-search"
+            placeholder="검색어를 입력해주세요"
+            class="search__field"
+          />
+          <button type="submit" class="search__button">
+            <svg
+              width="19"
+              height="19"
+              viewBox="0 0 19 19"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.0806 18.0811L13.9606 13.9611M8.46661 15.3341C9.3684 15.3341 10.2614 15.1565 11.0945 14.8114C11.9276 14.4663 12.6847 13.9605 13.3223 13.3228C13.96 12.6851 14.4658 11.9281 14.8109 11.095C15.156 10.2618 15.3336 9.36888 15.3336 8.4671C15.3336 7.56531 15.156 6.67235 14.8109 5.83921C14.4658 5.00607 13.96 4.24905 13.3223 3.61139C12.6847 2.97373 11.9276 2.46792 11.0945 2.12282C10.2614 1.77772 9.3684 1.6001 8.46661 1.6001C6.64537 1.6001 4.89872 2.32358 3.61091 3.61139C2.32309 4.89921 1.59961 6.64585 1.59961 8.4671C1.59961 10.2883 2.32309 12.035 3.61091 13.3228C4.89872 14.6106 6.64537 15.3341 8.46661 15.3341Z"
+                stroke="#5F0080"
+                stroke-width="1.7"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- 유저 아이콘들 -->
+        <ul class="user__utils">
+          <li>
+            <a href="/"><img src="../../assets/location.svg" alt="위치" /></a>
+          </li>
+          <li>
+            <a href="/"><img src="../../assets/heart.svg" alt="찜" /></a>
+          </li>
+          <li>
+            <a href="/"><img src="../../assets/cart.svg" alt="장바구니" /></a>
+          </li>
+        </ul>
       </nav>
-</div>
-</body>
+    </div>
+  </body>
 </html>
