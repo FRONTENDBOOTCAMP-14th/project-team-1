@@ -1,10 +1,10 @@
 .menu-wrapper {
-  border: 0.0625rem solid #333;
+  border: 0.0625rem solid var(--content);
   padding: 3.125rem;
 }
 
 .hamburger {
-  color: #333;
+  color: var(--content);
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -20,11 +20,11 @@
 }
 
 .hamburger:hover {
-  color: #5f0080;
+  color: var(--primary);
 }
 
 .menu {
-  color: #333;
+  color: var(--content);
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -38,12 +38,12 @@
 }
 
 .menu:hover {
-  border-bottom: 1px solid #5f0080;
+  border-bottom: 1px solid var(--primary);
 }
 
 .giftbox {
-  color: #333;
-  background-color: #fff;
+  color: var(--content);
+  background-color: var(--white);
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -56,6 +56,6 @@
 }
 
 .giftbox:hover {
-  background-color: #e1e1e1;
-  color: #5f0080;
+  background-color: var(--gray--100);
+  color: var(--primary);
 }
