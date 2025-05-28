@@ -1,0 +1,128 @@
+.body {
+  background-color: var(--gray--100);
+}
+
+.text-wrapper {
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+
+  margin-top: 1.875rem;
+}
+
+.headline {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  .headline__secret {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0rem 1.25rem;
+    gap: 1.25rem;
+
+    .secret__text {
+      color: var(--gray--400);
+      font-size: var(--heading---medium);
+      font-weight: 600;
+      line-height: 1.5;
+    }
+  }
+
+  .headline__status {
+    display: flex;
+    justify-content: flex-end;
+    width: 18.75rem;
+    height: 3.625rem;
+
+    .headline__author {
+      display: flex;
+      width: 6.25rem;
+      color: var(--gray--400);
+      justify-content: center;
+      align-items: center;
+      font-size: var(--heading---medium);
+      font-weight: 600;
+      line-height: 1.5;
+    }
+    .headline__postdate {
+      display: flex;
+      width: 6.25rem;
+      color: var(--gray--400);
+      justify-content: center;
+      align-items: center;
+      font-size: var(--heading---medium);
+      font-weight: 600;
+      line-height: 1.5;
+    }
+    .headline__answer {
+      display: flex;
+      width: 6.25rem;
+      color: var(--gray--400);
+      justify-content: center;
+      align-items: center;
+      font-size: var(--heading---medium);
+      font-weight: 600;
+      line-height: 1.5;
+    }
+  }
+}
+
+.context {
+  padding: 1.25rem;
+  background: white;
+
+  .context__question {
+    display: flex;
+    width: 100%;
+    gap: 0.75rem;
+    margin-bottom: 2.5rem;
+
+    .question__text {
+      width: 100%;
+      color: var(--content);
+      font-size: var(--label---small);
+      font-weight: 600;
+      line-height: 1.5;
+    }
+  }
+
+  .context__answer {
+    display: flex;
+    width: 100%;
+    gap: 0.75rem;
+
+    .answer__text {
+      width: 30.0625rem;
+      margin-bottom: 0.75rem;
+      color: var(--content);
+      font-size: var(--label---small);
+      font-weight: 600;
+      line-height: 1.5;
+    }
+
+    .answer__date {
+      color: var(--gray--400);
+      font-size: var(--label---small);
+      font-weight: 600;
+      line-height: 1.5;
+    }
+  }
+}
+
+.notice__context {
+  width: 100%;
+  background: white;
+  margin: 3.125rem 0;
+  padding: 1.25rem;
+}
+.notice__paragraph {
+  width: 44.6875rem;
+  margin: 0;
+  color: var(--content);
+  font-size: var(--label---small);
+  font-weight: 600;
+  line-height: 1.5;
+}
