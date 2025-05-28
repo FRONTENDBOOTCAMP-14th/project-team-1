@@ -1,0 +1,184 @@
+.mobile-wrapper {
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+
+  margin-top: 1.875rem;
+}
+
+.addcart {
+  width: 24.75rem;
+  height: 18.25rem;
+  margin: 20px;
+  padding: 1.5rem 1.25rem;
+  border-radius: 1rem;
+  box-shadow: 0px 8px 36px 0px rgba(0, 0, 0, 0.2);
+
+  .product-name__text {
+    color: var(--content);
+    font-size: var(--heading---medium);
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  .product-price {
+    display: flex;
+    margin-top: 0.75rem;
+    margin-bottom: 1.75rem;
+    justify-content: space-between;
+    align-items: center;
+
+    .product-price__amount {
+      color: var(--content);
+      font-size: var(--heading---medium);
+      font-weight: 600;
+      line-height: 1.5;
+    }
+
+    .quantity-selector {
+      display: flex;
+      width: 5.25rem;
+      height: 1.875rem;
+      border: 1px solid var(--gray--100);
+      gap: 0.5rem;
+      align-items: center;
+      justify-content: center;
+
+      .quantity-selector__button {
+        display: flex;
+        width: 1.875rem;
+        height: 1.875rem;
+        background-color: transparent;
+        border: none;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .quantity-selector__button--minus {
+        align-content: center;
+      }
+
+      .quantity-selector__value {
+        color: var(--content);
+        font-size: var(--heading---medium);
+        font-weight: 600;
+        line-height: 1.5;
+      }
+    }
+  }
+  .order-summary {
+    margin-bottom: 1.75rem;
+  }
+
+  .order-summary__group {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .order-summary__label {
+      margin-left: 0.25rem;
+
+      color: var(--black);
+      font-size: var(--heading---medium);
+      font-weight: 600;
+      line-height: 1.5;
+    }
+
+    .order-summary__price {
+      color: var(--black);
+      font-size: var(--heading---x-l);
+      font-weight: 700;
+      line-height: 1.4;
+    }
+  }
+
+  .order-summary__reward {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.75rem;
+
+    .order-summary__reward-badge {
+      width: auto;
+      height: 1.125rem;
+      padding: 0rem 0.5rem;
+      background: var(--accent--yellow);
+      border-radius: 0.0625rem;
+      text-align: center;
+      color: var(--white);
+      font-size: var(--label---small);
+      font-weight: 600;
+      line-height: 1.5;
+    }
+
+    .order-summary__reward-desc {
+      color: var(--black);
+      font-size: var(--heading---medium);
+      font-weight: 600;
+      line-height: 1.5;
+    }
+  }
+
+  .button-group {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+
+    .button--cancel {
+      width: 10.875rem;
+      height: 54px;
+      border: 1px solid var(--gray-400, #898989);
+      color: var(--content);
+      font-size: var(--heading---medium);
+      font-weight: 600;
+      line-height: 1.5;
+      background: var(--white);
+      border-radius: 4px;
+    }
+    .button--primary {
+      width: 10.875rem;
+      height: 54px;
+      border: none;
+      color: var(--white);
+      font-size: var(--heading---medium);
+      font-weight: 600;
+      line-height: 1.5;
+      background: var(--primary);
+      border-radius: 4px;
+    }
+  }
+}
+.mobile-menu {
+  width: 15.4375rem;
+  margin-left: 1.25rem;
+
+  .mobile-menu__category {
+    display: flex;
+    margin: 0.5rem 0px 0.5rem 0.75rem;
+    align-items: center;
+
+    .mobile-menu__link {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      .icon {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .icon {
+      align-content: center;
+    }
+
+    .text {
+      color: var(--content);
+      font-size: var(--heading---medium);
+      font-weight: 600;
+      line-height: 1.5;
+    }
+  }
+}
