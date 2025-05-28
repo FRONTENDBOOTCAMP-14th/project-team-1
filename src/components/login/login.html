@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles/reset.css" />
+    <link rel="stylesheet" href="../../styles/variables.css" />
+    <link rel="stylesheet" href="../../styles/base.css" />
+    <link rel="stylesheet" href="./login.css" />
+  </head>
+  <body>
+    <div class="banner__top">
+      <a href="/">지금 가입하고 인기상품 100원에 받아가세요!</a>
+      <button class="banner__close" aria-label="배너 닫기">
+        <img src="../../assets/icon_close.svg" alt="닫기 아이콘" />
+      </button>
+    </div>
+    <div class="header">
+      <div class="header__top">
+        <div class="user__area__layout">
+          <ul class="user__area">
+            <li><a class="purple" href="/">회원가입</a></li>
+            <li><a href="/">로그인</a></li>
+            <li><a href="/">고객센터</a></li>
+
+            <li>
+              <a href="/"><img src="../../assets/icon_down.svg" alt="공지사항" /></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="header__middle">
+          <div class="logo-area">
+            <img src="../../assets/logo.svg" alt="/" />
+            <ul>
+              <li><a class="purple" href="/">마켓칼리</a></li>
+              <li class="new">
+                <a class="gray" href="/">
+                  뷰티칼리
+                  <img class="new__icon" src="../../assets/icon_new.svg" alt="/" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="search__bar">
+            <label for="input-search" class="sr-only"></label>
+            <input
+              type="text"
+              id="input-search"
+              name="input-search"
+              placeholder="검색어를 입력해주세요"
+              class="search__field"
+            />
+            <button type="submit" class="search__button">
+              <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M18.0806 18.0811L13.9606 13.9611M8.46661 15.3341C9.3684 15.3341 10.2614 15.1565 11.0945 14.8114C11.9276 14.4663 12.6847 13.9605 13.3223 13.3228C13.96 12.6851 14.4658 11.9281 14.8109 11.095C15.156 10.2618 15.3336 9.36888 15.3336 8.4671C15.3336 7.56531 15.156 6.67235 14.8109 5.83921C14.4658 5.00607 13.96 4.24905 13.3223 3.61139C12.6847 2.97373 11.9276 2.46792 11.0945 2.12282C10.2614 1.77772 9.3684 1.6001 8.46661 1.6001C6.64537 1.6001 4.89872 2.32358 3.61091 3.61139C2.32309 4.89921 1.59961 6.64585 1.59961 8.4671C1.59961 10.2883 2.32309 12.035 3.61091 13.3228C4.89872 14.6106 6.64537 15.3341 8.46661 15.3341V15.3341Z"
+                  stroke="#5F0080"
+                  stroke-width="1.7"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <ul class="user__utils">
+            <li>
+              <a href="/"><img src="../../assets/location.svg" alt="/" /></a>
+            </li>
+            <li>
+              <a href="/"><img src="../../assets/heart.svg" alt="/" /></a>
+            </li>
+            <li>
+              <a href="/"><img src="../../assets/cart.svg" alt="/" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li class="main-nav__hamburger">
+            <a href="/">
+              <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_42_624)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0 0H16V1.7H0V0ZM0 6.15H16V7.85H0V6.15ZM0 12.3H16V14H0V12.3Z"
+                    fill="currentColor"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_42_624">
+                    <rect width="16" height="14" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span>카테고리</span>
+            </a>
+          </li>
+          <li><a href="/">신상품</a></li>
+          <li><a href="/">베스트</a></li>
+          <li><a href="/">알뜰쇼핑</a></li>
+          <li><a href="/">특가/혜택</a></li>
+          <li>
+            <a class="notice" href="/">
+              <span class="purple">샛별.낮</span>
+              배송안내
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="main">
+      <h1>로그인</h1>
+      <form action="/" method="GET" class="login-form">
+        <div class="input__wrapper">
+          <div class="form-input">
+            <label for="input-1" class="sr-only">아이디</label>
+            <input
+              aria-errormessage="error-1"
+              type="text"
+              id="input-1"
+              name="userID"
+              required
+              placeholder="아이디를 입력해주세요."
+            />
+          </div>
+          <div class="form-input">
+            <label for="input-2" class="sr-only">비밀번호</label>
+            <input
+              pattern="(?=.*[A-Za-z])(?=.*\d)(?=.*[\W_]).{10,}"
+              aria-errormessage="error-2"
+              type="password"
+              id="input-2"
+              name="userPWD"
+              required
+              placeholder="비밀번호를 입력해주세요."
+            />
+          </div>
+          <div class="help">
+            <a href="/">아이디 찾기</a>
+
+            <a href="/">비밀번호 찾기</a>
+          </div>
+        </div>
+        <div class="button__wrapper">
+          <button class="btn btn-normal--large btn-normal--fill">로그인</button>
+          <button class="btn btn-normal--large btn-normal--stroke">회원가입</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
