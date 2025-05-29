@@ -6,30 +6,31 @@
 
 .support {
   display: flex;
-  width: 150px;
+  width: fit-content;
   height: 1.8125rem;
   border: 0.0625rem solid transparent;
   text-decoration: none;
   align-items: center;
   box-sizing: border-box;
+  gap: 0.25rem;
+}
 
-  .support__text {
-    width: 6.875rem;
-    height: 1.1875rem;
-    margin: 0.25rem;
-    color: var(--primary);
-    font-size: 0.75rem;
-  }
+.support__text {
+  width: 6.875rem;
+  height: 1.1875rem;
+  margin: 0.25rem;
+  color: var(--primary);
+  font-size: 0.75rem;
+}
 
-  .support__icon {
-    margin-right: 0;
-    margin-left: 0;
-  }
+.support__icon {
+  margin-right: 0.25rem;
+  margin-left: 0;
+}
 
-  &:hover {
-    border: 0.0625rem solid var(--blue--500);
-    border-radius: 0.25rem;
-  }
+.support:hover {
+  border: 0.0625rem solid var(--blue--500);
+  border-radius: 0.25rem;
 }
 
 .label__row.label__row--large {
