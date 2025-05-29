@@ -48,7 +48,7 @@
 
 .popup-review__review { /*후기 작성 */
   display:inline-block;
-  font-size: 28.43px;
+  font-size: 28.4304px;
 }
 
 .popup-review-title__xmark{
@@ -190,7 +190,6 @@
   top:175px;
   right: 4px;
   bottom: 4px;
-  width: 49px;
   height: 19px;
   background-color: transparent;
   font-size: 12px;
