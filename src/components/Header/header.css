@@ -25,7 +25,7 @@
   display: none;
 }
 
-@media (width <= 30rem) {
+@media (width <= 48rem) {
   .header {
     display: none;
   }
@@ -95,14 +95,14 @@
       text-align: center;
       align-items: center;
       white-space: nowrap;
-    }
 
-    .gnb__list li:first-child {
-      color: var(--primary);
-      border-bottom: 3px solid var(--primary);
+      &:hover {
+        color: var(--primary);
+        border-bottom: 0.1875rem solid var(--primary);
 
-      .gnb__label__text {
-        transform: translateY(0.125rem);
+        .gnb__label__text {
+          transform: translateY(0.125rem);
+        }
       }
     }
   }
