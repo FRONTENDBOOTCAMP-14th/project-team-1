@@ -17,3 +17,6 @@
 @import url('../components/Header/smallheader.css');
 @import url('../components/login/login.css');
 @import url('../components/mobile-baek/mobile-baek.css');
+@import url("../components/popup/bubble.css");
+@import url("../components/popup/popup-review.css");
+@import url("../components/popup/popup-inquiry.css");

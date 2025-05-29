@@ -1,0 +1,246 @@
+.popup-review__body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Pretendard', sans-serif;
+
+}
+.font-weight__400{
+  font-weight: 500;
+}
+.font-weight__400{
+  font-weight: 500;
+}
+.font-weight__600{
+  font-weight: 600;
+}
+.font-weight__700{
+  font-weight: 700;
+}
+.line-height__140{
+  line-height:1.4;
+}
+.line-height__150{
+ line-height:1.5;
+}
+.line-height__160{
+  line-height:1.6;
+}
+
+
+.popup-review-container { /*전체 컨테이너너*/
+  width: 49.5625rem;
+  height: 39.375rem;
+  padding: 2rem;
+  background-color: var(--white);
+  border-radius: 1rem;
+}
+
+.popup-review-title__box { /*후기작성,X 컨테이너*/
+  display:flex;
+  flex-flow:row nowrap;/*flex-direction:row랑 flex-wrap:nowrap*/
+  justify-content:space-between;
+  width: 45.5625rem;
+  height: 3.75rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 0.0625rem solid var(--gray--100);
+}
+
+.popup-review__review { /*후기 작성 */
+  display:inline-block;
+  font-size: 1.7769rem;
+}
+
+.popup-review-title__xmark{
+  width: 1.875rem;
+  aspect-ratio: 1;
+}
+
+
+.popup-review-product { /*쫄면 + 제품명 Container*/
+  width: 45.5625rem;
+  height: 6.5rem;
+  margin-bottom: 1rem;
+  padding-block: 1rem;
+  border-bottom: 0.0625rem solid var(--gray--100);
+}
+
+.popup-review-product__wrapper { /*이미지랑 피켜캡션 묶은 피겨태그*/
+  display: flex;
+  align-items: center;
+}
+
+.popup-image {
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-right: 1.5rem;
+}
+
+.popup-image__info {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.pop-review-title__container { /*제목 인풋 묶은 Container*/
+  width: 45.5625rem;
+  height: 2.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.popup-review__title {
+  display: inline-block;
+  padding: 0.5rem 4rem 0.625rem 0.5rem;
+  font-size: 1rem;
+}
+
+.popup-review-title__info {
+  display: inline-block;
+  width: 39.3125rem;
+  height: 2.75rem;
+  padding-inline: 1.25rem;
+  padding-block: 0.5625rem 0.5625rem;
+  appearance: none;
+  border: 0.0625rem solid var(--gray--300);
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+
+.popup-review-info__wapper {/*내용 + textarea 감싸는 Container*/
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 3.625rem;
+  
+}
+
+.popup-review-info-title {
+  width: 6.25rem;
+  height: 2.625rem;
+  padding: 0.5rem 4rem 0.625rem 0.5rem;
+  font-size: 1rem;
+
+}
+
+.popup-review-info__mini-wapper { /*p랑 ul을 감싸는 div랑 textarea를 감싸는 Container*/
+  border: none;
+}
+
+.popup-review___info { /*여기는 p태그랑 ul태그를 감싸는 태그그*/
+  position: absolute;
+  width: 39.3125rem;
+  height: 12.375rem;
+  padding:1rem;
+  border:none;
+  overflow-x: hidden;
+  overflow-y: scroll;
+ 
+}
+
+.popup-review___info::-webkit-scrollbar {
+  width: 0.625rem;
+}
+
+.popup-review___info::-webkit-scrollbar-track {
+  background-color: var(--gray--50);
+}
+
+.popup-review___info::-webkit-scrollbar-thumb {
+  background-color: #bbb;
+  border-radius: 624.9375rem;
+  margin: 0.125rem;
+   background-clip: content-box;
+
+}
+
+
+.popup-review__caution {
+  font-size: 1rem;
+  color: var(--gray--400);
+}
+
+
+.popup-review__list-wrapper {
+  margin-bottom: 0.75rem;
+}
+
+
+.popup-review__list {
+  list-style: disc;
+  font-size: 0.75rem;
+  color: var(--gray--400);
+  font-weight: 400;
+  line-height:1.6;
+}
+
+.popup-review__notice { /*textarea*/
+  width: 39.3125rem;
+  height: 12.375rem;
+  margin-bottom:0.75rem;
+  padding: 1rem;
+  border:0.0625rem solid var(--gray--300);
+  border-radius: 0.25rem;
+}
+
+.popup-review__max {
+  display: inline-block;
+  position: absolute;
+  right: 0.25rem;
+  bottom: 0.25rem;
+ 
+  width: 3.0625rem;
+  height: 1.1875rem;
+  background-color: transparent;
+  font-size: 0.75rem;
+  color: var(--gray--300);
+}
+
+.popup-review-check__wrapper{
+  display:flex;
+  flex-flow:row nowrap;/*flex-direction:row랑 flex-wrap:nowrap*/
+  align-items:center;  
+}
+
+.popup-review__check{
+  margin-right: 0.5rem;
+}
+
+.popup-review__check-text{
+
+}
+
+.popup-review__button-container {
+  display: flex;
+  justify-content: center;
+  column-gap: 0.75rem;
+  width: 45.5625rem;
+  height: 4.625rem;
+  border-top: 0.0625rem solid var(--gray--100);
+}
+
+.popup-review__button {
+  width: 11.625rem;
+  height: 3.375rem;
+  margin-top: 1.25rem;
+  padding: 0.9375rem 4.9375rem;
+  border: 0.0625rem solid var(--gray--200);
+  border-radius: 0.25rem;
+  white-space: nowrap;
+  color: var(--black);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  font-family: 'Pretendard', sans-serif;
+
+  &.commit{
+     border: none;
+  color: white;
+  background-color: var(--gray--100);
+ 
+  }
+}
+
+
+.popup-review__list__hr{
+  display: block;
+  border: none;
+  height:1.875rem;
+}
