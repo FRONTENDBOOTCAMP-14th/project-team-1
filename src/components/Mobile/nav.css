@@ -4,11 +4,14 @@
   justify-content: space-around;
   align-items: center;
   bottom: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 999;
   width: 100%;
   max-width: 48rem;
   padding-bottom: 1.0625rem;
+  box-shadow: -1px 0px 10px rgba(0, 0, 0, 0.04),
+    1px 0px 10px rgba(0, 0, 0, 0.04), 0px -1px 10px rgba(0, 0, 0, 0.04);
 }
 
 .mobile-nav__component label {
