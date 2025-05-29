@@ -1,31 +1,63 @@
-.popup-review-container {
+.popup-review__body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Pretendard', sans-serif;
+
+}
+.font-weight__400{
+  font-weight: 500;
+}
+.font-weight__400{
+  font-weight: 500;
+}
+.font-weight__600{
+  font-weight: 600;
+}
+.font-weight__700{
+  font-weight: 700;
+}
+.line-height__140{
+  line-height:1.4;
+}
+.line-height__150{
+ line-height:1.5;
+}
+.line-height__160{
+  line-height:1.6;
+}
+
+
+.popup-review-container { /*전체 컨테이너너*/
   width: 793px;
   height: 630px;
   padding: 32px;
   background-color: var(--white);
-  font-family: 'Pretendard', sans-serif;
   border-radius: 16px;
 }
 
-.popup-review-title__box {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
+.popup-review-title__box { /*후기작성,X 컨테이너*/
+  display:flex;
+  flex-flow:row nowrap;/*flex-direction:row랑 flex-wrap:nowrap*/
+  justify-content:space-between;
   width: 729px;
   height: 60px;
   padding-bottom: 20px;
   border-bottom: 1px solid var(--gray--100);
 }
 
-.popup-review__review {
+.popup-review__review { /*후기 작성 */
+  display:inline-block;
   font-size: 28.43px;
-  font-weight: 700;
-  line-height: 1.4;
+}
+
+.popup-review-title__xmark{
+  width: 30px;
+  aspect-ratio: 1;
 }
 
 
-
-.popup-review-product {
+.popup-review-product { /*쫄면 + 제품명 Container*/
   width: 729px;
   height: 104px;
   margin-bottom: 16px;
@@ -33,7 +65,7 @@
   border-bottom: 1px solid var(--gray--100);
 }
 
-.popup-review-product__wrapper {
+.popup-review-product__wrapper { /*이미지랑 피켜캡션 묶은 피겨태그*/
   display: flex;
   align-items: center;
 }
@@ -47,11 +79,9 @@
 .popup-image__info {
   font-size: 16px;
   font-weight: 600;
-  line-height: 1.5;
-  font-family: 'Pretendard', sans-serif;
 }
 
-.pop-review-title__container {
+.pop-review-title__container { /*제목 인풋 묶은 Container*/
   width: 729px;
   height: 44px;
   margin-bottom: 12px;
@@ -61,12 +91,9 @@
   display: inline-block;
   padding: 8px 64px 10px 8px;
   font-size: 16px;
-  font-weight: 600;
-  line-height: 1.5;
-  font-family: 'Pretendard', sans-serif;
 }
 
-.popup-review-itle__info {
+.popup-review-title__info {
   display: inline-block;
   width: 629px;
   height: 44px;
@@ -76,15 +103,13 @@
   border: 1px solid var(--gray--300);
   border-radius: 4px;
   font-size: 16px;
-  font-weight: 400;
-  line-height: 1.6;
-  font-family: 'Pretendard', sans-serif;
 }
 
-.popup-review-info__wapper {
+.popup-review-info__wapper {/*내용 + textarea 감싸는 Container*/
   display: flex;
   flex-flow: row nowrap;
   margin-bottom: 58px;
+  
 }
 
 .popup-review-info-title {
@@ -92,26 +117,22 @@
   height: 42px;
   padding: 8px 64px 10px 8px;
   font-size: 16px;
-  font-weight: 600;
-  line-height: 1;
-  letter-spacing: normal;
-  font-family: 'Pretendard', sans-serif;
+
 }
 
-.popup-review-info__mini-wapper {
-  position: relative;
+.popup-review-info__mini-wapper { /*p랑 ul을 감싸는 div랑 textarea를 감싸는 Container*/
   border: none;
 }
 
-.popup-review___info {
+.popup-review___info { /*여기는 p태그랑 ul태그를 감싸는 태그그*/
   position: absolute;
   width: 629px;
   height: 198px;
-  padding: 16px 16px 0px 16px;
-  border: 1px solid var(--gray--300);
-  border-radius: 4px;
-  overflow-y: scroll;
+  padding:16px;
+  border:none;
   overflow-x: hidden;
+  overflow-y: scroll;
+ 
 }
 
 .popup-review___info::-webkit-scrollbar {
@@ -124,68 +145,66 @@
 
 .popup-review___info::-webkit-scrollbar-thumb {
   background-color: #bbb;
-  border: 3px solid transparent;
-  border-radius: 14px;
+  border-radius: 9999px;
   margin: 2px;
-  background-clip: content-box;
+   background-clip: content-box;
+
 }
 
-.popup-review__ex {
-  width: 597px;
-  height: 38px;
-  margin-bottom: 12px;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.6;
-  color: var(--gray--400);
-  font-family: 'Pretendard', sans-serif;
-}
 
 .popup-review__caution {
   font-size: 16px;
-  font-weight: 600;
-  line-height: 1.5;
   color: var(--gray--400);
-  font-family: 'Pretendard', sans-serif;
 }
 
+
 .popup-review__list-wrapper {
-  margin-left: 16px;
+  margin-bottom: 12px;
 }
+
 
 .popup-review__list {
   list-style: disc;
-  margin: 0;
-  padding: 0;
   font-size: 12px;
-  font-weight: 400;
-  line-height: 1.6;
   color: var(--gray--400);
-  font-family: 'Pretendard', sans-serif;
+  font-weight: 400;
+  line-height:1.6;
 }
 
-.popup-review__notice {
+.popup-review__notice { /*textarea*/
   width: 629px;
   height: 198px;
+  margin-bottom:12px;
   padding: 16px;
+  border:1px solid var(--gray--300);
   border-radius: 4px;
 }
 
 .popup-review__max {
+  display: inline-block;
   position: absolute;
-  top: 175px;
   right: 4px;
   bottom: 4px;
-  display: inline-block;
+ 
   width: 49px;
   height: 19px;
   background-color: transparent;
   font-size: 12px;
-  font-weight: 400;
-  line-height: 1.6;
-  letter-spacing: normal;
   color: var(--gray--300);
-  font-family: 'Pretendard', sans-serif;
+}
+
+.popup-review-check__wrapper{
+  display:flex;
+  flex-flow:row nowrap;/*flex-direction:row랑 flex-wrap:nowrap*/
+  align-items:center;  
+}
+
+.popup-review__check{
+  margin-right: 8px;
+}
+
+.popup-review__check-text{
+
 }
 
 .popup-review__button-container {
@@ -210,10 +229,18 @@
   font-weight: 600;
   line-height: 1.5;
   font-family: 'Pretendard', sans-serif;
-}
 
-.popup-review__button.commit {
+  &.commit{
+     border: none;
   color: white;
   background-color: var(--gray--100);
+ 
+  }
+}
+
+
+.popup-review__list__hr{
+  display: block;
   border: none;
+  height:30px;
 }

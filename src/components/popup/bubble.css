@@ -1,47 +1,48 @@
-
-
 .popup-container {
-  width: 254px;
-  height: 100px;
-  background-color: rgb(255, 255, 255);
-  padding: 20px;
-  font-family: 'Pretendard ', sans-serif;
-  border: 1px solid var(--gray--300);
-
-
   position: relative;
 
-  &::before {
-    display: inline-block;
+  width: 254px;
+  height: 100px;
+  padding: 20px;
+  border: 1px solid var(--gray--300);
 
-    content: "";
+  background-color: rgb(255, 255, 255);
+
+  font-family: 'Pretendard ', sans-serif;
+
+  &::before {
     position: absolute;
     top: -12px;
     right: 28px;
-    border-left: 12px solid transparent;
-    border-right: 12px solid transparent;
-    border-bottom: 12px solid var(--gray--300);
     z-index: 1;
-  }
 
-  &::after {
     display: inline-block;
 
     content: "";
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid var(--gray--300);
+  }
+
+  &::after {
     position: absolute;
     top: -11px;
     right: 29px;
+    z-index: 2;
+
+    display: inline-block;
+
+    content: "";
     border-left: 11px solid transparent;
     border-right: 11px solid transparent;
     border-bottom: 11px solid white;
-    z-index: 2;
   }
 }
 
 .popup-wrapper {
   display: flex;
   flex-flow: row nowrap;
-  /*flex-direction:row랑 flex-wrap:nowrap*/
+
   width: 214px;
   height: 60px;
 }
@@ -57,17 +58,16 @@
 }
 
 .popup--product__name {
+  margin-bottom: 8px;
+
   font-weight: 600;
   font-size: 12px;
   line-height: 1.5;
   color: var(--gray--300);
-  margin-bottom: 8px;
 }
 
 .popup--product__info {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.6;
-
-
 }
