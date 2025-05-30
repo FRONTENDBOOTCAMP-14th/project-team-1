@@ -24,4 +24,5 @@
 @import url('../components/RecentProduct/recent-product.css');
 
 /* Pages */
+@import url('../pages/Main/main.css');
 @import url('../components/login/login.css');

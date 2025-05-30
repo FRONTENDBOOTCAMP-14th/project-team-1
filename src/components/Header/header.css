@@ -1,9 +1,6 @@
 /* 헤더 컴포넌트 */
 .header {
   display: flex;
-  /* max-width: 65.625rem; */
-  width: 100%;
-  margin: 0 auto;
   align-items: center;
   flex-direction: column;
   box-shadow: 0 4px 24px #00000010;
@@ -29,6 +26,10 @@
   gap: 0.75rem;
 
   .purple {
+    color: var(--primary);
+  }
+
+  a:hover {
     color: var(--primary);
   }
 }
@@ -80,12 +81,11 @@
 
 .input__search-bar {
   display: flex;
-  width: 25rem;
-  height: 3.75rem;
-  padding: 1.25rem;
+  padding: 0.8125rem 1.25rem;
   border: 0.0625rem solid var(--primary);
   border-radius: 0.25rem;
   justify-content: space-between;
+  font-size: var(--paragraph---large);
   align-items: center;
   transition: border-color 0.2s;
 }
