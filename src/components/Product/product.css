@@ -1,28 +1,33 @@
 .product-container {
   display: flex;
+  flex-wrap: wrap;
   gap: 35px;
 }
 
 .product-list {
-  width: 249px;
-  height: 544px;
-  margin-bottom: 16px;
+  min-height: 32.25rem;
 }
 
 .product-card__image {
   position: relative;
-  width: 248px;
-  height: 320px;
+  min-width: 248px;
   margin-bottom: 16px;
+  overflow: hidden;
+
+  img {
+    transition: transform 0.3s ease;
+  }
+
+  img:hover {
+    transform: scale(1.05);
+  }
 }
 
 .product-card__shopping-cart {
   position: absolute;
   right: 15px;
-  width: 45px;
   height: 45px;
   bottom: 17px;
-  right: 15px;
 }
 
 .product-card__info {
