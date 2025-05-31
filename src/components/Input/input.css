@@ -27,7 +27,7 @@
 }
 
 .input--small .input__field {
-  width: 18.75rem;
+  width: 25rem;
   padding: 0.5625rem 1.25rem;
   border: 0.0625rem solid var(--gray--300);
   border-radius: 0.25rem;

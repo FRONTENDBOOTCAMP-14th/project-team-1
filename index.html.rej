@@ -1,9 +1,0 @@
-diff a/index.html b/index.html	(rejected hunks)
-@@ -41,6 +41,7 @@
-       <li>
-         <a href="src/components/mobile-baek/mobile-baek.html">Mobile-baek</a>
-       </li>
-+      <li><a href="src/page/Register/Register.html">Register</a></li>
-     </ul>
-   </body>
- </html>
