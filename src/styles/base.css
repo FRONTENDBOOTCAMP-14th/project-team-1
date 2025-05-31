@@ -29,13 +29,13 @@ button {
   }
 
   .mobile-only {
-    display: none;
+    display: none !important;
   }
 }
 
 @media screen and (max-width: 48rem) {
   .desktop-only {
-    display: none;
+    display: none !important;
   }
 
   .mobile-only {
