@@ -1525,12 +1525,57 @@
       </nav>
     </div>
 
+    <!-- 포트폴리오 안내 모달 -->
+    <dialog class="modal" id="disclaimerModal" role="dialog" aria-labelledby="modal__title" aria-modal="true">
+      <div class="modal__container">
+        <h2 class="modal__title">포트폴리오 면책 안내</h2>
+        <p class="modal__info">
+          해당 사이트는 가상의 사이트이며
+          <br />
+          <strong>비상업적 취업을 위한 포트폴리오</strong>
+          용으로만
+          <br />
+          사용하기 위해 제작된 사이트입니다.
+        </p>
+        <p class="modal__info">
+          실제 상품 판매나 결제 기능은 제공되지 않으며,
+          <br />
+          모든 콘텐츠는 데모 목적으로만 사용됩니다.
+        </p>
+
+        <button type="button" class="modal__check" onclick="closeModal()">확인했습니다</button>
+      </div>
+    </dialog>
+
+    <!-- dialog -->
+    <script>
+      const modal = document.getElementById('disclaimerModal');
+
+      window.addEventListener('load', () => {
+        setTimeout(() => {
+          modal.showModal();
+        }, 100);
+      });
+
+      function closeModal() {
+        modal.close();
+        localStorage.setItem('disclaimerSeen', 'true');
+      }
+
+      // ESC 키로 닫기
+      modal.addEventListener('keydown', e => {
+        if (e.key === 'Escape') {
+          closeModal();
+        }
+      });
+    </script>
+
     <!-- recent-product -->
     <script>
       const topBtn = document.querySelector('.icon-arrow-top');
       const bottomBtn = document.querySelector('.icon-arrow-bottom');
       const list = document.querySelector('.recent-product__item');
-      const scrollAmount = 100; // 한 번에 스크롤할 픽셀 수
+      const scrollAmount = 100;
 
       topBtn.addEventListener('click', () => {
         smoothScrollBy(list, -scrollAmount);
@@ -1547,8 +1592,8 @@
 
         function animateScroll(currentTime) {
           const elapsed = currentTime - startTime;
-          const progress = Math.min(elapsed / duration, 1); // 0~1
-          const ease = 0.5 - Math.cos(progress * Math.PI) / 2; // easeInOut 함수
+          const progress = Math.min(elapsed / duration, 1);
+          const ease = 0.5 - Math.cos(progress * Math.PI) / 2;
 
           element.scrollTop = start + (end - start) * ease;
 
