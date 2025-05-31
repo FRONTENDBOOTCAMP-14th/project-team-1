@@ -124,10 +124,10 @@
   width: 2.25rem;
   height: 2.25rem;
   justify-content: center;
-}
 
-.user__utils:hover {
-  color: var(--primary);
+  li:hover {
+    color: var(--primary);
+  }
 }
 
 .main-nav {
