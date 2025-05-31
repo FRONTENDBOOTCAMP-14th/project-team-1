@@ -10,7 +10,7 @@
 
 .product-card__image {
   position: relative;
-  min-width: 248px;
+  max-width: 248px;
   margin-bottom: 16px;
   overflow: hidden;
 
