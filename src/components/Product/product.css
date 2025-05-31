@@ -1,16 +1,9 @@
-.product-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 35px;
-}
-
 .product-list {
-  min-height: 32.25rem;
+  margin-bottom: 1rem;
 }
 
 .product-card__image {
   position: relative;
-  max-width: 248px;
   margin-bottom: 16px;
   overflow: hidden;
 
