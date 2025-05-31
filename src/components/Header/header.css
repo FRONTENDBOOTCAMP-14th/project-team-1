@@ -124,10 +124,10 @@
   width: 2.25rem;
   height: 2.25rem;
   justify-content: center;
-}
 
-.user__utils:hover {
-  color: var(--primary);
+  li:hover {
+    color: var(--primary);
+  }
 }
 
 .main-nav {
@@ -135,7 +135,6 @@
 
   ul {
     display: flex;
-    min-width: 65.625rem;
     padding: 1rem 0;
     justify-content: space-between;
     align-items: center;
@@ -163,7 +162,7 @@
 .notice {
   display: flex;
   padding: 0.25rem 0.5rem;
-  border: 0.0625rem solid var(--gray--300);
+  border: 0.0625rem solid var(--gray--100);
   align-items: flex-start;
   gap: 0.25rem;
   border-radius: 1rem;
