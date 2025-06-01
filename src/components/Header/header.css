@@ -12,18 +12,24 @@
   padding-bottom: 1.25rem;
   align-items: flex-end;
   flex-direction: column;
-  gap: 2rem;
+  align-items: flex-end;
+  gap: 32px;
+  width: 1050px;
+  padding-bottom: 20px;
+
+
+
 }
 
 .user__area {
   display: flex;
-  font-size: 0.7502rem;
+  font-size: 12.0032px;
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
-  padding-top: 0.75rem;
+  padding-top: 12px;
   align-items: center;
-  gap: 0.75rem;
+  gap: 12px;
 
   .purple {
     color: var(--primary);
@@ -48,8 +54,8 @@
 .logo-area {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  font-size: 1.333rem;
+  gap: 12px;
+  font-size: 21.328px;
   font-style: normal;
   font-weight: 600;
   line-height: 150%;
@@ -57,7 +63,7 @@
   ul {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 12px;
   }
 
   .new {
@@ -66,8 +72,8 @@
 
   .new__icon {
     position: absolute;
-    top: -0.1875rem;
-    right: -0.8125rem;
+    top: -3px;
+    right: -13px;
   }
 
   .purple {
@@ -108,8 +114,8 @@
 
 .input__search-button {
   display: flex;
-  width: 2.25rem;
-  height: 2.25rem;
+  width: 36px;
+  height: 36px;
   border: none;
   background: none;
   align-items: center;
@@ -120,9 +126,9 @@
 .user__utils {
   display: flex;
   align-items: center;
-  gap: 1.25rem;
-  width: 2.25rem;
-  height: 2.25rem;
+  gap: 20px;
+  width: 36px;
+  height: 36px;
   justify-content: center;
 
   li:hover {
@@ -145,18 +151,18 @@
 
   li {
     display: flex;
-    width: 9.375rem;
-    padding: 0.5rem 0;
+    width: 150px;
+    padding: 8px 0;
     justify-content: center;
     align-items: flex-end;
-    gap: 0.25rem;
+    gap: 4px;
   }
 }
 
 .main-nav__hamburger a {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 12px;
 }
 
 .notice {
@@ -164,9 +170,9 @@
   padding: 0.25rem 0.5rem;
   border: 0.0625rem solid var(--gray--100);
   align-items: flex-start;
-  gap: 0.25rem;
-  border-radius: 1rem;
-  font-size: 0.7502rem;
+  gap: 4px;
+  border-radius: 16px;
+  font-size: 12.0032px;
   font-style: normal;
   font-weight: 400;
   line-height: 160%;

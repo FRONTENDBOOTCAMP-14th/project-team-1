@@ -1,3 +1,4 @@
+
 .product-list {
   margin-bottom: 1rem;
 }
@@ -68,9 +69,11 @@
   line-height: 1.6;
   color: var(--gray--400);
 }
+
 .product-card__desc {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.6;
   color: var(--gray--400);
+  margin-bottom: 8px;
 }
