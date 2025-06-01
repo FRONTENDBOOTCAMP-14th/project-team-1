@@ -16,9 +16,6 @@
   gap: 32px;
   width: 1050px;
   padding-bottom: 20px;
-
-
-
 }
 
 .user__area {
@@ -125,6 +122,8 @@
 
 .user__utils {
   display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
   align-items: center;
   gap: 20px;
   width: 36px;
