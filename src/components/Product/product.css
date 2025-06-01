@@ -3,6 +3,8 @@
   gap: 35px;
 }
 
+
+
 .product-list {
   width: 249px;
   height: 544px;
@@ -11,7 +13,7 @@
 
 .product-card__image {
   position: relative;
-  width: 248px;
+  width: 249px;
   height: 320px;
   margin-bottom: 16px;
 }
@@ -70,9 +72,11 @@
   line-height: 1.6;
   color: var(--gray--400);
 }
+
 .product-card__desc {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.6;
   color: var(--gray--400);
+  margin-bottom: 8px;
 }

@@ -46,6 +46,7 @@
   gap: 2rem;
   min-width: 65.525rem;
 }
+
 ul {
   list-style: none;
   margin: 0;
@@ -66,7 +67,7 @@ ul {
     color: var(--primary);
   }
 
-  li + li::before {
+  li+li::before {
     content: '|';
     color: var(--gray--300);
     margin: 0.75rem 0.75rem;
@@ -117,7 +118,7 @@ ul {
     color: var(--gray--400);
   }
 
-  li + li::before {
+  li+li::before {
     content: '|';
     color: var(--gray--300);
     margin: 0.75rem 0.75rem;
@@ -302,7 +303,7 @@ h1 {
     line-height: 160%;
   }
 
-  a + a::before {
+  a+a::before {
     content: '|';
     color: var(--gray--300);
     margin: 0.75rem 0.75rem;
@@ -315,7 +316,8 @@ h1 {
 
 .button__wrapper {
   gap: 0.75rem;
-  > * {
+
+  >* {
     margin-bottom: 0.75rem;
   }
 }
@@ -342,6 +344,7 @@ h1 {
   color: var(--primary);
   border: 0.0625rem solid var(--primary);
   background: transparent;
+
   &:hover {
     color: var(--white);
     background-color: var(--primary);
