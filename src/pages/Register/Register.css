@@ -3,6 +3,8 @@ header {
 }
 
 .main {
+  display: flex;
+  flex-direction: column;
   padding: 5rem 0 2.5rem 0;
   align-items: center;
   gap: 2.75rem;
@@ -16,21 +18,23 @@ header {
   grid-template-rows: repeat(10, 5.25rem);
   border-top: 0.125rem solid var(--content, #333);
   border-bottom: 0.0625rem solid var(--content, #333);
+}
 
-  dt {
-    width: 8.6875rem;
-    height: 2.75rem;
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-    align-items: start;
-    gap: 4px;
-  }
+.grid-table dt {
+  display: flex;
+  width: 8.6875rem;
+  height: 2.75rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  align-items: start;
+  gap: 4px;
+}
 
-  dd {
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-    align-items: start;
-  }
+.grid-table dd {
+  display: flex;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  align-items: start;
 }
 
 .input--small {
@@ -76,32 +80,19 @@ dd .gender {
   }
 }
 
-.checkbox-wrapper {
-  display: inline-flex;
-  cursor: pointer;
-  position: relative;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.checkbox-wrapper input {
+.radio-wrapper .icon-checked {
   display: none;
 }
 
-.icon-unchecked,
-.icon-checked {
-  width: 1.5rem;
-  height: 1.5rem;
+.radio-wrapper input[type='radio']:checked + .icon-unchecked {
   display: none;
-  vertical-align: middle;
+}
+.radio-wrapper input[type='radio']:checked + .icon-unchecked + .icon-checked {
+  display: inline;
 }
 
-.checkbox-wrapper input:not(:checked) + .icon-unchecked {
-  display: block;
-}
-
-.checkbox-wrapper input:checked + .icon-unchecked + .icon-checked {
-  display: block;
+.date .input--small .input__field {
+  text-align: center;
 }
 
 .agreement {
@@ -128,7 +119,40 @@ dd .gender {
     align-items: flex-start;
     justify-content: center;
 
+    .checkbox-wrapper {
+      display: inline-flex;
+      cursor: pointer;
+      position: relative;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .checkbox-wrapper input {
+      display: none;
+    }
+
+    .icon-unchecked,
+    .icon-checked {
+      width: 1.5rem;
+      height: 1.5rem;
+      display: none;
+      vertical-align: middle;
+    }
+
+    .checkbox-wrapper input:not(:checked) + .icon-unchecked {
+      display: block;
+    }
+
+    .checkbox-wrapper input:checked + .icon-unchecked + .icon-checked {
+      display: block;
+    }
+
     .allagree {
+      .checkbox-container {
+        display: flex;
+        gap: 0.5rem;
+      }
+
       p {
         color: var(--gray--400, #898989);
         font-size: 0.7502rem;
@@ -145,7 +169,7 @@ dd .gender {
       width: 100%;
       box-sizing: border-box;
 
-      .gender {
+      .checkbox-container {
         display: flex;
         align-items: center;
         gap: 0.5rem;
@@ -199,92 +223,6 @@ dd .gender {
   }
 }
 
-/* form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.formfield {
-  border-top: 0.125rem solid var(--content, #333);
-  border-bottom: 0.0625rem solid var(--content, #333);
-  display: flex;
-  width: 40rem;
-  flex-direction: column;
-  align-items: flex-start;
-
-  div {
-    display: flex;
-    flex-direction: row;
-    padding: 1.25rem 0;
-    gap: 0.5rem;
-    align-items: flex-end;
-    align-self: stretch;
-  }
-}
-
-label {
-  display: flex;
-  width: 8.6875rem;
-  height: 2.75rem;
-  padding: 0.25rem;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.25rem;
-}
-
-input {
-  display: flex;
-  width: 20.8125rem;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.btn {
-  display: flex;
-  min-width: 8.9375rem;
-  justify-content: center;
-  align-items: center;
-}
-
-.adress {
-  min-width: 20.8125rem;
-}
-
-.input--small .frame-adress {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-  gap: 0.25rem;
-
-  p {
-    font-family: Pretendard;
-    font-size: 0.7502rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%;
-  }
-}
-
-.checkbox-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-
-  span {
-    display: flex;
-    gap: 0.5rem;
-  }
-}
-
-.gender {
-  display: flex;
-  padding: 20px 0px;
-  align-items: center;
-  gap: 8px;
-} */
 .input--small .input__field {
   width: 18.75rem;
 }

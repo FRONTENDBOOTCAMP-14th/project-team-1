@@ -209,11 +209,11 @@
         </dt>
         <dd>
           <div class="input input--small">
-            <label for="input-small" class="sr-only">아이디</label>
+            <label for="id" class="sr-only">아이디</label>
             <input
               aria-errormessage="hint-message-small"
               type="text"
-              id="input-small"
+              id="id"
               name="input-name-small"
               required
               placeholder="아이디를 입력해주세요"
@@ -230,11 +230,11 @@
         </dt>
         <dd>
           <div class="input input--small">
-            <label for="input-small" class="sr-only">비밀번호</label>
+            <label for="password" class="sr-only">비밀번호</label>
             <input
               aria-errormessage="hint-message-small"
               type="text"
-              id="input-small"
+              id="password"
               name="input-name-small"
               required
               placeholder="비밀번호를 입력해주세요"
@@ -251,11 +251,11 @@
         </dt>
         <dd>
           <div class="input input--small">
-            <label for="input-small" class="sr-only">비밀번호 확인</label>
+            <label for="password2" class="sr-only">비밀번호 확인</label>
             <input
               aria-errormessage="hint-message-small"
               type="text"
-              id="input-small"
+              id="password2"
               name="input-name-small"
               required
               placeholder="비밀번호를 한번 더 입력해주세요"
@@ -272,11 +272,11 @@
         </dt>
         <dd>
           <div class="input input--small">
-            <label for="input-small" class="sr-only">이름</label>
+            <label for="name" class="sr-only">이름</label>
             <input
               aria-errormessage="hint-message-small"
               type="text"
-              id="input-small"
+              id="name"
               name="input-name-small"
               required
               placeholder="이름을 한번 더 입력해주세요"
@@ -293,11 +293,11 @@
         </dt>
         <dd>
           <div class="input input--small">
-            <label for="input-small" class="sr-only">이메일</label>
+            <label for="email" class="sr-only">이메일</label>
             <input
               aria-errormessage="hint-message-small"
               type="text"
-              id="input-small"
+              id="email"
               name="input-name-small"
               required
               placeholder="예)marketkarly@karly.com"
@@ -316,11 +316,11 @@
         </dt>
         <dd>
           <div class="input input--small">
-            <label for="input-small" class="sr-only">휴대폰</label>
+            <label for="phone" class="sr-only">휴대폰</label>
             <input
               aria-errormessage="hint-message-small"
               type="text"
-              id="input-small"
+              id="phone"
               name="input-name-small"
               required
               placeholder="숫자만 입력해주세요"
@@ -349,8 +349,8 @@
         </dt>
         <dd>
           <div class="gender">
-            <label class="checkbox-wrapper">
-              <input type="checkbox" id="toggle-check" />
+            <label class="radio-wrapper" for="gender-male">
+              <input type="radio" name="gender" value="male" id="gender-male" />
               <!-- 체크 전 -->
 
               <span class="icon icon-radio icon-unchecked" aria-label="라디오 버튼">
@@ -367,8 +367,8 @@
               </span>
             </label>
             <span class="text-gender">남자</span>
-            <label class="checkbox-wrapper">
-              <input type="checkbox" id="toggle-check" />
+            <label class="radio-wrapper" for="gender-female">
+              <input type="radio" name="gender" value="female" id="gender-female" />
               <!-- 체크 전 -->
 
               <span class="icon icon-radio icon-unchecked" aria-label="라디오 버튼">
@@ -385,8 +385,8 @@
               </span>
             </label>
             <span class="text-gender">여자</span>
-            <label class="checkbox-wrapper">
-              <input type="checkbox" id="toggle-check" />
+            <label class="radio-wrapper" for="gender-none">
+              <input type="radio" name="gender" value="none" id="gender-none" />
               <!-- 체크 전 -->
 
               <span class="icon icon-radio icon-unchecked" aria-label="라디오 버튼">
@@ -409,12 +409,12 @@
         <dt>
           <span class="text-nomal">생년월일</span>
         </dt>
-        <dd>
+        <dd class="date">
           <div class="input input--small">
-            <label for="input-small" class="sr-only">생년월일</label>
+            <label for="birth" class="sr-only">생년월일</label>
             <input
               aria-errormessage="hint-message-small"
-              id="input-small"
+              id="birth"
               name="input-name-small"
               required
               placeholder="YYYY / MM / DD"
@@ -428,8 +428,8 @@
         </dt>
         <dd>
           <div class="gender">
-            <label class="checkbox-wrapper">
-              <input type="checkbox" id="toggle-check" />
+            <label class="radio-wrapper" for="event-reference">
+              <input type="radio" name="event" value="reference" id="event-reference" />
               <!-- 체크 전 -->
 
               <span class="icon icon-radio icon-unchecked" aria-label="라디오 버튼">
@@ -446,8 +446,8 @@
               </span>
             </label>
             <span class="text-gender">친구초대 추천인 아이디</span>
-            <label class="checkbox-wrapper">
-              <input type="checkbox" id="toggle-check" />
+            <label class="radio-wrapper" for="event-check">
+              <input type="radio" name="event" value="check" id="event-check" />
               <!-- 체크 전 -->
 
               <span class="icon icon-radio icon-unchecked" aria-label="라디오 버튼">
@@ -477,9 +477,9 @@
         </dt>
         <dd>
           <div class="allagree">
-            <div class="gender">
+            <div class="checkbox-container">
               <label class="checkbox-wrapper">
-                <input type="checkbox" class="sync-check" id="toggle-check master-check" />
+                <input type="checkbox" class="sync-check master-check" />
                 <!-- 체크 전 -->
                 <span class="icon icon-check icon-unchecked" aria-label="체크 버튼">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -528,9 +528,9 @@
           </div>
 
           <div class="agree">
-            <div class="gender">
+            <div class="checkbox-container">
               <label class="checkbox-wrapper">
-                <input type="checkbox" class="sync-check" id="toggle-check" />
+                <input type="checkbox" class="sync-check" />
                 <!-- 체크 전 -->
                 <span class="icon icon-check icon-unchecked" aria-label="체크 버튼">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -586,9 +586,9 @@
           </div>
 
           <div class="agree">
-            <div class="gender">
+            <div class="checkbox-container">
               <label class="checkbox-wrapper">
-                <input type="checkbox" class="sync-check" id="toggle-check" />
+                <input type="checkbox" class="sync-check" />
                 <!-- 체크 전 -->
                 <span class="icon icon-check icon-unchecked" aria-label="체크 버튼">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -644,9 +644,9 @@
           </div>
 
           <div class="agree">
-            <div class="gender">
+            <div class="checkbox-container">
               <label class="checkbox-wrapper">
-                <input type="checkbox" class="sync-check" id="toggle-check" />
+                <input type="checkbox" class="sync-check" />
                 <!-- 체크 전 -->
                 <span class="icon icon-check icon-unchecked" aria-label="체크 버튼">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -702,9 +702,9 @@
           </div>
 
           <div class="agree">
-            <div class="gender">
+            <div class="checkbox-container">
               <label class="checkbox-wrapper">
-                <input type="checkbox" class="sync-check" id="toggle-check" />
+                <input type="checkbox" class="sync-check" />
                 <!-- 체크 전 -->
                 <span class="icon icon-check icon-unchecked" aria-label="체크 버튼">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -950,16 +950,23 @@
         topBanner.classList.add('close');
       });
 
-      // 모든 sync-check 체크박스들 가져오기
-      const checkboxes = document.querySelectorAll('.sync-check');
+      document.addEventListener('DOMContentLoaded', function () {
+        const masterCheck = document.querySelector('.master-check');
+        const allChecks = document.querySelectorAll('.sync-check:not(.master-check)');
 
-      // 대표 체크박스를 기준으로 판단 (첫 번째)
-      const masterCheckbox = document.getElementById('master-check');
+        // 전체 동의 체크 → 나머지도 전부 체크 or 해제
+        masterCheck.addEventListener('change', function () {
+          allChecks.forEach(check => {
+            check.checked = masterCheck.checked;
+          });
+        });
 
-      // 대표 체크박스 변경 시, 다른 체크박스들 모두 상태 동일하게 적용
-      masterCheckbox.addEventListener('change', function () {
-        checkboxes.forEach(cb => {
-          cb.checked = masterCheckbox.checked;
+        // 개별 체크박스가 모두 체크되었는지 확인 → 전체 동의 체크박스 상태 갱신
+        allChecks.forEach(check => {
+          check.addEventListener('change', function () {
+            const allChecked = Array.from(allChecks).every(checkbox => checkbox.checked);
+            masterCheck.checked = allChecked;
+          });
         });
       });
     </script>
