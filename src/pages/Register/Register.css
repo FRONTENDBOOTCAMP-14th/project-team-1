@@ -23,7 +23,6 @@ header {
 .grid-table dt {
   display: flex;
   width: 8.6875rem;
-  height: 2.75rem;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   align-items: start;
