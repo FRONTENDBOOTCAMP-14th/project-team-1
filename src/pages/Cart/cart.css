@@ -1,0 +1,9 @@
+.cart-page {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+  row-gap: 2.75rem;
+}
