@@ -409,114 +409,359 @@
         <dt>
           <span class="text-nomal">생년월일</span>
         </dt>
-        <dd></dd>
-        <dd></dd>
-        <dt>
-          <span class="text-nomal">추가입력사항</span>
-        </dt>
-        <dd></dd>
-        <dd></dd>
-      </dl>
-
-      <form>
-        <div class="formfield">
+        <dd>
           <div class="input input--small">
-            <label for="input-small" class="sr-only">주소</label>
-            <div class="frame-adress">
-              <button class="btn btn-normal--small btn-normal--stroke adress">주소 검색</button>
-              <p class="adress-p">배송지에 따라 상품 정보가 달라질 수 있습니다.</p>
-            </div>
-          </div>
-
-          <div class="input input--small">
-            <label for="input-small" class="phone">성별</label>
-
-            <div class="gender">
-              <div class="checkbox-wrapper" onclick="togglecheck()">
-                <span id="icon-unchecked" class="icon icon-radio" aria-label="라디오 버튼">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="12" cy="12" r="11.5" stroke="#C4C4C4" />
-                  </svg>
-                  남자
-                </span>
-                <span
-                  id="icon-checked"
-                  class="icon icon-radio--selected"
-                  aria-label="라디오 버튼"
-                  style="display: none"
-                >
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="12" cy="12" r="12" fill="#5F0080" />
-                    <circle cx="12" cy="12" r="5" fill="#C4C4C4" />
-                  </svg>
-                </span>
-              </div>
-
-              <div class="checkbox-wrapper" onclick="togglecheck()"></div>
-              <span id="svg1" class="icon icon-radio" aria-label="라디오 버튼">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="12" cy="12" r="11.5" stroke="#C4C4C4" />
-                </svg>
-                여자
-              </span>
-              <!-- 선택 후 -->
-              <!-- <span id="svg2" class="icon icon-radio--selected" aria-label="라디오 버튼" style="display: none">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="12" cy="12" r="12" fill="#5F0080" />
-                  <circle cx="12" cy="12" r="5" fill="#C4C4C4" />
-                </svg>
-              </span> -->
-            </div>
-            <div class="checkbox-wrapper" onclick="togglecheck()">
-              <!-- 선택 전 -->
-              <span id="svg1" class="icon icon-radio" aria-label="라디오 버튼">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="12" cy="12" r="11.5" stroke="#C4C4C4" />
-                </svg>
-                선택안함
-              </span>
-              <!-- 선택 후 -->
-              <!-- <span id="svg2" class="icon icon-radio--selected" aria-label="라디오 버튼" style="display: none">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="12" cy="12" r="12" fill="#5F0080" />
-                  <circle cx="12" cy="12" r="5" fill="#C4C4C4" />
-                </svg>
-              </span> -->
-            </div>
-          </div>
-          <div class="input input--small">
-            <label for="input-small" class="date">생년월일</label>
+            <label for="input-small" class="sr-only">생년월일</label>
             <input
               aria-errormessage="hint-message-small"
               id="input-small"
               name="input-name-small"
               required
               placeholder="YYYY / MM / DD"
-              class="input__field"
+              class="input__field date"
             />
           </div>
+        </dd>
+        <dd></dd>
+        <dt>
+          <span class="text-nomal">추가입력사항</span>
+        </dt>
+        <dd>
+          <div class="gender">
+            <label class="checkbox-wrapper">
+              <input type="checkbox" id="toggle-check" />
+              <!-- 체크 전 -->
 
-          <div class="input input--small">
-            <label for="input-small" class="phone">추가입력사항</label>
+              <span class="icon icon-radio icon-unchecked" aria-label="라디오 버튼">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="11.5" stroke="#C4C4C4" />
+                </svg>
+              </span>
+              <!-- 체크 후 -->
+              <span class="icon icon-radio--selected icon-checked" aria-label="라디오 버튼">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="12" fill="#5F0080" />
+                  <circle cx="12" cy="12" r="5" fill="#C4C4C4" />
+                </svg>
+              </span>
+            </label>
+            <span class="text-gender">친구초대 추천인 아이디</span>
+            <label class="checkbox-wrapper">
+              <input type="checkbox" id="toggle-check" />
+              <!-- 체크 전 -->
+
+              <span class="icon icon-radio icon-unchecked" aria-label="라디오 버튼">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="11.5" stroke="#C4C4C4" />
+                </svg>
+              </span>
+              <!-- 체크 후 -->
+              <span class="icon icon-radio--selected icon-checked" aria-label="라디오 버튼">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="12" fill="#5F0080" />
+                  <circle cx="12" cy="12" r="5" fill="#C4C4C4" />
+                </svg>
+              </span>
+            </label>
+            <span class="text-gender">참여 이벤트명</span>
+          </div>
+        </dd>
+        <dd></dd>
+      </dl>
+      <dl class="agreement">
+        <dt>
+          <div class="label__row label__row--large">
+            <span class="label__text">이용약관동의</span>
+            <span class="label__required">*</span>
+          </div>
+        </dt>
+        <dd>
+          <div class="allagree">
             <div class="gender">
-              <span class="icon icon-radio" aria-label="라디오 버튼">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="12" cy="12" r="11.5" stroke="#C4C4C4" />
-                </svg>
-                친구초대 추천인 아이디
-              </span>
-              <span class="icon icon-radio" aria-label="라디오 버튼">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="12" cy="12" r="11.5" stroke="#C4C4C4" />
-                </svg>
-                참여 이벤트명
-              </span>
+              <label class="checkbox-wrapper">
+                <input type="checkbox" class="sync-check" id="toggle-check master-check" />
+                <!-- 체크 전 -->
+                <span class="icon icon-check icon-unchecked" aria-label="체크 버튼">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_42_1787)">
+                      <path
+                        d="M12 23.5C18.3513 23.5 23.5 18.3513 23.5 12C23.5 5.64873 18.3513 0.5 12 0.5C5.64873 0.5 0.5 5.64873 0.5 12C0.5 18.3513 5.64873 23.5 12 23.5Z"
+                        stroke="#C4C4C4"
+                      />
+                      <path
+                        d="M7 12.667L10.385 16L18 8.5"
+                        stroke="#C4C4C4"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_42_1787">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </span>
+                <!-- 체크 후 -->
+                <span class="icon icon-check--selected icon-checked" aria-label="체크 버튼">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12 23.5C18.3513 23.5 23.5 18.3513 23.5 12C23.5 5.64873 18.3513 0.5 12 0.5C5.64873 0.5 0.5 5.64873 0.5 12C0.5 18.3513 5.64873 23.5 12 23.5Z"
+                      fill="#5F0080"
+                    />
+                    <path
+                      d="M7 12.667L10.385 16L18 8.5"
+                      stroke="#C4C4C4"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </label>
+              <div>
+                <span class="text-gender">전체 동의합니다.</span>
+                <p>선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.</p>
+              </div>
             </div>
           </div>
-        </div>
-      </form>
-    </div>
 
+          <div class="agree">
+            <div class="gender">
+              <label class="checkbox-wrapper">
+                <input type="checkbox" class="sync-check" id="toggle-check" />
+                <!-- 체크 전 -->
+                <span class="icon icon-check icon-unchecked" aria-label="체크 버튼">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_42_1787)">
+                      <path
+                        d="M12 23.5C18.3513 23.5 23.5 18.3513 23.5 12C23.5 5.64873 18.3513 0.5 12 0.5C5.64873 0.5 0.5 5.64873 0.5 12C0.5 18.3513 5.64873 23.5 12 23.5Z"
+                        stroke="#C4C4C4"
+                      />
+                      <path
+                        d="M7 12.667L10.385 16L18 8.5"
+                        stroke="#C4C4C4"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_42_1787">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </span>
+                <!-- 체크 후 -->
+                <span class="icon icon-check--selected icon-checked" aria-label="체크 버튼">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12 23.5C18.3513 23.5 23.5 18.3513 23.5 12C23.5 5.64873 18.3513 0.5 12 0.5C5.64873 0.5 0.5 5.64873 0.5 12C0.5 18.3513 5.64873 23.5 12 23.5Z"
+                      fill="#5F0080"
+                    />
+                    <path
+                      d="M7 12.667L10.385 16L18 8.5"
+                      stroke="#C4C4C4"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </label>
+              <p class="text-terms">이용약관 동의 (필수)</p>
+            </div>
+            <div class="terms">
+              <a href="/">
+                약관보기
+                <span class="icon icon--arrow-right" aria-label="오른쪽 화살표">
+                  <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L5 5L1 9" stroke="currentColor" stroke-width="1.2" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div class="agree">
+            <div class="gender">
+              <label class="checkbox-wrapper">
+                <input type="checkbox" class="sync-check" id="toggle-check" />
+                <!-- 체크 전 -->
+                <span class="icon icon-check icon-unchecked" aria-label="체크 버튼">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_42_1787)">
+                      <path
+                        d="M12 23.5C18.3513 23.5 23.5 18.3513 23.5 12C23.5 5.64873 18.3513 0.5 12 0.5C5.64873 0.5 0.5 5.64873 0.5 12C0.5 18.3513 5.64873 23.5 12 23.5Z"
+                        stroke="#C4C4C4"
+                      />
+                      <path
+                        d="M7 12.667L10.385 16L18 8.5"
+                        stroke="#C4C4C4"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_42_1787">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </span>
+                <!-- 체크 후 -->
+                <span class="icon icon-check--selected icon-checked" aria-label="체크 버튼">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12 23.5C18.3513 23.5 23.5 18.3513 23.5 12C23.5 5.64873 18.3513 0.5 12 0.5C5.64873 0.5 0.5 5.64873 0.5 12C0.5 18.3513 5.64873 23.5 12 23.5Z"
+                      fill="#5F0080"
+                    />
+                    <path
+                      d="M7 12.667L10.385 16L18 8.5"
+                      stroke="#C4C4C4"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </label>
+              <p class="text-terms">개인정보 수집 · 이용 동의 (필수)</p>
+            </div>
+            <div class="terms">
+              <a href="/">
+                약관보기
+                <span class="icon icon--arrow-right" aria-label="오른쪽 화살표">
+                  <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L5 5L1 9" stroke="currentColor" stroke-width="1.2" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div class="agree">
+            <div class="gender">
+              <label class="checkbox-wrapper">
+                <input type="checkbox" class="sync-check" id="toggle-check" />
+                <!-- 체크 전 -->
+                <span class="icon icon-check icon-unchecked" aria-label="체크 버튼">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_42_1787)">
+                      <path
+                        d="M12 23.5C18.3513 23.5 23.5 18.3513 23.5 12C23.5 5.64873 18.3513 0.5 12 0.5C5.64873 0.5 0.5 5.64873 0.5 12C0.5 18.3513 5.64873 23.5 12 23.5Z"
+                        stroke="#C4C4C4"
+                      />
+                      <path
+                        d="M7 12.667L10.385 16L18 8.5"
+                        stroke="#C4C4C4"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_42_1787">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </span>
+                <!-- 체크 후 -->
+                <span class="icon icon-check--selected icon-checked" aria-label="체크 버튼">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12 23.5C18.3513 23.5 23.5 18.3513 23.5 12C23.5 5.64873 18.3513 0.5 12 0.5C5.64873 0.5 0.5 5.64873 0.5 12C0.5 18.3513 5.64873 23.5 12 23.5Z"
+                      fill="#5F0080"
+                    />
+                    <path
+                      d="M7 12.667L10.385 16L18 8.5"
+                      stroke="#C4C4C4"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </label>
+              <p class="text-terms">무료배송, 할인쿠폰 등 혜택/정보 수신 동의 (선택))</p>
+            </div>
+            <div class="terms">
+              <a href="/">
+                약관보기
+                <span class="icon icon--arrow-right" aria-label="오른쪽 화살표">
+                  <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L5 5L1 9" stroke="currentColor" stroke-width="1.2" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div class="agree">
+            <div class="gender">
+              <label class="checkbox-wrapper">
+                <input type="checkbox" class="sync-check" id="toggle-check" />
+                <!-- 체크 전 -->
+                <span class="icon icon-check icon-unchecked" aria-label="체크 버튼">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_42_1787)">
+                      <path
+                        d="M12 23.5C18.3513 23.5 23.5 18.3513 23.5 12C23.5 5.64873 18.3513 0.5 12 0.5C5.64873 0.5 0.5 5.64873 0.5 12C0.5 18.3513 5.64873 23.5 12 23.5Z"
+                        stroke="#C4C4C4"
+                      />
+                      <path
+                        d="M7 12.667L10.385 16L18 8.5"
+                        stroke="#C4C4C4"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_42_1787">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </span>
+                <!-- 체크 후 -->
+                <span class="icon icon-check--selected icon-checked" aria-label="체크 버튼">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12 23.5C18.3513 23.5 23.5 18.3513 23.5 12C23.5 5.64873 18.3513 0.5 12 0.5C5.64873 0.5 0.5 5.64873 0.5 12C0.5 18.3513 5.64873 23.5 12 23.5Z"
+                      fill="#5F0080"
+                    />
+                    <path
+                      d="M7 12.667L10.385 16L18 8.5"
+                      stroke="#C4C4C4"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </label>
+              <p class="text-terms">본인은 만 14세 이상입니다. (필수)</p>
+            </div>
+            <div class="terms">
+              <a href="/">
+                약관보기
+                <span class="icon icon--arrow-right" aria-label="오른쪽 화살표">
+                  <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L5 5L1 9" stroke="currentColor" stroke-width="1.2" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </dd>
+      </dl>
+      <div class="btn-entry"><button class="btn btn-normal--large btn-normal--fill">가입하기</button></div>
+    </div>
     <footer class="footer">
       <div class="footer__container">
         <section class="footer__top">
@@ -705,14 +950,18 @@
         topBanner.classList.add('close');
       });
 
-      // function toggleCheck() {
-      //   const unchecked = document.getElementById('icon-unchecked');
-      //   const checked = document.getElementById('icon-checked');
-      //   const isChecked = checked.style.display === 'block';
+      // 모든 sync-check 체크박스들 가져오기
+      const checkboxes = document.querySelectorAll('.sync-check');
 
-      //   unchecked.style.display = isChecked ? 'block' : 'none';
-      //   checked.style.display = isChecked ? 'none' : 'block';
-      // }
+      // 대표 체크박스를 기준으로 판단 (첫 번째)
+      const masterCheckbox = document.getElementById('master-check');
+
+      // 대표 체크박스 변경 시, 다른 체크박스들 모두 상태 동일하게 적용
+      masterCheckbox.addEventListener('change', function () {
+        checkboxes.forEach(cb => {
+          cb.checked = masterCheckbox.checked;
+        });
+      });
     </script>
   </body>
 </html>
