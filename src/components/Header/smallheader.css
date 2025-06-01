@@ -12,7 +12,6 @@
   display: flex;
   align-items: center;
   gap: 2rem;
-  width: 100%;
   justify-content: space-between;
 }
 
@@ -53,7 +52,7 @@
   flex: 1 1 auto;
   border: none;
   outline: none;
-  font-size: 0.75rem;
+  font-size: var(--paragraph---medium);
   color: var(--gray--400);
   min-width: 0;
 }
