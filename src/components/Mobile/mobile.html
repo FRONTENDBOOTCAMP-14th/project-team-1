@@ -3,19 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mobile-baek</title>
+    <title>Mobile</title>
     <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="/public/favicon.ico" type="image/svg" />
-    <link rel="stylesheet" href="/src/styles/reset.css" />
-    <link rel="stylesheet" href="/src/styles/base.css" />
-    <!-- 정적 자산 -->
-    <link rel="stylesheet" href="/src/styles/variables.css" />
-    <!-- 동적 자산 -->
-    <!-- 동적 자산과 정적 자산을 분리화기 위해서 합치지 않음 -->
-    <link rel="stylesheet" href="/src/components/mobile-baek/mobile-baek.css" />
+    <link rel="stylesheet" href="../../styles/variables.css" />
+    <link rel="stylesheet" href="../../styles/reset.css" />
+    <link rel="stylesheet" href="../../styles/base.css" />
+    <link rel="stylesheet" href="./mobile.css" />
   </head>
   <body class="body">
-    <h1>Mobile-baek</h1>
+    <h1>Mobile</h1>
     <!-- add cart -->
     <div class="mobile-wrapper">
       <div class="addcart">
@@ -25,32 +22,14 @@
         <div class="product-price">
           <span class="product-price__amount">4,980원</span>
           <div class="quantity-selector">
-            <button
-              class="quantity-selector__button quantity-selector__button--minus"
-              aria-label="수량 감소"
-            >
-              <svg
-                width="10"
-                height="2"
-                viewBox="0 0 10 2"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+            <button class="quantity-selector__button quantity-selector__button--minus" aria-label="수량 감소">
+              <svg width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10 0V2H0V0H10Z" fill="#A6A6A6" />
               </svg>
             </button>
             <span class="quantity-selector__value">1</span>
-            <button
-              class="quantity-selector__button quantity-selector__button--plus"
-              aria-label="수량 증가"
-            >
-              <svg
-                width="10"
-                height="10"
-                viewBox="0 0 10 10"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+            <button class="quantity-selector__button quantity-selector__button--plus" aria-label="수량 증가">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6 0V4H10V6H6V10H4V6H0V4H4V0H6Z" fill="#333333" />
               </svg>
             </button>
@@ -75,9 +54,9 @@
       <nav class="mobile-menu">
         <ul>
           <li class="mobile-menu__category">
-            <a href="#" class="mobile-menu__link"
-              ><span class="icon"
-                ><svg
+            <a href="#" class="mobile-menu__link">
+              <span class="icon">
+                <svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -87,16 +66,8 @@
                 >
                   <rect width="24" height="24" fill="url(#pattern0_7247_590)" />
                   <defs>
-                    <pattern
-                      id="pattern0_7247_590"
-                      patternContentUnits="objectBoundingBox"
-                      width="1"
-                      height="1"
-                    >
-                      <use
-                        xlink:href="#image0_7247_590"
-                        transform="scale(0.0123457)"
-                      />
+                    <pattern id="pattern0_7247_590" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_7247_590" transform="scale(0.0123457)" />
                     </pattern>
                     <image
                       id="image0_7247_590"
@@ -108,13 +79,13 @@
                   </defs>
                 </svg>
               </span>
-              <span class="text">선물하기</span></a
-            >
+              <span class="text">선물하기</span>
+            </a>
           </li>
           <li class="mobile-menu__category">
-            <a href="#" class="mobile-menu__link"
-              ><span class="icon"
-                ><svg
+            <a href="#" class="mobile-menu__link">
+              <span class="icon">
+                <svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -122,22 +93,10 @@
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
                 >
-                  <rect
-                    width="24"
-                    height="24"
-                    fill="url(#pattern0_7247_2708)"
-                  />
+                  <rect width="24" height="24" fill="url(#pattern0_7247_2708)" />
                   <defs>
-                    <pattern
-                      id="pattern0_7247_2708"
-                      patternContentUnits="objectBoundingBox"
-                      width="1"
-                      height="1"
-                    >
-                      <use
-                        xlink:href="#image0_7247_2708"
-                        transform="scale(0.0123457)"
-                      />
+                    <pattern id="pattern0_7247_2708" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_7247_2708" transform="scale(0.0123457)" />
                     </pattern>
                     <image
                       id="image0_7247_2708"
@@ -149,13 +108,13 @@
                   </defs>
                 </svg>
               </span>
-              <span class="text">채소</span></a
-            >
+              <span class="text">채소</span>
+            </a>
           </li>
           <li class="mobile-menu__category">
-            <a href="#" class="mobile-menu__link"
-              ><span class="icon"
-                ><svg
+            <a href="#" class="mobile-menu__link">
+              <span class="icon">
+                <svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -163,22 +122,10 @@
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
                 >
-                  <rect
-                    width="24"
-                    height="24"
-                    fill="url(#pattern0_7247_2693)"
-                  />
+                  <rect width="24" height="24" fill="url(#pattern0_7247_2693)" />
                   <defs>
-                    <pattern
-                      id="pattern0_7247_2693"
-                      patternContentUnits="objectBoundingBox"
-                      width="1"
-                      height="1"
-                    >
-                      <use
-                        xlink:href="#image0_7247_2693"
-                        transform="scale(0.0123457)"
-                      />
+                    <pattern id="pattern0_7247_2693" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_7247_2693" transform="scale(0.0123457)" />
                     </pattern>
                     <image
                       id="image0_7247_2693"
@@ -190,13 +137,13 @@
                   </defs>
                 </svg>
               </span>
-              <span class="text">과일 · 견과 · 쌀</span></a
-            >
+              <span class="text">과일 · 견과 · 쌀</span>
+            </a>
           </li>
           <li class="mobile-menu__category">
-            <a href="#" class="mobile-menu__link"
-              ><span class="icon"
-                ><svg
+            <a href="#" class="mobile-menu__link">
+              <span class="icon">
+                <svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -204,22 +151,10 @@
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
                 >
-                  <rect
-                    width="24"
-                    height="24"
-                    fill="url(#pattern0_7247_1031)"
-                  />
+                  <rect width="24" height="24" fill="url(#pattern0_7247_1031)" />
                   <defs>
-                    <pattern
-                      id="pattern0_7247_1031"
-                      patternContentUnits="objectBoundingBox"
-                      width="1"
-                      height="1"
-                    >
-                      <use
-                        xlink:href="#image0_7247_1031"
-                        transform="scale(0.0123457)"
-                      />
+                    <pattern id="pattern0_7247_1031" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_7247_1031" transform="scale(0.0123457)" />
                     </pattern>
                     <image
                       id="image0_7247_1031"
@@ -231,13 +166,13 @@
                   </defs>
                 </svg>
               </span>
-              <span class="text">수산 · 해산 · 건어물</span></a
-            >
+              <span class="text">수산 · 해산 · 건어물</span>
+            </a>
           </li>
           <li class="mobile-menu__category">
-            <a href="#" class="mobile-menu__link"
-              ><span class="icon"
-                ><svg
+            <a href="#" class="mobile-menu__link">
+              <span class="icon">
+                <svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -245,22 +180,10 @@
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
                 >
-                  <rect
-                    width="24"
-                    height="24"
-                    fill="url(#pattern0_7247_2678)"
-                  />
+                  <rect width="24" height="24" fill="url(#pattern0_7247_2678)" />
                   <defs>
-                    <pattern
-                      id="pattern0_7247_2678"
-                      patternContentUnits="objectBoundingBox"
-                      width="1"
-                      height="1"
-                    >
-                      <use
-                        xlink:href="#image0_7247_2678"
-                        transform="scale(0.0123457)"
-                      />
+                    <pattern id="pattern0_7247_2678" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_7247_2678" transform="scale(0.0123457)" />
                     </pattern>
                     <image
                       id="image0_7247_2678"
@@ -272,13 +195,13 @@
                   </defs>
                 </svg>
               </span>
-              <span class="text">정육 · 계란</span></a
-            >
+              <span class="text">정육 · 계란</span>
+            </a>
           </li>
           <li class="mobile-menu__category">
-            <a href="#" class="mobile-menu__link"
-              ><span class="icon"
-                ><svg
+            <a href="#" class="mobile-menu__link">
+              <span class="icon">
+                <svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -286,22 +209,10 @@
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
                 >
-                  <rect
-                    width="24"
-                    height="24"
-                    fill="url(#pattern0_7247_2696)"
-                  />
+                  <rect width="24" height="24" fill="url(#pattern0_7247_2696)" />
                   <defs>
-                    <pattern
-                      id="pattern0_7247_2696"
-                      patternContentUnits="objectBoundingBox"
-                      width="1"
-                      height="1"
-                    >
-                      <use
-                        xlink:href="#image0_7247_2696"
-                        transform="scale(0.0123457)"
-                      />
+                    <pattern id="pattern0_7247_2696" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_7247_2696" transform="scale(0.0123457)" />
                     </pattern>
                     <image
                       id="image0_7247_2696"
@@ -313,13 +224,13 @@
                   </defs>
                 </svg>
               </span>
-              <span class="text">국 · 반찬 · 메인요리</span></a
-            >
+              <span class="text">국 · 반찬 · 메인요리</span>
+            </a>
           </li>
           <li class="mobile-menu__category">
-            <a href="#" class="mobile-menu__link"
-              ><span class="icon"
-                ><svg
+            <a href="#" class="mobile-menu__link">
+              <span class="icon">
+                <svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -327,22 +238,10 @@
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
                 >
-                  <rect
-                    width="24"
-                    height="24"
-                    fill="url(#pattern0_7247_2232)"
-                  />
+                  <rect width="24" height="24" fill="url(#pattern0_7247_2232)" />
                   <defs>
-                    <pattern
-                      id="pattern0_7247_2232"
-                      patternContentUnits="objectBoundingBox"
-                      width="1"
-                      height="1"
-                    >
-                      <use
-                        xlink:href="#image0_7247_2232"
-                        transform="scale(0.0123457)"
-                      />
+                    <pattern id="pattern0_7247_2232" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_7247_2232" transform="scale(0.0123457)" />
                     </pattern>
                     <image
                       id="image0_7247_2232"
@@ -354,13 +253,13 @@
                   </defs>
                 </svg>
               </span>
-              <span class="text">샐러드 · 간편식</span></a
-            >
+              <span class="text">샐러드 · 간편식</span>
+            </a>
           </li>
           <li class="mobile-menu__category">
-            <a href="#" class="mobile-menu__link"
-              ><span class="icon"
-                ><svg
+            <a href="#" class="mobile-menu__link">
+              <span class="icon">
+                <svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -368,22 +267,10 @@
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
                 >
-                  <rect
-                    width="24"
-                    height="24"
-                    fill="url(#pattern0_7247_2682)"
-                  />
+                  <rect width="24" height="24" fill="url(#pattern0_7247_2682)" />
                   <defs>
-                    <pattern
-                      id="pattern0_7247_2682"
-                      patternContentUnits="objectBoundingBox"
-                      width="1"
-                      height="1"
-                    >
-                      <use
-                        xlink:href="#image0_7247_2682"
-                        transform="scale(0.0123457)"
-                      />
+                    <pattern id="pattern0_7247_2682" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_7247_2682" transform="scale(0.0123457)" />
                     </pattern>
                     <image
                       id="image0_7247_2682"
@@ -395,13 +282,13 @@
                   </defs>
                 </svg>
               </span>
-              <span class="text">면 · 양념 · 오일</span></a
-            >
+              <span class="text">면 · 양념 · 오일</span>
+            </a>
           </li>
           <li class="mobile-menu__category">
-            <a href="#" class="mobile-menu__link"
-              ><span class="icon"
-                ><svg
+            <a href="#" class="mobile-menu__link">
+              <span class="icon">
+                <svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -409,22 +296,10 @@
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
                 >
-                  <rect
-                    width="24"
-                    height="24"
-                    fill="url(#pattern0_7247_2742)"
-                  />
+                  <rect width="24" height="24" fill="url(#pattern0_7247_2742)" />
                   <defs>
-                    <pattern
-                      id="pattern0_7247_2742"
-                      patternContentUnits="objectBoundingBox"
-                      width="1"
-                      height="1"
-                    >
-                      <use
-                        xlink:href="#image0_7247_2742"
-                        transform="scale(0.0123457)"
-                      />
+                    <pattern id="pattern0_7247_2742" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_7247_2742" transform="scale(0.0123457)" />
                     </pattern>
                     <image
                       id="image0_7247_2742"
@@ -436,13 +311,13 @@
                   </defs>
                 </svg>
               </span>
-              <span class="text">생수 · 음료 · 우유 · 커피</span></a
-            >
+              <span class="text">생수 · 음료 · 우유 · 커피</span>
+            </a>
           </li>
           <li class="mobile-menu__category">
-            <a href="#" class="mobile-menu__link"
-              ><span class="icon"
-                ><svg
+            <a href="#" class="mobile-menu__link">
+              <span class="icon">
+                <svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -452,16 +327,8 @@
                 >
                   <rect width="24" height="24" fill="url(#pattern0_7247_375)" />
                   <defs>
-                    <pattern
-                      id="pattern0_7247_375"
-                      patternContentUnits="objectBoundingBox"
-                      width="1"
-                      height="1"
-                    >
-                      <use
-                        xlink:href="#image0_7247_375"
-                        transform="scale(0.0123457)"
-                      />
+                    <pattern id="pattern0_7247_375" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_7247_375" transform="scale(0.0123457)" />
                     </pattern>
                     <image
                       id="image0_7247_375"
@@ -473,13 +340,13 @@
                   </defs>
                 </svg>
               </span>
-              <span class="text">간식 · 과자 · 떡</span></a
-            >
+              <span class="text">간식 · 과자 · 떡</span>
+            </a>
           </li>
           <li class="mobile-menu__category">
-            <a href="#" class="mobile-menu__link"
-              ><span class="icon"
-                ><svg
+            <a href="#" class="mobile-menu__link">
+              <span class="icon">
+                <svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -487,22 +354,10 @@
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
                 >
-                  <rect
-                    width="24"
-                    height="24"
-                    fill="url(#pattern0_7247_2575)"
-                  />
+                  <rect width="24" height="24" fill="url(#pattern0_7247_2575)" />
                   <defs>
-                    <pattern
-                      id="pattern0_7247_2575"
-                      patternContentUnits="objectBoundingBox"
-                      width="1"
-                      height="1"
-                    >
-                      <use
-                        xlink:href="#image0_7247_2575"
-                        transform="scale(0.0123457)"
-                      />
+                    <pattern id="pattern0_7247_2575" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_7247_2575" transform="scale(0.0123457)" />
                     </pattern>
                     <image
                       id="image0_7247_2575"
@@ -514,13 +369,13 @@
                   </defs>
                 </svg>
               </span>
-              <span class="text">베이커리 · 치즈 · 델리</span></a
-            >
+              <span class="text">베이커리 · 치즈 · 델리</span>
+            </a>
           </li>
           <li class="mobile-menu__category">
-            <a href="#" class="mobile-menu__link"
-              ><span class="icon"
-                ><svg
+            <a href="#" class="mobile-menu__link">
+              <span class="icon">
+                <svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -528,22 +383,10 @@
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
                 >
-                  <rect
-                    width="24"
-                    height="24"
-                    fill="url(#pattern0_7247_2584)"
-                  />
+                  <rect width="24" height="24" fill="url(#pattern0_7247_2584)" />
                   <defs>
-                    <pattern
-                      id="pattern0_7247_2584"
-                      patternContentUnits="objectBoundingBox"
-                      width="1"
-                      height="1"
-                    >
-                      <use
-                        xlink:href="#image0_7247_2584"
-                        transform="scale(0.0123457)"
-                      />
+                    <pattern id="pattern0_7247_2584" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_7247_2584" transform="scale(0.0123457)" />
                     </pattern>
                     <image
                       id="image0_7247_2584"
@@ -555,13 +398,13 @@
                   </defs>
                 </svg>
               </span>
-              <span class="text">건강식품</span></a
-            >
+              <span class="text">건강식품</span>
+            </a>
           </li>
           <li class="mobile-menu__category">
-            <a href="#" class="mobile-menu__link"
-              ><span class="icon"
-                ><svg
+            <a href="#" class="mobile-menu__link">
+              <span class="icon">
+                <svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -569,22 +412,10 @@
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
                 >
-                  <rect
-                    width="24"
-                    height="24"
-                    fill="url(#pattern0_7247_1822)"
-                  />
+                  <rect width="24" height="24" fill="url(#pattern0_7247_1822)" />
                   <defs>
-                    <pattern
-                      id="pattern0_7247_1822"
-                      patternContentUnits="objectBoundingBox"
-                      width="1"
-                      height="1"
-                    >
-                      <use
-                        xlink:href="#image0_7247_1822"
-                        transform="scale(0.0123457)"
-                      />
+                    <pattern id="pattern0_7247_1822" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_7247_1822" transform="scale(0.0123457)" />
                     </pattern>
                     <image
                       id="image0_7247_1822"
@@ -596,13 +427,13 @@
                   </defs>
                 </svg>
               </span>
-              <span class="text">와인</span></a
-            >
+              <span class="text">와인</span>
+            </a>
           </li>
           <li class="mobile-menu__category">
-            <a href="#" class="mobile-menu__link"
-              ><span class="icon"
-                ><svg
+            <a href="#" class="mobile-menu__link">
+              <span class="icon">
+                <svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -612,16 +443,8 @@
                 >
                   <rect width="24" height="24" fill="url(#pattern0_7247_447)" />
                   <defs>
-                    <pattern
-                      id="pattern0_7247_447"
-                      patternContentUnits="objectBoundingBox"
-                      width="1"
-                      height="1"
-                    >
-                      <use
-                        xlink:href="#image0_7247_447"
-                        transform="scale(0.0123457)"
-                      />
+                    <pattern id="pattern0_7247_447" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_7247_447" transform="scale(0.0123457)" />
                     </pattern>
                     <image
                       id="image0_7247_447"
@@ -633,13 +456,13 @@
                   </defs>
                 </svg>
               </span>
-              <span class="text">전통주</span></a
-            >
+              <span class="text">전통주</span>
+            </a>
           </li>
           <li class="mobile-menu__category">
-            <a href="#" class="mobile-menu__link"
-              ><span class="icon"
-                ><svg
+            <a href="#" class="mobile-menu__link">
+              <span class="icon">
+                <svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -647,22 +470,10 @@
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
                 >
-                  <rect
-                    width="24"
-                    height="24"
-                    fill="url(#pattern0_7247_2246)"
-                  />
+                  <rect width="24" height="24" fill="url(#pattern0_7247_2246)" />
                   <defs>
-                    <pattern
-                      id="pattern0_7247_2246"
-                      patternContentUnits="objectBoundingBox"
-                      width="1"
-                      height="1"
-                    >
-                      <use
-                        xlink:href="#image0_7247_2246"
-                        transform="scale(0.0123457)"
-                      />
+                    <pattern id="pattern0_7247_2246" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_7247_2246" transform="scale(0.0123457)" />
                     </pattern>
                     <image
                       id="image0_7247_2246"
@@ -674,13 +485,13 @@
                   </defs>
                 </svg>
               </span>
-              <span class="text">생활용품 · 리빙 · 캠핑</span></a
-            >
+              <span class="text">생활용품 · 리빙 · 캠핑</span>
+            </a>
           </li>
           <li class="mobile-menu__category">
-            <a href="#" class="mobile-menu__link"
-              ><span class="icon"
-                ><svg
+            <a href="#" class="mobile-menu__link">
+              <span class="icon">
+                <svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -688,22 +499,10 @@
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
                 >
-                  <rect
-                    width="24"
-                    height="24"
-                    fill="url(#pattern0_7247_2705)"
-                  />
+                  <rect width="24" height="24" fill="url(#pattern0_7247_2705)" />
                   <defs>
-                    <pattern
-                      id="pattern0_7247_2705"
-                      patternContentUnits="objectBoundingBox"
-                      width="1"
-                      height="1"
-                    >
-                      <use
-                        xlink:href="#image0_7247_2705"
-                        transform="scale(0.0123457)"
-                      />
+                    <pattern id="pattern0_7247_2705" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_7247_2705" transform="scale(0.0123457)" />
                     </pattern>
                     <image
                       id="image0_7247_2705"
@@ -715,13 +514,13 @@
                   </defs>
                 </svg>
               </span>
-              <span class="text">스킨케어 · 메이크업</span></a
-            >
+              <span class="text">스킨케어 · 메이크업</span>
+            </a>
           </li>
           <li class="mobile-menu__category">
-            <a href="#" class="mobile-menu__link"
-              ><span class="icon"
-                ><svg
+            <a href="#" class="mobile-menu__link">
+              <span class="icon">
+                <svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -729,22 +528,10 @@
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
                 >
-                  <rect
-                    width="24"
-                    height="24"
-                    fill="url(#pattern0_7247_2001)"
-                  />
+                  <rect width="24" height="24" fill="url(#pattern0_7247_2001)" />
                   <defs>
-                    <pattern
-                      id="pattern0_7247_2001"
-                      patternContentUnits="objectBoundingBox"
-                      width="1"
-                      height="1"
-                    >
-                      <use
-                        xlink:href="#image0_7247_2001"
-                        transform="scale(0.0123457)"
-                      />
+                    <pattern id="pattern0_7247_2001" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_7247_2001" transform="scale(0.0123457)" />
                     </pattern>
                     <image
                       id="image0_7247_2001"
@@ -756,13 +543,13 @@
                   </defs>
                 </svg>
               </span>
-              <span class="text">헤어 · 바디 · 구강</span></a
-            >
+              <span class="text">헤어 · 바디 · 구강</span>
+            </a>
           </li>
           <li class="mobile-menu__category">
-            <a href="#" class="mobile-menu__link"
-              ><span class="icon"
-                ><svg
+            <a href="#" class="mobile-menu__link">
+              <span class="icon">
+                <svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -770,22 +557,10 @@
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
                 >
-                  <rect
-                    width="24"
-                    height="24"
-                    fill="url(#pattern0_7247_1039)"
-                  />
+                  <rect width="24" height="24" fill="url(#pattern0_7247_1039)" />
                   <defs>
-                    <pattern
-                      id="pattern0_7247_1039"
-                      patternContentUnits="objectBoundingBox"
-                      width="1"
-                      height="1"
-                    >
-                      <use
-                        xlink:href="#image0_7247_1039"
-                        transform="scale(0.0123457)"
-                      />
+                    <pattern id="pattern0_7247_1039" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_7247_1039" transform="scale(0.0123457)" />
                     </pattern>
                     <image
                       id="image0_7247_1039"
@@ -797,13 +572,13 @@
                   </defs>
                 </svg>
               </span>
-              <span class="text">주방용품</span></a
-            >
+              <span class="text">주방용품</span>
+            </a>
           </li>
           <li class="mobile-menu__category">
-            <a href="#" class="mobile-menu__link"
-              ><span class="icon"
-                ><svg
+            <a href="#" class="mobile-menu__link">
+              <span class="icon">
+                <svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -811,22 +586,10 @@
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
                 >
-                  <rect
-                    width="24"
-                    height="24"
-                    fill="url(#pattern0_7247_2553)"
-                  />
+                  <rect width="24" height="24" fill="url(#pattern0_7247_2553)" />
                   <defs>
-                    <pattern
-                      id="pattern0_7247_2553"
-                      patternContentUnits="objectBoundingBox"
-                      width="1"
-                      height="1"
-                    >
-                      <use
-                        xlink:href="#image0_7247_2553"
-                        transform="scale(0.0123457)"
-                      />
+                    <pattern id="pattern0_7247_2553" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_7247_2553" transform="scale(0.0123457)" />
                     </pattern>
                     <image
                       id="image0_7247_2553"
@@ -838,13 +601,13 @@
                   </defs>
                 </svg>
               </span>
-              <span class="text">가전제품</span></a
-            >
+              <span class="text">가전제품</span>
+            </a>
           </li>
           <li class="mobile-menu__category">
-            <a href="#" class="mobile-menu__link"
-              ><span class="icon"
-                ><svg
+            <a href="#" class="mobile-menu__link">
+              <span class="icon">
+                <svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -852,22 +615,10 @@
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
                 >
-                  <rect
-                    width="24"
-                    height="24"
-                    fill="url(#pattern0_7247_2243)"
-                  />
+                  <rect width="24" height="24" fill="url(#pattern0_7247_2243)" />
                   <defs>
-                    <pattern
-                      id="pattern0_7247_2243"
-                      patternContentUnits="objectBoundingBox"
-                      width="1"
-                      height="1"
-                    >
-                      <use
-                        xlink:href="#image0_7247_2243"
-                        transform="scale(0.0123457)"
-                      />
+                    <pattern id="pattern0_7247_2243" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_7247_2243" transform="scale(0.0123457)" />
                     </pattern>
                     <image
                       id="image0_7247_2243"
@@ -879,13 +630,13 @@
                   </defs>
                 </svg>
               </span>
-              <span class="text">반려동물</span></a
-            >
+              <span class="text">반려동물</span>
+            </a>
           </li>
           <li class="mobile-menu__category">
-            <a href="#" class="mobile-menu__link"
-              ><span class="icon"
-                ><svg
+            <a href="#" class="mobile-menu__link">
+              <span class="icon">
+                <svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -893,22 +644,10 @@
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
                 >
-                  <rect
-                    width="24"
-                    height="24"
-                    fill="url(#pattern0_7247_1801)"
-                  />
+                  <rect width="24" height="24" fill="url(#pattern0_7247_1801)" />
                   <defs>
-                    <pattern
-                      id="pattern0_7247_1801"
-                      patternContentUnits="objectBoundingBox"
-                      width="1"
-                      height="1"
-                    >
-                      <use
-                        xlink:href="#image0_7247_1801"
-                        transform="scale(0.0123457)"
-                      />
+                    <pattern id="pattern0_7247_1801" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_7247_1801" transform="scale(0.0123457)" />
                     </pattern>
                     <image
                       id="image0_7247_1801"
@@ -920,13 +659,13 @@
                   </defs>
                 </svg>
               </span>
-              <span class="text">베이비 · 키즈 · 완구</span></a
-            >
+              <span class="text">베이비 · 키즈 · 완구</span>
+            </a>
           </li>
           <li class="mobile-menu__category">
-            <a href="#" class="mobile-menu__link"
-              ><span class="icon"
-                ><svg
+            <a href="#" class="mobile-menu__link">
+              <span class="icon">
+                <svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -934,22 +673,10 @@
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
                 >
-                  <rect
-                    width="24"
-                    height="24"
-                    fill="url(#pattern0_7247_2199)"
-                  />
+                  <rect width="24" height="24" fill="url(#pattern0_7247_2199)" />
                   <defs>
-                    <pattern
-                      id="pattern0_7247_2199"
-                      patternContentUnits="objectBoundingBox"
-                      width="1"
-                      height="1"
-                    >
-                      <use
-                        xlink:href="#image0_7247_2199"
-                        transform="scale(0.0125)"
-                      />
+                    <pattern id="pattern0_7247_2199" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_7247_2199" transform="scale(0.0125)" />
                     </pattern>
                     <image
                       id="image0_7247_2199"
@@ -961,8 +688,8 @@
                   </defs>
                 </svg>
               </span>
-              <span class="text">여행 · 티켓</span></a
-            >
+              <span class="text">여행 · 티켓</span>
+            </a>
           </li>
         </ul>
       </nav>

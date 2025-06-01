@@ -2,23 +2,29 @@
 @import url('../styles/variables.css');
 @import url('../styles/base.css');
 
-/* components */
-@import url('../components/Notice/notice.css');
-@import url('../components/Product/product.css');
+/* components 최종 수정 */
+@import url('../components/Accordion/Accordion.css');
 @import url('../components/Badge/badge.css');
-@import url('../components/Menu/menu.css');
-@import url('../components/Input/input.css');
 @import url('../components/Button/button.css');
-@import url('../components/Icon/icon.css');
-@import url('../components/Table/table.css');
 @import url('../components/Footer/footer.css');
-@import url('../components/Text/text.css');
 @import url('../components/Header/header.css');
 @import url('../components/Header/smallheader.css');
-@import url('../components/login/login.css');
-@import url('../components/mobile-baek/mobile-baek.css');
+@import url('../components/Icon/icon.css');
+@import url('../components/Input/input.css');
+@import url('../components/Menu/menu.css');
+@import url('../components/Mobile/nav.css');
+@import url('../components/Mobile/mobile.css');
+@import url('../components/Notice/notice.css');
 @import url('../components/popup/bubble.css');
-@import url('../components/popup/popup-review.css');
 @import url('../components/popup/popup-inquiry.css');
+@import url('../components/popup/popup-review.css');
+@import url('../components/Product/product.css');
+@import url('../components/Table/table.css');
+@import url('../components/Text/text.css');
+@import url('../components/RecentProduct/recent-product.css');
 
+/* Pages */
+@import url('../pages/Main/main.css');
+@import url('../components/login/login.css');
 @import url('../Pages/Product_list/product_list.css');
+

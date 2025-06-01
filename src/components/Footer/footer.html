@@ -14,7 +14,7 @@
     <footer class="footer">
       <div class="footer__container">
         <section class="footer__top">
-          <div class="footer__left">
+          <div class="footer__left desktop-only">
             <h2>고객행복센터</h2>
             <div class="customer-service">
               <strong>1644-1107</strong>
@@ -60,15 +60,18 @@
           <div class="footer__right">
             <ul class="footer__list">
               <li><a href="#">칼리소개</a></li>
-              <li><a href="#">칼리소개영상</a></li>
-              <li><a href="#">인재채용</a></li>
+              <li><a class="desktop-only" href="#">칼리소개영상</a></li>
+              <li><a class="desktop-only" href="#">인재채용</a></li>
               <li><a href="#">이용약관</a></li>
-              <li><a href="#">개인정보처리방침</a></li>
-              <li><a href="#">이용안내</a></li>
+              <li><a href="#" class="privacy">개인정보처리방침</a></li>
+              <li><a class="desktop-only" href="#">이용안내</a></li>
             </ul>
             <ul class="footer__company-info">
               <li class="company-info__list">
-                <span class="inquiry-text">법인명 (상호) : 주식회사 칼리 |</span>
+                <span class="inquiry-text">
+                  <span class="desktop-only">법인명 (상호) :</span>
+                  주식회사 칼리 |
+                </span>
                 <span class="inquiry-text">사업자등록번호 : 111-11-22222 |</span>
                 <a class="inquiry-link" href="">사업자정보 확인</a>
               </li>
@@ -78,21 +81,34 @@
               </li>
               <li class="company-info__list">
                 <span class="inquiry-text">주소 : 서울특별시 강남구 테헤란로 5003, 28층(역삼동) |</span>
-                <span class="inquiry-text">대표이사 : 심선범</span>
+                <span class="inquiry-text desktop-only">대표이사 : 심선범</span>
               </li>
               <li class="company-info__list">
-                <span class="inquiry-text">입점문의 : 입점문의하기 |</span>
+                <span class="inquiry-text desktop-only">입점문의 : 입점문의하기 |</span>
                 <span class="inquiry-text">제휴문의 :</span>
                 <a class="inquiry-link" href="mailto:business@karlycorp.com">business@karlycorp.com</a>
               </li>
-              <li class="company-info__list">
-                <span class="inquiry-text">채용문의 :</span>
+              <li class="company-info__list desktop-only">
+                <span class="inquiry-text">채용문의 :&nbsp;</span>
                 <a class="inquiry-link" href="mailto:recruit@karlycorp.com">recruit@karlycorp.com</a>
               </li>
               <li class="company-info__list">
                 <span class="inquiry-text">팩스 : 070 - 1111 - 2222</span>
               </li>
+              <li class="company-info__list mobile-only inquiry-text">
+                고객행복센터 :
+                <a class="inquiry-link" href="tell:1644-1107">1644-1107</a>
+              </li>
+              <li class="company-info__list mobile-only inquiry-text">
+                대량주문 문의 :
+                <a href="#" class="inquiry-link">대량주문 문의하기</a>
+              </li>
             </ul>
+            <p class="inquiry-text mobile-only">
+              카카오톡
+              <a class="inquiry-link" href="#">@칼리</a>
+              친구 추가하고 소식과 혜택을 받아보세요.
+            </p>
             <ul class="footer__sns">
               <li>
                 <a href="https://blog.naver.com" target="_blank">
@@ -122,7 +138,7 @@
             </ul>
           </div>
         </section>
-        <section class="footer__middle">
+        <section class="footer__middle desktop-only">
           <div class="footer__certification">
             <img src="../../assets/logo_isms.svg" alt="isms 인증 로고" />
             <p>
@@ -154,12 +170,20 @@
         </section>
       </div>
       <section class="footer__bottom">
+        <div class="inquiry-text mobile-only">
+          우리은행 채무지급 보증안내
+          <a class="inquiry-link" href="#">서비스가입 확인</a>
+          <p>
+            당사는 고객님이 현금 결제한 금액에 대해 우리은행과 채무지급보증 계약을 체결하여 안전거래를 보장하고
+            있습니다.
+          </p>
+        </div>
         <small class="footer__copyright">
           마켓컬리에서 판매되는 상품 중에는 마켓컬리에 입점한 개별 판매자가 판매하는 마켓플레이스(오픈마켓) 상품이
           포함되어 있습니다.
           <br />
           마켓플레이스(오픈마켓) 상품의 경우 컬리는 통신판매중개자로서 통신판매의 당사자가 아닙니다. 컬리는 해당 상품의
-          주문, 품질, 교환/환불
+          주문, 품질, 교환/환불 등 의무와 책임을 부담하지 않습니다.
         </small>
         <small class="footer__copyright">© KURLY CORP. ALL RIGHTS RESERVED</small>
       </section>
