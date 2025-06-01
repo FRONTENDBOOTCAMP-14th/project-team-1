@@ -10,8 +10,8 @@
   width: 100%;
   max-width: 48rem;
   padding-bottom: 1.0625rem;
-  box-shadow: -1px 0px 10px rgba(0, 0, 0, 0.04),
-    1px 0px 10px rgba(0, 0, 0, 0.04), 0px -1px 10px rgba(0, 0, 0, 0.04);
+  background: var(--white);
+  box-shadow: -1px 0px 10px rgba(0, 0, 0, 0.04), 1px 0px 10px rgba(0, 0, 0, 0.04), 0px -1px 10px rgba(0, 0, 0, 0.04);
 }
 
 .mobile-nav__component label {
@@ -41,6 +41,7 @@
   padding: 0;
   line-height: 1;
   text-align: center;
+  font-size: 0.875rem;
 }
 
 .mobile-nav__component input:checked + label {
