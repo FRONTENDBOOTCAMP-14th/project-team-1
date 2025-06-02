@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./src/styles/style.css" />
+  <link rel="stylesheet" href="./src/styles/index2.css" />
+
+  <title>칼리 - 인덱스</title>
+</head>
+
+<body>
+  <h1 class="sr-only">1팀 발표용 페이지</h1>
+  <!-- 커스텀 커서 -->
+  <div class="cursor"></div>
+
+  <!-- 파티클 배경 -->
+  <div class="particles"></div>
+
+  <!-- 히어로 섹션 -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="main-title">SUNSHINE CODERS</h1>
+
+      <div class="team-badge">
+        ✨ 멋쟁이사자처럼 부트캠프 14기 • UI Project 1팀 • SUNSHINE CODERS
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <span class="feature-icon">🎨</span>
+          <h3 class="feature-title">컴포넌트 기반 설계</h3>
+          <p class="feature-desc">재사용성과 유지보수성을 고려한 모듈화된 컴포넌트 시스템</p>
+        </div>
+
+        <div class="feature-card">
+          <span class="feature-icon">📱</span>
+          <h3 class="feature-title">완벽한 반응형</h3>
+          <p class="feature-desc">모든 디바이스에서 최적화된 사용자 경험을 제공</p>
+        </div>
+
+        <div class="feature-card">
+          <span class="feature-icon">⚡</span>
+          <h3 class="feature-title">최신 기술 스택</h3>
+          <p class="feature-desc">Vite, 모던 JavaScript, CSS Grid/Flexbox 활용</p>
+        </div>
+
+        <div class="feature-card">
+          <span class="feature-icon">🤝</span>
+          <h3 class="feature-title">팀워크와 협업</h3>
+          <p class="feature-desc">Git을 통한 체계적인 협업과 코드 리뷰 프로세스</p>
+        </div>
+      </div>
+
+      <div class="cta-section">
+        <a href="./src/pages/Main/main.html" class="cta-button">
+          🚀 프로젝트 구경하기
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+
+  <script>
+
+
+    // // ✨ 파티클 생성
+    // function createParticle() {
+    //   const particle = document.createElement('div');
+    //   particle.className = 'particle';
+    //   particle.style.left = Math.random() * 100 + '%';
+    //   particle.style.animationDuration = (Math.random() * 3 + 7) + 's';
+    //   particle.style.animationDelay = Math.random() * 2 + 's';
+
+    //   document.querySelector('.particles').appendChild(particle);
+
+    //   // 파티클 제거
+    //   setTimeout(() => {
+    //     if (particle.parentNode) {
+    //       particle.parentNode.removeChild(particle);
+    //     }
+    //   }, 10000);
+    // }
+
+    // // 파티클 주기적 생성
+    // setInterval(createParticle, 200);
+
+    // 리플 애니메이션 CSS 추가
+    const style = document.createElement('style');
+    style.textContent = `
+            @keyframes ripple {
+                to {
+                    transform: scale(4);
+                    opacity: 0;
+                }
+            }
+        `;
+    document.head.appendChild(style);
+
+    // 📊 숫자 카운트업 애니메이션
+    function animateNumbers() {
+      const numbers = document.querySelectorAll('.stat-number');
+
+      numbers.forEach(number => {
+        const target = parseInt(number.dataset.target);
+        const duration = 2000;
+        const step = target / (duration / 16);
+        let current = 0;
+
+        const timer = setInterval(() => {
+          current += step;
+          if (current >= target) {
+            current = target;
+            clearInterval(timer);
+          }
+          number.textContent = Math.floor(current) + (target === 100 ? '%' : '');
+        }, 16);
+      });
+    }
+
+    // Intersection Observer로 숫자 애니메이션 트리거
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateNumbers();
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+
+    observer.observe(document.querySelector('.stats-section'));
+
+
+
+
+  </script>
+</body>
+
+</html>

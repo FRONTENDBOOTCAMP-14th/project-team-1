@@ -1,0 +1,133 @@
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.index {
+  display: block;
+  max-width: none;
+  margin: 0;
+
+  min-height: calc(100vh+500px);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  letter-spacing: -0.01rem;
+  background: linear-gradient(45deg, #667eea 0%, #b253e9 50%, #667eea 100%);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* 메인 섹션 */
+.index__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--white);
+
+  .index__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4.5rem;
+    align-items: center;
+    padding: 2rem;
+    max-width: 800px;
+  }
+
+  .index__header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    text-align: center;
+  }
+
+  .index__title {
+    font-size: clamp(3rem, 5vw, 6rem);
+    font-weight: 800;
+    letter-spacing: -0.05rem;
+    line-height: 1.1;
+  }
+
+  .index__subtitle {
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    border: 1px solid #ffffff30;
+    background-color: #ffffff20;
+    backdrop-filter: blur(10px);
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .index__cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    gap: 2rem;
+
+    .card {
+      text-align: center;
+      padding: 2rem;
+      border-radius: 1.25rem;
+      border: 1px solid #ffffff30;
+      background-color: #ffffff10;
+      backdrop-filter: blur(20px);
+
+      &::before {
+      }
+
+      &:hover {
+      }
+
+      &:hover::before {
+      }
+    }
+
+    .card__icon {
+      display: inline-block;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .card__title {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card__desc {
+      font-size: 1rem;
+      line-height: 1.6;
+      opacity: 0.8;
+    }
+  }
+
+  .btn-site {
+    padding: 1.5rem 2rem;
+    background: linear-gradient(45deg, #ff6b6b, #ff8e53);
+    border-radius: 50px;
+    box-shadow: 0 10px 30px rgba(255, 107, 107, 0.4);
+    font-size: 1.3rem;
+    font-weight: 700;
+
+    &:hover {
+      box-shadow: 0 20px 40px rgba(255, 107, 107, 0.6);
+    }
+  }
+
+  .indicator {
+    font-size: 3rem;
+    opacity: 0.5;
+  }
+}
+
+/* 컴포넌트 섹션 */
+.index__components {
+}

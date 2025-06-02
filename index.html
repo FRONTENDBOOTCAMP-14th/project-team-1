@@ -1,47 +1,97 @@
 <!DOCTYPE html>
-<html lang="ko-KR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>UI 프로젝트 - CSS</title>
-    <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" />
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
-    <script type="module" src="/src/main.js"></script>
+<html lang="ko">
 
-    <style>
-      body {
-        margin: 50px;
-        a:hover {
-          color: var(--primary);
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <ul>
-      <li><a href="src/components/Button/button.html">Button</a></li>
-      <li><a href="src/components/Icon/icon.html">Icon</a></li>
-      <li><a href="src/components/Footer/footer.html">Footer</a></li>
-      <li><a href="src/components/Notice/notice.html"></a></li>
-      <li><a href="src/components/Badge/badge.html">badge</a></li>
-      <li><a href="src/components/Menu/menu.html">menu</a></li>
-      <li><a href="src/components/Input/input.html">input</a></li>
-      <li><a href="src/components/Button/button.html">Button</a></li>
-      <li><a href="src/components/Icon/icon.html">Icon</a></li>
-      <li><a href="src/components/Footer/footer.html">Footer</a></li>
-      <li><a href="src/components/Table/table.html">Table</a></li>
-      <li><a href="src/components/Button/Button.html">Button</a></li>
-      <li><a href="src/components/Icon/Icon.html">Icon</a></li>
-      <li><a href="src/components/Table/table.html">Table</a></li>
-      <li><a href="src/components/Header/header.html">header</a></li>
-      <li><a href="src/components/Header/smallheader.html">smallheader</a></li>
-      <li><a href="src/components/Text/text.html">Text</a></li>
-      <li><a href="src/components/login/login.html">login</a></li>
-      <li>
-        <a href="src/components/mobile-baek/mobile-baek.html">Mobile-baek</a>
-      </li>
-      <li><a href="src/pages/Register/Register.html">register</a></li>
-    </ul>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./src/styles/style.css" />
+  <link rel="stylesheet" href="./src/styles/index.css" />
+
+  <title>칼리 - 인덱스</title>
+</head>
+
+<body>
+  <h1 class="sr-only">1팀 발표용 페이지</h1>
+
+  <main class="index">
+    <!-- 메인 섹션 -->
+    <section class="index__main">
+      <div class="index__content">
+        <div class="index__header">
+          <h1 class="index__title">HELLO <span aria-hidden="true">---</span> WE <span aria-hidden="true">-</span>
+            ARE<br> SUNSHINE <span aria-hidden="true">-</span> CODERS!</h1>
+          <h2 class="index__subtitle">
+            ✨ 멋쟁이사자처럼 부트캠프 14기 UI 프로젝트 1팀 선샤인 코더스 ✨
+          </h2>
+        </div>
+
+        <div class="index__cards">
+          <a href="#intro" class="card">
+            <span class="card__icon">🤝</span>
+            <h3 class="card__title">팀원 소개</h3>
+            <p class="card__desc">
+              멋사 14기 UI프로젝트 1조 팀원 소개 바로가기
+            </p>
+          </a>
+          <a href="#components" class="card">
+            <span class="card__icon">🎨</span>
+            <h3 class="card__title">컴포넌트</h3>
+            <p class="card__desc">
+              재사용성을 고려한 컴포넌트 살펴보기
+            </p>
+          </a>
+          <a href="#pages" class="card">
+            <span class="card__icon">📱</span>
+            <h3 class="card__title">페이지</h3>
+            <p class="card__desc">
+              반응형 칼리 페이지 구경하러 가기
+            </p>
+          </a>
+          <a href="#rules" class="card">
+            <span class="card__icon">⚡</span>
+            <h3 class="card__title">프로젝트 규칙</h3>
+            <p class="card__desc">
+              컨벤션, 일정 등 프로젝트 상세 내용 바로가기
+            </p>
+          </a>
+        </div>
+
+        <div class="indicator">⬇</div>
+      </div>
+    </section>
+
+
+    <!-- 첫번째 섹션/팀원 소개 -->
+    <section id="#intro" class="index__intro">
+    </section>
+
+
+    <!-- 두번째 섹션/컴포넌트 -->
+    <section id="#components" class="index__components">
+
+    </section>
+
+
+    <!-- 세번째 섹션/페이지 -->
+    <section id="pages" class="index__pages">
+
+    </section>
+
+
+    <!-- 네번째 섹션/프로젝트 상세 -->
+    <section id="rules" class="index__rules">
+
+    </section>
+
+  </main>
+
+
+
+
+
+
+
+</body>
+
 </html>
