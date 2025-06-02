@@ -71,3 +71,8 @@
   align-items: center;
   gap: 1.25rem;
 }
+
+.main-nav ul li a:hover,
+.user__utils li a:hover {
+  color: var(--primary);
+}
