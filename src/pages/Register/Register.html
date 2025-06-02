@@ -34,6 +34,15 @@
           <a href="/"><img src="../../assets/icon_down.svg" alt="공지사항" /></a>
         </li>
       </ul>
+      <!-- 고객센터 아래 열릴메뉴 -->
+      <div class="under-user__area">
+        <ul class="menu__panel">
+          <li><a href="/">공지사항</a></li>
+          <li><a href="/">자주하는 질문</a></li>
+          <li><a href="/">1:1 문의</a></li>
+          <li><a href="/">대량주문 문의</a></li>
+        </ul>
+      </div>
 
       <div class="header__middle">
         <div class="logo-area">
@@ -49,7 +58,7 @@
           </ul>
         </div>
         <div class="input__search-bar">
-          <label for="input-search" class="sr-only"></label>
+          <label for="input-search" class="sr-only">검색어</label>
           <input type="text" id="input-search" name="input-search" placeholder="검색어를 입력해주세요" class="search__field" />
           <button type="submit" class="search__button">
             <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -194,8 +203,7 @@
       <dd>
         <div class="input input--small">
           <label for="id" class="sr-only">아이디</label>
-          <input aria-errormessage="hint-message-small" type="text" id="id" name="input-name-small" required
-            placeholder="아이디를 입력해주세요" class="input__field" />
+          <input type="text" id="id" name="user_id" required placeholder="아이디를 입력해주세요" class="input__field" />
         </div>
       </dd>
       <dd><button class="btn btn-normal--small btn-normal--stroke">중복확인</button></dd>
@@ -208,8 +216,8 @@
       <dd>
         <div class="input input--small">
           <label for="password" class="sr-only">비밀번호</label>
-          <input aria-errormessage="hint-message-small" type="text" id="password" name="input-name-small" required
-            placeholder="비밀번호를 입력해주세요" class="input__field" />
+          <input type="password" id="password" name="user_pw" required placeholder="비밀번호를 입력해주세요"
+            class="input__field" />
         </div>
       </dd>
       <dd></dd>
@@ -222,8 +230,8 @@
       <dd>
         <div class="input input--small">
           <label for="password2" class="sr-only">비밀번호 확인</label>
-          <input aria-errormessage="hint-message-small" type="text" id="password2" name="input-name-small" required
-            placeholder="비밀번호를 한번 더 입력해주세요" class="input__field" />
+          <input type="password" id="password2" name="user_pw2" required placeholder="비밀번호를 한번 더 입력해주세요"
+            class="input__field" />
         </div>
       </dd>
       <dd></dd>
@@ -236,8 +244,7 @@
       <dd>
         <div class="input input--small">
           <label for="name" class="sr-only">이름</label>
-          <input aria-errormessage="hint-message-small" type="text" id="name" name="input-name-small" required
-            placeholder="이름을 한번 더 입력해주세요" class="input__field" />
+          <input type="text" id="name" name="user_name" required placeholder="이름을 한번 더 입력해주세요" class="input__field" />
         </div>
       </dd>
       <dd></dd>
@@ -250,8 +257,8 @@
       <dd>
         <div class="input input--small">
           <label for="email" class="sr-only">이메일</label>
-          <input aria-errormessage="hint-message-small" type="text" id="email" name="input-name-small" required
-            placeholder="예)marketkarly@karly.com" class="input__field" />
+          <input type="email" id="email" name="user_email" required placeholder="예)marketkarly@karly.com"
+            class="input__field" />
         </div>
       </dd>
       <dd>
@@ -266,8 +273,7 @@
       <dd>
         <div class="input input--small">
           <label for="phone" class="sr-only">휴대폰</label>
-          <input aria-errormessage="hint-message-small" type="text" id="phone" name="input-name-small" required
-            placeholder="숫자만 입력해주세요" class="input__field" />
+          <input type="phone" id="phone" name="user_phone" required placeholder="숫자만 입력해주세요" class="input__field" />
         </div>
       </dd>
       <dd>
@@ -291,10 +297,10 @@
       </dt>
       <dd>
         <div class="gender">
-          <label class="radio-wrapper" for="gender-male">
+          <div class="gender-option">
+            <label class="radio-wrapper" for="gender-male"></label>
             <input type="radio" name="gender" value="male" id="gender-male" />
             <!-- 체크 전 -->
-
             <span class="icon icon-radio icon-unchecked" aria-label="라디오 버튼">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="12" cy="12" r="11.5" stroke="#C4C4C4" />
@@ -307,12 +313,12 @@
                 <circle cx="12" cy="12" r="5" fill="#C4C4C4" />
               </svg>
             </span>
-          </label>
+          </div>
           <span class="text-gender">남자</span>
-          <label class="radio-wrapper" for="gender-female">
+          <div class="gender-option">
+            <label class="radio-wrapper" for="gender-female"></label>
             <input type="radio" name="gender" value="female" id="gender-female" />
             <!-- 체크 전 -->
-
             <span class="icon icon-radio icon-unchecked" aria-label="라디오 버튼">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="12" cy="12" r="11.5" stroke="#C4C4C4" />
@@ -325,12 +331,12 @@
                 <circle cx="12" cy="12" r="5" fill="#C4C4C4" />
               </svg>
             </span>
-          </label>
+          </div>
           <span class="text-gender">여자</span>
-          <label class="radio-wrapper" for="gender-none">
+          <div class="gender-option">
+            <label class="radio-wrapper" for="gender-none"></label>
             <input type="radio" name="gender" value="none" id="gender-none" />
             <!-- 체크 전 -->
-
             <span class="icon icon-radio icon-unchecked" aria-label="라디오 버튼">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="12" cy="12" r="11.5" stroke="#C4C4C4" />
@@ -343,7 +349,7 @@
                 <circle cx="12" cy="12" r="5" fill="#C4C4C4" />
               </svg>
             </span>
-          </label>
+          </div>
           <span class="text-gender">선택안함</span>
         </div>
       </dd>
@@ -354,8 +360,7 @@
       <dd class="date">
         <div class="input input--small">
           <label for="birth" class="sr-only">생년월일</label>
-          <input aria-errormessage="hint-message-small" id="birth" name="input-name-small" required
-            placeholder="YYYY / MM / DD" class="input__field date" />
+          <input id="birth" name="user_birth" required placeholder="YYYY / MM / DD" class="input__field date" />
         </div>
       </dd>
       <dd></dd>
@@ -364,10 +369,10 @@
       </dt>
       <dd>
         <div class="gender">
-          <label class="radio-wrapper" for="event-reference">
+          <div class="event">
+            <label class="radio-wrapper" for="event-reference"></label>
             <input type="radio" name="event" value="reference" id="event-reference" />
             <!-- 체크 전 -->
-
             <span class="icon icon-radio icon-unchecked" aria-label="라디오 버튼">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="12" cy="12" r="11.5" stroke="#C4C4C4" />
@@ -380,12 +385,12 @@
                 <circle cx="12" cy="12" r="5" fill="#C4C4C4" />
               </svg>
             </span>
-          </label>
+          </div>
           <span class="text-gender">친구초대 추천인 아이디</span>
-          <label class="radio-wrapper" for="event-check">
+          <div class="event">
+            <label class="radio-wrapper" for="event-check"></label>
             <input type="radio" name="event" value="check" id="event-check" />
             <!-- 체크 전 -->
-
             <span class="icon icon-radio icon-unchecked" aria-label="라디오 버튼">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="12" cy="12" r="11.5" stroke="#C4C4C4" />
@@ -398,7 +403,7 @@
                 <circle cx="12" cy="12" r="5" fill="#C4C4C4" />
               </svg>
             </span>
-          </label>
+          </div>
           <span class="text-gender">참여 이벤트명</span>
         </div>
       </dd>
@@ -445,7 +450,7 @@
               </span>
             </label>
             <div>
-              <span class="text-gender">전체 동의합니다.</span>
+              <strong>전체 동의합니다.</strong>
               <p>선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.</p>
             </div>
           </div>

@@ -15,7 +15,7 @@ header {
   display: grid;
   align-items: start;
   grid-template-columns: 8.75rem 21.875rem 8.9375rem;
-  grid-template-rows: repeat(10, 5.25rem);
+
   border-top: 0.125rem solid var(--content, #333);
   border-bottom: 0.0625rem solid var(--content, #333);
 }
@@ -34,6 +34,14 @@ header {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   align-items: start;
+}
+
+.input__hint-message {
+  display: none;
+  font-size: 0.7502rem;
+  font-weight: 400;
+  line-height: 160%;
+  color: var(--error);
 }
 
 .input--small {
@@ -67,33 +75,78 @@ dd .gender {
     margin-right: 0.5rem;
     margin-left: 0.5rem;
   }
-
-  .text-gender {
-    text-align: start;
-    color: var(--content, #333);
-    font-size: 1rem;
-    font-weight: 600;
-    line-height: 150%;
-    vertical-align: top;
-    margin-right: 0.625rem;
-  }
 }
 
-.radio-wrapper .icon-checked {
+.gender-option,
+.event {
+  gap: 0.5rem;
+  margin-right: 1.25rem;
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.gender-option input[type='radio'],
+.event input[type='radio'] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.radio-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.radio-wrapper {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon-unchecked {
+  display: block;
+}
+
+.icon-checked {
   display: none;
 }
 
-.radio-wrapper input[type='radio']:checked + .icon-unchecked {
+input[type='radio']:checked ~ .icon-unchecked {
   display: none;
 }
-.radio-wrapper input[type='radio']:checked + .icon-unchecked + .icon-checked {
-  display: inline;
+
+input[type='radio']:checked ~ .icon-checked {
+  display: block;
+}
+
+.radio-wrapper {
+  cursor: pointer;
+  font-size: 1rem;
 }
 
 .date .input--small .input__field {
   text-align: center;
 }
 
+.text-gender {
+  margin-top: 0.625rem;
+  margin-left: -1.875rem;
+  color: var(--content, #333);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
 .agreement {
   width: 40rem;
   display: grid;
