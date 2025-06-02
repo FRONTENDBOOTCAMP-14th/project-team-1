@@ -1,80 +1,93 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
-  <head>
-    <meta charset="UTF-8" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../styles/variables.css" />
-    <link rel="stylesheet" href="../../styles/reset.css" />
-    <link rel="stylesheet" href="../../styles/base.css" />
-    <link rel="stylesheet" href="./smallheader.css" />
-  </head>
-  <body>
-    <div class="small-header">
-      <nav class="main-nav">
-        <!-- 메뉴 리스트 -->
-        <ul>
-          <li class="main-nav__hamburger">
-            <a href="/">
-              <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_42_624)">
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M0 0H16V1.7H0V0ZM0 6.15H16V7.85H0V6.15ZM0 12.3H16V14H0V12.3Z"
-                    fill="currentColor"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_42_624">
-                    <rect width="16" height="14" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-              <span>카테고리</span>
-            </a>
-          </li>
-          <li><a href="/">신상품</a></li>
-          <li><a href="/">베스트</a></li>
-          <li><a href="/">알뜰쇼핑</a></li>
-          <li><a href="/">특가/혜택</a></li>
-        </ul>
 
-        <!-- 검색창 -->
-        <div class="search__bar">
-          <label for="input-search" class="sr-only">검색창</label>
-          <input
-            type="text"
-            id="input-search"
-            name="input-search"
-            placeholder="검색어를 입력해주세요"
-            class="search__field"
-          />
-          <button type="submit" class="search__button">
-            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M18.0806 18.0811L13.9606 13.9611M8.46661 15.3341C9.3684 15.3341 10.2614 15.1565 11.0945 14.8114C11.9276 14.4663 12.6847 13.9605 13.3223 13.3228C13.96 12.6851 14.4658 11.9281 14.8109 11.095C15.156 10.2618 15.3336 9.36888 15.3336 8.4671C15.3336 7.56531 15.156 6.67235 14.8109 5.83921C14.4658 5.00607 13.96 4.24905 13.3223 3.61139C12.6847 2.97373 11.9276 2.46792 11.0945 2.12282C10.2614 1.77772 9.3684 1.6001 8.46661 1.6001C6.64537 1.6001 4.89872 2.32358 3.61091 3.61139C2.32309 4.89921 1.59961 6.64585 1.59961 8.4671C1.59961 10.2883 2.32309 12.035 3.61091 13.3228C4.89872 14.6106 6.64537 15.3341 8.46661 15.3341Z"
-                stroke="#5F0080"
-                stroke-width="1.7"
-                stroke-linecap="round"
-              />
+<head>
+  <meta charset="UTF-8" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../styles/variables.css" />
+  <link rel="stylesheet" href="../../styles/reset.css" />
+  <link rel="stylesheet" href="../../styles/base.css" />
+  <link rel="stylesheet" href="./smallheader.css" />
+</head>
+
+<body>
+  <div class="small-header">
+    <nav class="main-nav">
+      <!-- 메뉴 리스트 -->
+      <ul>
+        <li class="main-nav__hamburger">
+          <a href="/">
+            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_42_624)">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0 0H16V1.7H0V0ZM0 6.15H16V7.85H0V6.15ZM0 12.3H16V14H0V12.3Z" fill="currentColor" />
+              </g>
+              <defs>
+                <clipPath id="clip0_42_624">
+                  <rect width="16" height="14" fill="white" />
+                </clipPath>
+              </defs>
             </svg>
-          </button>
-        </div>
+            <span>카테고리</span>
+          </a>
+        </li>
+        <li><a href="/">신상품</a></li>
+        <li><a href="/">베스트</a></li>
+        <li><a href="/">알뜰쇼핑</a></li>
+        <li><a href="/">특가/혜택</a></li>
+      </ul>
 
-        <!-- 유저 아이콘들 -->
-        <ul class="user__utils">
-          <li>
-            <a href="/"><img src="../../assets/location.svg" alt="위치" /></a>
-          </li>
-          <li>
-            <a href="/"><img src="../../assets/heart.svg" alt="찜" /></a>
-          </li>
-          <li>
-            <a href="/"><img src="../../assets/cart.svg" alt="장바구니" /></a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </body>
+      <!-- 검색창 -->
+      <div class="search__bar">
+        <label for="input-search" class="sr-only">검색창</label>
+        <input type="text" id="input-search" name="input-search" placeholder="검색어를 입력해주세요" class="search__field" />
+        <button type="submit" class="search__button">
+          <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M18.0806 18.0811L13.9606 13.9611M8.46661 15.3341C9.3684 15.3341 10.2614 15.1565 11.0945 14.8114C11.9276 14.4663 12.6847 13.9605 13.3223 13.3228C13.96 12.6851 14.4658 11.9281 14.8109 11.095C15.156 10.2618 15.3336 9.36888 15.3336 8.4671C15.3336 7.56531 15.156 6.67235 14.8109 5.83921C14.4658 5.00607 13.96 4.24905 13.3223 3.61139C12.6847 2.97373 11.9276 2.46792 11.0945 2.12282C10.2614 1.77772 9.3684 1.6001 8.46661 1.6001C6.64537 1.6001 4.89872 2.32358 3.61091 3.61139C2.32309 4.89921 1.59961 6.64585 1.59961 8.4671C1.59961 10.2883 2.32309 12.035 3.61091 13.3228C4.89872 14.6106 6.64537 15.3341 8.46661 15.3341Z"
+              stroke="#5F0080" stroke-width="1.7" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- 유저 아이콘들 -->
+      <ul class="user__utils">
+        <li>
+          <a href="/"><svg width="22" height="26" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M11.0062 25C11.0062 25 1.7002 17.544 1.7002 10.306C1.7002 7.8379 2.68065 5.47088 4.42586 3.72566C6.17107 1.98045 8.53809 1 11.0062 1C13.4743 1 15.8413 1.98045 17.5865 3.72566C19.3317 5.47088 20.3122 7.8379 20.3122 10.306C20.3122 17.544 11.0062 25 11.0062 25Z"
+                stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M10.9119 12.9071C12.4495 12.9071 13.6959 11.6607 13.6959 10.1231C13.6959 8.58555 12.4495 7.33911 10.9119 7.33911C9.37437 7.33911 8.12793 8.58555 8.12793 10.1231C8.12793 11.6607 9.37437 12.9071 10.9119 12.9071Z"
+                stroke="currentColor" stroke-width="1.7" stroke-linecap="square" stroke-linejoin="round" />
+            </svg></a>
+        </li>
+        <li>
+          <a href="/"><svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M24.9269 2.89295C24.3269 2.29261 23.6146 1.81636 22.8305 1.49144C22.0465 1.16651 21.2061 0.999268 20.3574 0.999268C19.5086 0.999268 18.6682 1.16651 17.8842 1.49144C17.1001 1.81636 16.3878 2.29261 15.7879 2.89295L13.9589 4.72095L12.1319 2.89295C10.9201 1.68091 9.27646 0.999887 7.56257 0.9997C5.84867 0.999512 4.2049 1.68017 2.99286 2.89195C1.78082 4.10372 1.0998 5.74735 1.09961 7.46124C1.09942 9.17514 1.78008 10.8189 2.99186 12.0309L4.81986 13.8599L13.2519 22.2939C13.4394 22.4814 13.6937 22.5867 13.9589 22.5867C14.224 22.5867 14.4783 22.4814 14.6659 22.2939L23.0989 13.8599L24.9269 12.0319C25.5271 11.432 26.0032 10.7198 26.328 9.9358C26.6528 9.15183 26.82 8.31155 26.82 7.46295C26.82 6.61435 26.6528 5.77407 26.328 4.9901C26.0032 4.20614 25.5271 3.49386 24.9269 2.89395V2.89295Z"
+                stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+            </svg></a>
+        </li>
+        <li>
+          <a href="/"><svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M26.8442 5.20703L24.1242 16.777H8.53422L5.82422 5.20703H26.8442Z" stroke="currentColor"
+                stroke-width="1.7" stroke-linecap="square" stroke-linejoin="round" />
+              <path
+                d="M21.6839 24.467C22.8658 24.467 23.8239 23.5089 23.8239 22.327C23.8239 21.1451 22.8658 20.187 21.6839 20.187C20.5021 20.187 19.5439 21.1451 19.5439 22.327C19.5439 23.5089 20.5021 24.467 21.6839 24.467Z"
+                stroke="currentColor" stroke-width="1.7" stroke-linecap="square" stroke-linejoin="round" />
+              <path
+                d="M10.974 24.467C12.1559 24.467 13.114 23.5089 13.114 22.327C13.114 21.1451 12.1559 20.187 10.974 20.187C9.7921 20.187 8.83398 21.1451 8.83398 22.327C8.83398 23.5089 9.7921 24.467 10.974 24.467Z"
+                stroke="currentColor" stroke-width="1.7" stroke-linecap="square" stroke-linejoin="round" />
+              <path d="M1.16406 1.54712H4.96406L6.72406 9.04712" stroke="currentColor" stroke-width="1.7"
+                stroke-linecap="square" stroke-linejoin="round" />
+            </svg></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</body>
+
 </html>
