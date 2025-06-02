@@ -37,6 +37,29 @@
   }
 }
 
+.under-user__area {
+  display: none;
+  position: absolute;
+  top: 100%; /* 고객센터 아래에 위치 */
+  left: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  min-width: 160px;
+}
+
+.submenu {
+  display: flex;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.submenu:hover .under-user__area {
+  display: block;
+}
+
 .membership {
   color: var(--primary);
 }
@@ -149,7 +172,7 @@
   }
 
   li {
-    display: flex;
+    display: inline-flex;
     width: 150px;
     padding: 8px 0;
     justify-content: center;
