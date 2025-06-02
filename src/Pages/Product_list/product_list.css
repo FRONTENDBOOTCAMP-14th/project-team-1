@@ -49,7 +49,7 @@
   height: 50px;
   color: var(--white);
   background-color: #5f0080;
-  font-family: 'Pretendard', sans-serif;
+  font-family: 'Pretendard Variable', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -66,7 +66,7 @@
   height: 128px;
   text-align: center;
   padding-block: 48px;
-  font-family: 'Pretendard', sans-serif;
+  font-family: 'Pretendard Variable', sans-serif;
   font-weight: 600;
   font-size: 21.3px;
   line-height: 1.5;
@@ -77,11 +77,12 @@
 
 }
 
-main {
+.product-list__container-wrapper {
   display: flex;
   max-width: 1050px;
   margin-inline: auto;
   margin-bottom: 24px;
+  padding-left: 50px;
 }
 
 
@@ -126,7 +127,7 @@ main {
   width: 220px;
   height: 52px;
   border-bottom: 1px solid var(--gray--100);
-  font-family: 'Pretendard', sans-serif;
+  font-family: 'Pretendard Variable', sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
@@ -135,7 +136,7 @@ main {
 
 .product-list-filter__reset {
   color: var(--gray--300);
-  font-family: 'Pretendard', sans-serif;
+  font-family: 'Pretendard Variable', sans-serif;
   font-weight: 600;
   font-size: 10px;
   line-height: 1.6;
@@ -147,7 +148,7 @@ main {
   width: 5px;
   height: 16px;
   margin-left: 8px;
-  font-family: 'Pretendard', sans-serif;
+  font-family: 'Pretendard Variable', sans-serif;
   font-weight: 600;
   font-size: 10px;
   line-height: 1.6;
@@ -198,12 +199,11 @@ main {
 
 .product-card__only {
   display: inline-block;
-  width: 65px;
   height: 26px;
   padding: 4px;
   color: #5F0080;
   background-color: var(--gray--100);
-  font-family: 'Pretendard', sans-serif;
+  font-family: 'Pretendard Variable', sans-serif;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.5;
@@ -213,12 +213,11 @@ main {
 
 .product-card__timeout {
   display: inline-block;
-  width: 50px;
   height: 26px;
   padding: 4px;
   color: var(--black);
   background-color: var(--gray--100);
-  font-family: 'Pretendard', sans-serif;
+  font-family: 'Pretendard Variable', sans-serif;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.5;
