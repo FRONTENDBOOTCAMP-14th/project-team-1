@@ -24,4 +24,4 @@
 @import url('../components/login/login.css');
 
 /* pages */
-@import url('../components/product-detail/product-detail.css');
+@import url('../pages/product-detail/product-detail.css');
