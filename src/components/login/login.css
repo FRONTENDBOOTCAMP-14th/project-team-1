@@ -133,3 +133,7 @@
     background: var(--content, #333);
   }
 }
+
+.btn {
+  width: 21.25rem;
+}
