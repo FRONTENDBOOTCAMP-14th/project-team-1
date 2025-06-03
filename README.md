@@ -11,62 +11,20 @@
   
 
 <br>
-  <h3>🔸기술 스택🔸</h3>
-  <table>
-  <thead>
-    <tr>
-      <th>분류</th>
-      <th>툴</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>사용 언어</td>
-      <td>
-        <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white"/>
-        <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white"/> 
-      </td>
-    </tr>
-    <tr>
-      <td>개발 환경</td>
-      <td>
-        <img src="https://img.shields.io/badge/VScode-007ACC?style=flat&logo=visualstudiocode&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white"/>
-      </td>
-    </tr>
-    <tr>
-      <td>협업</td>
-      <td>
-        <img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white"/>
-        <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Discord-5865F2?style=flat&logo=discord&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=notion&logoColor=white"/>
-      </td>
-    </tr>
-    <tr>
-      <td>배포</td>
-      <td>
-        <img src="https://img.shields.io/badge/Netlify-00C7B7?style=flat&logo=netlify&logoColor=white"/>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-<br>
-<h3>🔸팀원 소개🔸</h3>
-<table style="table-layout: fixed; width: 100%; border-collapse: collapse;" border="1">
+  <h3>🔸팀원 소개🔸</h3>
+  <table style="table-layout: fixed; width: 100%; border-collapse: collapse;" border="1">
   <tr>
     <td align="center">
-      <img src="https://i.pinimg.com/736x/96/21/f3/9621f3921221015520f556dfb7a8f71a.jpg" width="150">
+      <img src="https://media.discordapp.net/attachments/1311319579913490442/1379445302217539624/Frame_11.png?ex=6840440c&is=683ef28c&hm=82d4cb63febefb50f6750aae984fc4d23ca87bef957d9797e7580c5ec4297eda&=&format=webp&quality=lossless" width="150">
     </td>
     <td align="center">
-      <img src="https://i.pinimg.com/736x/96/21/f3/9621f3921221015520f556dfb7a8f71a.jpg" width="150">  
+      <img src="https://i.pinimg.com/736x/a5/14/3a/a5143aa919dd4ea0cf4ccd77d29bb725.jpg" width="150">  
     </td>
     <td align="center">
-      <img src="https://i.pinimg.com/736x/96/21/f3/9621f3921221015520f556dfb7a8f71a.jpg" width="150">  
+      <img src="https://cdn.discordapp.com/attachments/1311319579913490442/1379447341500600371/image_4.png?ex=684045f3&is=683ef473&hm=5e14c527d483fdbc4542554536e653e1035df9bbb153831fd5d74e10a9bf7750" width="150">  
     </td>
     <td align="center">
-      <img src="https://i.pinimg.com/736x/96/21/f3/9621f3921221015520f556dfb7a8f71a.jpg" width="150">  
+      <img src="https://i.pinimg.com/736x/5d/9f/da/5d9fdab3e23f1a30e5d27895c47f6803.jpg" width="150">  
     </td>
     <td align="center">
       <img src="https://i.pinimg.com/736x/96/21/f3/9621f3921221015520f556dfb7a8f71a.jpg" width="150">  
@@ -100,21 +58,61 @@
     <td align="center">4tres1@gmail.com</td>
     <td align="center">이메일</td>
     <td align="center">이메일</td>
-    <td align="center">이메일</td>
-    <td align="center">이메일</td>
+    <td align="center">gomteang@nate.com</td>
+    <td align="center">artful.tittle.0o@gmail.com</td>
   </tr>
   <tr>
-    <td colspan="5" align="center"><strong>역할</strong></td>
-  </tr>
-  <tr>
-    <td align="center"></td>
-    <td align="center"></td>
-    <td align="center"></td>
-    <td align="center"></td>
-    <td align="center"></td>
+    <td align="center"><strong>INTP</strong></td>
+    <td align="center"><strong>ENFJ</strong></td>
+    <td align="center"><strong>ISTP</strong></td>
+    <td align="center"><strong>ENFP</strong></td>
+    <td align="center"><strong>INTP</strong></td>
   </tr>
 </table>
 <br>
+
+
+<h3>🔸기술 스택🔸</h3>
+<table>
+  <thead>
+    <tr>
+      <th>분류</th>
+      <th>툴</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>사용 언어</td>
+      <td>
+        <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white"/>
+        <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white"/> 
+        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black"/>
+      </td>
+    </tr>
+    <tr>
+      <td>개발 환경</td>
+      <td>
+        <img src="https://img.shields.io/badge/VScode-007ACC?style=flat&logo=visualstudiocode&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white"/>
+      </td>
+    </tr>
+    <tr>
+      <td>협업</td>
+      <td>
+        <img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white"/>
+        <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Discord-5865F2?style=flat&logo=discord&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=notion&logoColor=white"/>
+      </td>
+    </tr>
+    <tr>
+      <td>배포</td>
+      <td>
+        <img src="https://img.shields.io/badge/Netlify-00C7B7?style=flat&logo=netlify&logoColor=white"/>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 
 <h3>🔸구현 화면🔸</h3>
