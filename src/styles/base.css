@@ -22,3 +22,37 @@ button {
   border: 0;
   clip: rect(0 0 0 0);
 }
+
+dialog {
+  border: none;
+  border-radius: 16px;
+  padding: 0;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+}
+
+@media screen and (min-width: 48.0625rem) {
+  .desktop-only {
+    display: block;
+  }
+
+  .mobile-only {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 48rem) {
+  .desktop-only {
+    display: none !important;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+}

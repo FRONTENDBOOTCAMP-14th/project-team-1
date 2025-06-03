@@ -1,9 +1,6 @@
 /* 헤더 컴포넌트 */
 .header {
   display: flex;
-  /* max-width: 65.625rem; */
-  width: 100%;
-  margin: 0 auto;
   align-items: center;
   flex-direction: column;
   box-shadow: 0 4px 24px #00000010;
@@ -15,20 +12,30 @@
   padding-bottom: 1.25rem;
   align-items: flex-end;
   flex-direction: column;
-  gap: 2rem;
+  align-items: flex-end;
+  gap: 32px;
+  width: 1050px;
+  padding-bottom: 20px;
+
+
+
 }
 
 .user__area {
   display: flex;
-  font-size: 0.7502rem;
+  font-size: 12.0032px;
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
-  padding-top: 0.75rem;
+  padding-top: 12px;
   align-items: center;
-  gap: 0.75rem;
+  gap: 12px;
 
   .purple {
+    color: var(--primary);
+  }
+
+  a:hover {
     color: var(--primary);
   }
 }
@@ -47,8 +54,8 @@
 .logo-area {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  font-size: 1.333rem;
+  gap: 12px;
+  font-size: 21.328px;
   font-style: normal;
   font-weight: 600;
   line-height: 150%;
@@ -56,7 +63,7 @@
   ul {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 12px;
   }
 
   .new {
@@ -65,8 +72,8 @@
 
   .new__icon {
     position: absolute;
-    top: -0.1875rem;
-    right: -0.8125rem;
+    top: -3px;
+    right: -13px;
   }
 
   .purple {
@@ -80,12 +87,11 @@
 
 .input__search-bar {
   display: flex;
-  width: 25rem;
-  height: 3.75rem;
-  padding: 1.25rem;
+  padding: 0.8125rem 1.25rem;
   border: 0.0625rem solid var(--primary);
   border-radius: 0.25rem;
   justify-content: space-between;
+  font-size: var(--paragraph---large);
   align-items: center;
   transition: border-color 0.2s;
 }
@@ -108,8 +114,8 @@
 
 .input__search-button {
   display: flex;
-  width: 2.25rem;
-  height: 2.25rem;
+  width: 36px;
+  height: 36px;
   border: none;
   background: none;
   align-items: center;
@@ -120,14 +126,14 @@
 .user__utils {
   display: flex;
   align-items: center;
-  gap: 1.25rem;
-  width: 2.25rem;
-  height: 2.25rem;
+  gap: 20px;
+  width: 36px;
+  height: 36px;
   justify-content: center;
-}
 
-.user__utils:hover {
-  color: var(--primary);
+  li:hover {
+    color: var(--primary);
+  }
 }
 
 .main-nav {
@@ -135,7 +141,6 @@
 
   ul {
     display: flex;
-    min-width: 65.625rem;
     padding: 1rem 0;
     justify-content: space-between;
     align-items: center;
@@ -146,28 +151,28 @@
 
   li {
     display: flex;
-    width: 9.375rem;
-    padding: 0.5rem 0;
+    width: 150px;
+    padding: 8px 0;
     justify-content: center;
     align-items: flex-end;
-    gap: 0.25rem;
+    gap: 4px;
   }
 }
 
 .main-nav__hamburger a {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 12px;
 }
 
 .notice {
   display: flex;
   padding: 0.25rem 0.5rem;
-  border: 0.0625rem solid var(--gray--300);
+  border: 0.0625rem solid var(--gray--100);
   align-items: flex-start;
-  gap: 0.25rem;
-  border-radius: 1rem;
-  font-size: 0.7502rem;
+  gap: 4px;
+  border-radius: 16px;
+  font-size: 12.0032px;
   font-style: normal;
   font-weight: 400;
   line-height: 160%;

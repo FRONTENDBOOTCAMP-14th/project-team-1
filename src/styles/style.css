@@ -21,7 +21,10 @@
 @import url('../components/Product/product.css');
 @import url('../components/Table/table.css');
 @import url('../components/Text/text.css');
-@import url('../components/login/login.css');
+@import url('../components/RecentProduct/recent-product.css');
 
-/* pages */
+/* Pages */
+@import url('../pages/Main/main.css');
+@import url('../components/login/login.css');
 @import url('../pages/product-detail/product-detail.css');
+@import url('../Pages/Product_list/product_list.css');
