@@ -171,20 +171,74 @@
     line-height: 150%;
   }
 
-  li {
+  .main__nav {
     display: inline-flex;
     width: 150px;
     padding: 8px 0;
     justify-content: center;
-    align-items: flex-end;
-    gap: 4px;
+    align-items: baseline;
+    gap: 12px;
   }
 }
 
-.main-nav__hamburger a {
+.under-category {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 0.0625rem solid #ddd;
+  padding: 0.75rem;
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  width: 18.75rem;
+  flex-direction: column;
+
+  .category__panel {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: start;
+    justify-content: start;
+    color: var(--black);
+
+    li {
+      display: flex;
+      align-items: center;
+
+      svg {
+        width: 1.25rem;
+        height: 1.25rem;
+        margin-right: 0.5rem;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.main-nav__hamburger {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 0.75rem;
+  position: relative;
+  cursor: pointer;
+
+  span {
+    margin-top: 5px;
+  }
+
+  &:hover .under-category {
+    display: flex;
+  }
+}
+
+.main-nav__hamburger:hover .under-category {
+  display: flex;
 }
 
 .notice {
@@ -206,6 +260,7 @@
 
 .logo-area ul li a:hover,
 .main-nav ul li a:hover,
+.main-nav ul li:hover,
 .user__utils li a:hover {
   color: var(--primary);
 }
