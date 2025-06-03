@@ -1,9 +1,59 @@
 .cart-page {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  max-width: 1050px;
+  margin: 0 auto;
   padding: 5rem 0;
   row-gap: 2.75rem;
+
+  .cart__title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+  }
+}
+
+.cart__component {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; /* 반응형 대응 */
+
+  .cart-component-left {
+    display: flex;
+    flex: 1 1 70%;
+  }
+
+  .cart-component-right {
+    display: flex;
+    flex: 1 1 30%;
+    width: 244px;
+  }
+}
+
+.cart-change-dest {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+  border: 1px solid var(--gray--100);
+}
+
+.cart-amount {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.cart-order-notice {
+  color: var(--gray--400);
+  font-family: Pretendard;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
 }
