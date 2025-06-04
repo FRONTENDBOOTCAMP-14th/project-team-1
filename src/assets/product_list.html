@@ -4,22 +4,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="신선한 식품과 생필품을 집까지 배송해드리는 칼리. 샛별배송으로 새벽에 주문하면 오늘 도착! 100원 할인 혜택까지." />
-  <meta name="keywords" content="칼리, 마켓칼리, 신선식품, 식료품, 새벽배송, 샛별배송" />
-  <meta name="author" content="칼리" />
-  <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#5f0080" />
-  <meta name="application-name" content="칼리" />
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Karly" />
-  <meta property="og:title" content="마켓 칼리 Market Karly" />
-  <meta property="og:description" content="신선한 식품을 문 앞까지, 마켓 칼리!" />
-  <meta property="og:image" content="../../assets/cover.jpg" />
-  <meta property="og:url" content="https://ui-team-1.netlify.app" />
-  <meta property="og:locale" content="ko_KR" />
   <title>Document</title>
+
+
+  <!--font awsome CDN-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-k6RqeWeci5ZR/Lv4MR0sA0FfDOMQz8z5c5NyEJD7BqXc9E+u6KDvAm8X1sC3yR">
+
+  <!-- Pretendard CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
 
 
 
@@ -28,8 +21,6 @@
 </head>
 
 <body class="product__body">
-
-  <h1 class="sr-only">마켓컬리</h1>
   <div class="top__banner desktop-only">
     <div class="inner">
       <a href="/">
@@ -39,7 +30,7 @@
       </a>
     </div>
     <button type="button" class="banner__close" aria-label="배너 닫기">
-      <img loading="lazy" src="../../assets/icon_close.svg" alt="닫기 아이콘" />
+      <img src="../../assets/icon_close.svg" alt="닫기 아이콘" />
     </button>
   </div>
   <header class="header">
@@ -49,21 +40,19 @@
         <li><a href="/">로그인</a></li>
         <li><a href="/">고객센터</a></li>
         <li>
-          <a href="/"><img loading="lazy" src="../../assets/icon_down.svg" alt="공지사항" /></a>
+          <a href="/"><img src="../../assets/icon_down.svg" alt="공지사항" /></a>
         </li>
       </ul>
 
       <div class="header__middle">
         <div class="logo-area">
-          <img loading="lazy" src="../../assets/logo.svg" alt="마켓칼리로고" />
+          <img src="../../assets/logo.svg" alt="/" />
           <ul>
-            <li>
-              <a class="purple" href="/">마켓칼리</a>
-            </li>
+            <li><a class="purple" href="/">마켓칼리</a></li>
             <li class="new">
               <a class="gray" href="/">
                 뷰티칼리
-                <img loading="lazy" class="new__icon" src="../../assets/icon_new.svg" alt="신작" />
+                <img class="new__icon" src="../../assets/icon_new.svg" alt="/" />
               </a>
             </li>
           </ul>
@@ -71,7 +60,7 @@
         <div class="input__search-bar">
           <label for="input-search" class="sr-only"></label>
           <input type="text" id="input-search" name="input-search" placeholder="검색어를 입력해주세요" class="search__field" />
-          <button aria-label="검색" type="submit" class="search__button">
+          <button type="submit" class="search__button">
             <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M18.0806 18.0811L13.9606 13.9611M8.46661 15.3341C9.3684 15.3341 10.2614 15.1565 11.0945 14.8114C11.9276 14.4663 12.6847 13.9605 13.3223 13.3228C13.96 12.6851 14.4658 11.9281 14.8109 11.095C15.156 10.2618 15.3336 9.36888 15.3336 8.4671C15.3336 7.56531 15.156 6.67235 14.8109 5.83921C14.4658 5.00607 13.96 4.24905 13.3223 3.61139C12.6847 2.97373 11.9276 2.46792 11.0945 2.12282C10.2614 1.77772 9.3684 1.6001 8.46661 1.6001C6.64537 1.6001 4.89872 2.32358 3.61091 3.61139C2.32309 4.89921 1.59961 6.64585 1.59961 8.4671C1.59961 10.2883 2.32309 12.035 3.61091 13.3228C4.89872 14.6106 6.64537 15.3341 8.46661 15.3341V15.3341Z"
@@ -81,13 +70,13 @@
         </div>
         <ul class="user__utils">
           <li>
-            <a href="/"><img loading="lazy" src="../../assets/location.svg" alt="위치" /></a>
+            <a href="/"><img src="../../assets/location.svg" alt="/" /></a>
           </li>
           <li>
-            <a href="/"><img loading="lazy" src="../../assets/heart.svg" alt="찜하기" /></a>
+            <a href="/"><img src="../../assets/heart.svg" alt="/" /></a>
           </li>
           <li>
-            <a href="/"><img loading="lazy" src="../../assets/cart.svg" alt="쇼핑카드" /></a>
+            <a href="/"><img src="../../assets/cart.svg" alt="/" /></a>
           </li>
         </ul>
       </div>
@@ -111,10 +100,10 @@
             <span>카테고리</span>
           </a>
         </li>
-        <li><button type="button" href="/">신상품</button></li>
-        <li><button type="button" href="/">베스트</button></li>
-        <li><button type="button" href="/">알뜰쇼핑</button></li>
-        <li><button type="button" href="/">특가/혜택</button></li>
+        <li><a href="/">신상품</a></li>
+        <li><a href="/">베스트</a></li>
+        <li><a href="/">알뜰쇼핑</a></li>
+        <li><a href="/">특가/혜택</a></li>
         <li>
           <a class="notice" href="/">
             <span class="purple">샛별.낮</span>
@@ -178,44 +167,42 @@
       <li class="gnb__label"><a class="gnb__label__text" href="">특가/혜택</a></li>
     </ul>
   </nav>
+  <h3 class="product-list__title">베스트</h3>
+  <main>
 
-  <h2 class="product-list__title">베스트</h2>
 
-
-
-  <main class="product-list__container-wrapper">
     <aside class="product-list__filter">
       <ul class="product-list-filter__list-group">
         <li class="product-list-filter__list">필터<button type="button" value="" id=""
             class="product-list-filter__reset">초기화</button></li>
-        <li class="product-list-filter__list">카테고리<span class="product-list_cate">1</span><button
-            aria-label="카테고리 필터 열기" type="button" value="" id="" class=""><svg width="18" height="18"
-              viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <li class="product-list-filter__list">카테고리<span class="product-list_cate">1</span><button type="button" value=""
+            id="" class=""><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
               <path d="M5 7L9 11L13 7" stroke="#999999" stroke-width="1.2" />
             </svg>
           </button></li>
-        <li class="product-list-filter__list">브랜드<button aria-label="브랜드 필터 열기" type="button" value="" id=""
-            class=""><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <li class="product-list-filter__list">브랜드<button type="button" value="" id="" class=""><svg width="18"
+              height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5 7L9 11L13 7" stroke="#999999" stroke-width="1.2" />
             </svg>
           </button></li>
-        <li class="product-list-filter__list">가격<button aria-label="가격격 필터 열기 " type="button" value="" id=""
-            class=""><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <li class="product-list-filter__list">가격<button type="button" value="" id="" class=""><svg width="18"
+              height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5 7L9 11L13 7" stroke="#999999" stroke-width="1.2" />
             </svg>
           </button></li>
-        <li class="product-list-filter__list">혜택<button aria-label="혜택택 필터 열기" type="button" value="" id=""
-            class=""><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <li class="product-list-filter__list">혜택<button type="button" value="" id="" class=""><svg width="18"
+              height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5 7L9 11L13 7" stroke="#999999" stroke-width="1.2" />
             </svg>
           </button></li>
-        <li class="product-list-filter__list">유형<button aria-label="유형형 필터 열기" type="button" value="" id=""
-            class=""><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <li class="product-list-filter__list">유형<button type="button" value="" id="" class=""><svg width="18"
+              height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5 7L9 11L13 7" stroke="#999999" stroke-width="1.2" />
             </svg>
           </button></li>
-        <li class="product-list-filter__list">특정상품 제외<button aria-label="특정상품 제외 필터 열기" type="button" value="" id=""
-            class=""><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <li class="product-list-filter__list">특정상품 제외<button type="button" value="" id="" class=""><svg width="18"
+              height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5 7L9 11L13 7" stroke="#999999" stroke-width="1.2" />
             </svg>
           </button></li>
@@ -249,11 +236,18 @@
 
 
 
+
+
+
+
+
+
+
       <div class="product-container">
         <article class="product-list">
           <div class="product-card__image">
-            <img loading="lazy" src="../../assets/product01.png" alt="조르디 화장품" />
-            <button type="button" class="product-card__shopping-cart" aria-label="장바구니 담기">
+            <img src="../../assets/product01.png" alt="" />
+            <span class="product-card__shopping-cart" aria-label="장바구니 담기">
               <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_42_291)">
                   <path opacity="0.5"
@@ -277,7 +271,7 @@
                   </clipPath>
                 </defs>
               </svg>
-            </button>
+            </span>
           </div>
 
           <div class="product-card__info">
@@ -291,10 +285,10 @@
           </div>
         </article>
 
-        <article class="product-list ">
+        <article class="product-list">
           <div class="product-card__image">
-            <img loading="lazy" src="../../assets/product02.png" alt="조르디 화장품" />
-            <button type="button" class="product-card__shopping-cart" aria-label="장바구니 담기">
+            <img src="../../assets/product02.png" alt="" />
+            <span class="product-card__shopping-cart" aria-label="장바구니 담기">
               <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_42_291)">
                   <path opacity="0.5"
@@ -318,7 +312,7 @@
                   </clipPath>
                 </defs>
               </svg>
-            </button>
+            </span>
           </div>
 
           <div class="product-card__info">
@@ -335,8 +329,8 @@
 
         <article class="product-list product-list__hidden">
           <div class="product-card__image">
-            <img loading="lazy" src="../../assets/product10.png" alt="포도씨유" />
-            <button type="button" class="product-card__shopping-cart" aria-label="장바구니 담기">
+            <img src="../../assets/product10.png" alt="" />
+            <span class="product-card__shopping-cart" aria-label="장바구니 담기">
               <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_42_291)">
                   <path opacity="0.5"
@@ -360,7 +354,7 @@
                   </clipPath>
                 </defs>
               </svg>
-            </button>
+            </span>
           </div>
 
           <div class="product-card__info">
@@ -387,8 +381,8 @@
       <div class="product-container">
         <article class="product-list">
           <div class="product-card__image">
-            <img loading="lazy" src="../../assets/product03.png" alt="현미쌀" />
-            <button type="button" class="product-card__shopping-cart" aria-label="장바구니 담기">
+            <img src="../../assets/product03.png" alt="" />
+            <span class="product-card__shopping-cart" aria-label="장바구니 담기">
               <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_42_291)">
                   <path opacity="0.5"
@@ -412,7 +406,7 @@
                   </clipPath>
                 </defs>
               </svg>
-            </button>
+            </span>
           </div>
 
           <div class="product-card__info">
@@ -426,10 +420,10 @@
           </div>
         </article>
 
-        <article class="product-list ">
+        <article class="product-list">
           <div class="product-card__image">
-            <img loading="lazy" src="../../assets/product04.png" alt="락스" />
-            <button type="button" class="product-card__shopping-cart" aria-label="장바구니 담기">
+            <img src="../../assets/product04.png" alt="" />
+            <span class="product-card__shopping-cart" aria-label="장바구니 담기">
               <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_42_291)">
                   <path opacity="0.5"
@@ -453,7 +447,7 @@
                   </clipPath>
                 </defs>
               </svg>
-            </button>
+            </span>
           </div>
 
           <div class="product-card__info">
@@ -472,8 +466,8 @@
 
         <article class="product-list product-list__hidden">
           <div class="product-card__image">
-            <img loading="lazy" src="../../assets/product11.png" alt="양파" />
-            <button type="button" class="product-card__shopping-cart" aria-label="장바구니 담기">
+            <img src="../../assets/product11.png" alt="" />
+            <span class="product-card__shopping-cart" aria-label="장바구니 담기">
               <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_42_291)">
                   <path opacity="0.5"
@@ -497,7 +491,7 @@
                   </clipPath>
                 </defs>
               </svg>
-            </button>
+            </span>
           </div>
 
           <div class="product-card__info">
@@ -530,8 +524,8 @@
       <div class="product-container">
         <article class="product-list">
           <div class="product-card__image">
-            <img loading="lazy" src="../../assets/product06.png" alt="갈비" />
-            <button type="button" class="product-card__shopping-cart" aria-label="장바구니 담기">
+            <img src="../../assets/product06.png" alt="" />
+            <span class="product-card__shopping-cart" aria-label="장바구니 담기">
               <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_42_291)">
                   <path opacity="0.5"
@@ -555,7 +549,7 @@
                   </clipPath>
                 </defs>
               </svg>
-            </button>
+            </span>
           </div>
 
           <div class="product-card__info">
@@ -567,10 +561,10 @@
           </div>
         </article>
 
-        <article class="product-list ">
+        <article class="product-list">
           <div class="product-card__image">
-            <img loading="lazy" src="../../assets/product05.png" alt="탕수육" />
-            <button type="button" class="product-card__shopping-cart" aria-label="장바구니 담기">
+            <img src="../../assets/product05.png" alt="" />
+            <span class="product-card__shopping-cart" aria-label="장바구니 담기">
               <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_42_291)">
                   <path opacity="0.5"
@@ -594,7 +588,7 @@
                   </clipPath>
                 </defs>
               </svg>
-            </button>
+            </span>
           </div>
 
           <div class="product-card__info">
@@ -613,8 +607,8 @@
 
         <article class="product-list product-list__hidden">
           <div class="product-card__image">
-            <img loading="lazy" src="../../assets/product12.png" alt="오이" />
-            <button type="button" class="product-card__shopping-cart" aria-label="장바구니 담기">
+            <img src="../../assets/product12.png" alt="" />
+            <span class="product-card__shopping-cart" aria-label="장바구니 담기">
               <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_42_291)">
                   <path opacity="0.5"
@@ -638,7 +632,7 @@
                   </clipPath>
                 </defs>
               </svg>
-            </button>
+            </span>
           </div>
 
           <div class="product-card__info">
@@ -672,8 +666,8 @@
       <div class="product-container">
         <article class="product-list">
           <div class="product-card__image">
-            <img loading="lazy" src="../../assets/product07.png" alt="젤리" />
-            <button type="button" class="product-card__shopping-cart" aria-label="장바구니 담기">
+            <img src="../../assets/product07.png" alt="" />
+            <span class="product-card__shopping-cart" aria-label="장바구니 담기">
               <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_42_291)">
                   <path opacity="0.5"
@@ -697,7 +691,7 @@
                   </clipPath>
                 </defs>
               </svg>
-            </button>
+            </span>
           </div>
 
           <div class="product-card__info">
@@ -709,10 +703,10 @@
           </div>
         </article>
 
-        <article class="product-list ">
+        <article class="product-list">
           <div class="product-card__image">
-            <img loading="lazy" src="../../assets/product08.png" alt="도너츠" />
-            <button type="button" class="product-card__shopping-cart" aria-label="장바구니 담기">
+            <img src="../../assets/product08.png" alt="" />
+            <span class="product-card__shopping-cart" aria-label="장바구니 담기">
               <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_42_291)">
                   <path opacity="0.5"
@@ -736,10 +730,10 @@
                   </clipPath>
                 </defs>
               </svg>
-            </button>
+            </span>
           </div>
 
-          <div class="product-card__info ">
+          <div class="product-card__info">
             <span class="product-card-delivery">샛별배송</span>
             <h3 class="product-card__name">[제빵왕] 장인도넛 (4개입)</h3>
             <strong class="product-card__price">
@@ -753,8 +747,8 @@
 
         <article class="product-list product-list__hidden">
           <div class="product-card__image">
-            <img loading="lazy" src="../../assets/product14.png" alt="파스타" />
-            <button type="button" class="product-card__shopping-cart" aria-label="장바구니 담기">
+            <img src="../../assets/product14.png" alt="" />
+            <span class="product-card__shopping-cart" aria-label="장바구니 담기">
               <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_42_291)">
                   <path opacity="0.5"
@@ -778,7 +772,7 @@
                   </clipPath>
                 </defs>
               </svg>
-            </button>
+            </span>
           </div>
 
           <div class="product-card__info">
@@ -799,8 +793,8 @@
       <div class="product-container">
         <article class="product-list">
           <div class="product-card__image">
-            <img loading="lazy" src="../../assets/product09.png" alt="젤리" />
-            <button type="button" class="product-card__shopping-cart" aria-label="장바구니 담기">
+            <img src="../../assets/product09.png" alt="" />
+            <span class="product-card__shopping-cart" aria-label="장바구니 담기">
               <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_42_291)">
                   <path opacity="0.5"
@@ -824,7 +818,7 @@
                   </clipPath>
                 </defs>
               </svg>
-            </button>
+            </span>
           </div>
 
           <div class="product-card__info">
@@ -838,10 +832,10 @@
           </div>
         </article>
 
-        <article class="product-list ">
+        <article class="product-list">
           <div class="product-card__image">
-            <img loading="lazy" src="../../assets/product02.png" alt="조르디 화장품" />
-            <button type="button" class="product-card__shopping-cart" aria-label="장바구니 담기">
+            <img src="../../assets/product02.png" alt="" />
+            <span class="product-card__shopping-cart" aria-label="장바구니 담기">
               <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_42_291)">
                   <path opacity="0.5"
@@ -865,7 +859,7 @@
                   </clipPath>
                 </defs>
               </svg>
-            </button>
+            </span>
           </div>
 
           <div class="product-card__info">
@@ -882,8 +876,8 @@
 
         <article class="product-list product-list__hidden">
           <div class="product-card__image">
-            <img loading="lazy" src="../../assets/product13.png" alt="멸치" />
-            <button type="button" class="product-card__shopping-cart" aria-label="장바구니 담기">
+            <img src="../../assets/product13.png" alt="" />
+            <span class="product-card__shopping-cart" aria-label="장바구니 담기">
               <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_42_291)">
                   <path opacity="0.5"
@@ -907,7 +901,7 @@
                   </clipPath>
                 </defs>
               </svg>
-            </button>
+            </span>
           </div>
 
           <div class="product-card__info">
@@ -929,8 +923,8 @@
           <li><button type="button" class="pagination__btn" aria-label="처음 페이지">«</button></li>
           <li><button type="button" class="pagination__btn" aria-label="이전 페이지">‹</button></li>
           <li><button type="button" class="pagination__btn pagination__btn--active" aria-current="page">1</button></li>
-          <li><a class="pagination__btn-anchor" href="/">2</a></li>
-          <li><a class="pagination__btn-anchor" href="/">3</a></li>
+          <li><button type="button" class="pagination__btn">2</button></li>
+          <li><button type="button" class="pagination__btn">3</button></li>
           <li><button type="button" class="pagination__btn" aria-label="다음 페이지">›</button></li>
           <li><button type="button" class="pagination__btn" aria-label="마지막 페이지">»</button></li>
         </ul>
@@ -1045,27 +1039,27 @@
           <ul class="footer__sns">
             <li>
               <a href="https://blog.naver.com" target="_blank">
-                <img loading="lazy" src="../../assets/sns_Blog.svg" alt="네이버 블로그 열기" />
+                <img src="../../assets/sns_Blog.svg" alt="네이버 블로그 열기" />
               </a>
             </li>
             <li>
               <a href="https://facebook.com" target="_blank">
-                <img loading="lazy" src="../../assets/sns_FaceBook.svg" alt="페이스북 열기" />
+                <img src="../../assets/sns_FaceBook.svg" alt="페이스북 열기" />
               </a>
             </li>
             <li>
               <a href="https://instagram.com" target="_blank">
-                <img loading="lazy" src="../../assets/sns_Instagram.svg" alt="인스타그램 열기" />
+                <img src="../../assets/sns_Instagram.svg" alt="인스타그램 열기" />
               </a>
             </li>
             <li>
               <a href="https://www.naver.com" target="_blank">
-                <img loading="lazy" src="../../assets/sns_NaverPost.svg" alt="네이버포스트 열기" />
+                <img src="../../assets/sns_NaverPost.svg" alt="네이버포스트 열기" />
               </a>
             </li>
             <li>
               <a href="https://youtube.com" target="_blank">
-                <img loading="lazy" src="../../assets/sns_Youtube.svg" alt="유튜브 열기" />
+                <img src="../../assets/sns_Youtube.svg" alt="유튜브 열기" />
               </a>
             </li>
           </ul>
@@ -1073,7 +1067,7 @@
       </section>
       <section class="footer__middle desktop-only">
         <div class="footer__certification">
-          <img loading="lazy" src="../../assets/logo_isms.svg" alt="isms 인증 로고" />
+          <img src="../../assets/logo_isms.svg" alt="isms 인증 로고" />
           <p>
             [인증범위] 마켓칼리 쇼핑몰 서비스 개발 운영
             <br />
@@ -1083,7 +1077,7 @@
           </p>
         </div>
         <div class="footer__certification">
-          <img loading="lazy" src="../../assets/logo_privacy.svg" alt="개인정보보호 인증 로고" />
+          <img src="../../assets/logo_privacy.svg" alt="개인정보보호 인증 로고" />
           <p>
             개인정보보호 우수 웹사이트
             <br />
@@ -1091,11 +1085,11 @@
           </p>
         </div>
         <div class="footer__certification">
-          <img loading="lazy" src="../../assets/logo_tosspayments.svg" alt="토스 인증 로고" />
+          <img src="../../assets/logo_tosspayments.svg" alt="토스 인증 로고" />
           <p>토스페이먼츠 구매안전(에스크로) 서비스를 이용하실 수 있습니다.</p>
         </div>
         <div class="footer__certification">
-          <img loading="lazy" src="../../assets/logo_wooriBank.svg" alt="우리은행 로고" />
+          <img src="../../assets/logo_wooriBank.svg" alt="우리은행 로고" />
           <p>
             고객님이 현금으로 결제한 금액에 대해 우리은행과 채무지급보증 계약을 체결하여 안전거래를 보장하고 있습니다.
           </p>
