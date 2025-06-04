@@ -317,11 +317,26 @@ button:focus {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+
+  .product-detail-image {
+    padding-left: 1rem;
+    padding-right: 0.9375rem;
+  }
+
+  .review-section {
+    padding-left: 1rem;
+    padding-right: 0.9375rem;
+  }
+  .support-section {
+    padding-left: 1rem;
+    padding-right: 0.9375rem;
+  }
 }
 .review-section {
   display: flex;
   flex-flow: column nowrap;
-  width: 1050px;
+  width: 100%;
+  max-width: 1050px;
   margin: 0 auto 4.5rem auto;
   gap: auto;
   .review-header-wrapper {
@@ -367,8 +382,10 @@ button:focus {
     border-radius: 0.25rem;
   }
 }
+
 .review-table-header {
   display: flex;
+
   margin-bottom: 1rem;
   justify-content: space-between;
   align-items: center;
@@ -408,7 +425,8 @@ button:focus {
 }
 .review-table-wrapper {
   display: flex;
-  width: 65.625rem;
+  width: 100%;
+  max-width: 65.625rem;
   flex-direction: column;
   .announcement-review-wrapper {
     border-top: 0.0625rem solid var(--content);
@@ -526,7 +544,8 @@ button:focus {
 .support-section {
   display: flex;
   flex-flow: column nowrap;
-  width: 1050px;
+  width: 100%;
+  max-width: 65.625rem;
   margin: 4.5rem auto 6rem auto;
   gap: auto;
   .support-header-wrapper {
@@ -567,8 +586,13 @@ button:focus {
   }
 }
 .support-table-wrapper {
+  width: 100%;
+  max-width: 65.625rem;
   border-top: 0.125rem solid var(--black);
+
   .table-header {
+    width: 100%;
+    max-width: 65.625rem;
     display: flex;
     height: 3.625rem;
     border-bottom: 0.0625rem solid var(--black);
@@ -578,14 +602,18 @@ button:focus {
     font-weight: 600;
     line-height: 1.5;
     .table-header__title {
-      width: 46.875rem;
+      flex: 3 1 0;
+      min-width: 0;
+      width: auto;
       text-align: center;
       flex-shrink: 0;
     }
     .table-header__author,
     .table-header__date,
     .table-header__status {
-      width: 6.25rem;
+      flex: 1 1 0;
+      min-width: 0;
+      width: auto;
       flex-shrink: 0;
       text-align: center;
     }
@@ -627,7 +655,7 @@ button:focus {
 }
 .author,
 .date,
-.staus {
+.status {
   color: var(--gray--400);
   font-size: var(--label---medium);
   font-weight: 600;
