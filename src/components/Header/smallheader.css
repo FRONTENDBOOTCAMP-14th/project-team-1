@@ -102,7 +102,7 @@
     flex: 1 1 auto;
     border: none;
     outline: none;
-    font-size: var(--paragraph---medium);
+    font-size: var(--paragraph---small);
     color: var(--gray--400);
     min-width: 0;
   }
