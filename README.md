@@ -56,8 +56,8 @@
   </tr>
   <tr>
     <td align="center">4tres1@gmail.com</td>
-    <td align="center">이메일</td>
-    <td align="center">이메일</td>
+    <td align="center">martinbaek94@gmail.com</td>
+    <td align="center">bimax1234@naver.com</td>
     <td align="center">gomteang@nate.com</td>
     <td align="center">artful.tittle.0o@gmail.com</td>
   </tr>
