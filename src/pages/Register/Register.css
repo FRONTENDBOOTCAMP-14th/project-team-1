@@ -10,16 +10,6 @@ header {
   gap: 2.75rem;
 }
 
-.grid-table {
-  width: 40rem;
-  display: grid;
-  align-items: start;
-  grid-template-columns: 8.75rem 21.875rem 8.9375rem;
-  grid-template-rows: repeat(10, 5.25rem);
-  border-top: 0.125rem solid var(--content, #333);
-  border-bottom: 0.0625rem solid var(--content, #333);
-}
-
 .grid-table dt {
   display: flex;
   width: 8.6875rem;
@@ -34,64 +24,124 @@ header {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   align-items: start;
+
+  .input--small .input__field {
+    width: 18.75rem;
+  }
 }
 
-.input--small {
-  width: 20.8125rem;
-}
+.grid-table {
+  width: 40rem;
+  display: grid;
+  align-items: start;
+  grid-template-columns: 8.75rem 21.875rem 8.9375rem;
 
-.btn {
-  min-width: 8.9375rem;
-}
+  border-top: 0.125rem solid var(--content, #333);
+  border-bottom: 0.0625rem solid var(--content, #333);
 
-.adress {
-  min-width: 20.8125rem;
-}
-
-dd .frame-adress p {
-  font-size: 0.7502rem;
-  font-weight: 400;
-  line-height: 160%;
-}
-
-.text-nomal {
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 150%;
-}
-
-dd .gender {
-  display: flex;
-
-  label {
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
+  dd .input--small {
+    width: 20.8125rem;
   }
 
-  .text-gender {
-    text-align: start;
-    color: var(--content, #333);
+  dd .btn {
+    min-width: 8.9375rem;
+  }
+
+  dd .adress {
+    min-width: 20.8125rem;
+  }
+
+  dd .frame-adress p {
+    font-size: 0.7502rem;
+    font-weight: 400;
+    line-height: 160%;
+  }
+
+  .text-nomal {
     font-size: 1rem;
     font-weight: 600;
     line-height: 150%;
-    vertical-align: top;
-    margin-right: 0.625rem;
   }
-}
 
-.radio-wrapper .icon-checked {
-  display: none;
-}
+  dd .gender {
+    display: flex;
 
-.radio-wrapper input[type='radio']:checked + .icon-unchecked {
-  display: none;
-}
-.radio-wrapper input[type='radio']:checked + .icon-unchecked + .icon-checked {
-  display: inline;
-}
+    label {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem;
+    }
+  }
 
-.date .input--small .input__field {
-  text-align: center;
+  .gender-option,
+  .event {
+    gap: 0.5rem;
+    margin-right: 1.25rem;
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+  }
+
+  .gender-option input[type='radio'],
+  .event input[type='radio'] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .radio-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .radio-wrapper {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .icon-unchecked {
+    display: block;
+  }
+
+  .icon-checked {
+    display: none;
+  }
+
+  input[type='radio']:checked ~ .icon-unchecked {
+    display: none;
+  }
+
+  input[type='radio']:checked ~ .icon-checked {
+    display: block;
+  }
+
+  .radio-wrapper {
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
+  .date .input--small .input__field {
+    text-align: center;
+  }
+
+  .text-gender {
+    margin-top: 0.625rem;
+    margin-left: -1.875rem;
+    color: var(--content, #333);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
 }
 
 .agreement {
@@ -216,12 +266,7 @@ dd .gender {
   .btn-normal--fill {
     display: flex;
     width: 21.25rem;
-    height: 3.375rem;
     justify-content: center;
     align-items: center;
   }
-}
-
-.input--small .input__field {
-  width: 18.75rem;
 }
