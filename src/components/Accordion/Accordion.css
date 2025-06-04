@@ -14,7 +14,7 @@ a {
 /* 카데고리 */
 
 .category {
-  display: inline-block;
+  display: block;
   padding: 1rem;
   user-select: none;
 }
@@ -34,6 +34,7 @@ a {
   width: max-content;
   padding: 1rem;
   border: 0.0625rem solid var(--secondary);
+  background: var(--white);
 }
 
 .category__dropdown:hover .category__list {
