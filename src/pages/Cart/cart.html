@@ -201,7 +201,7 @@
         </ul>
       </nav>
     </header>
-    <!-- responsive header -->
+    <!--  responsive header -->
     <header class="mobile-header">
       <a href="#" class="mobile-header__logo">
         <svg width="64" height="33" viewBox="0 0 64 33" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -712,29 +712,52 @@
               <li>
                 <address>서울 중랑구 면목로 42길 11 (행운빌딩) 603호</address>
               </li>
-              <li>샛별배송</li>
-              <li><button>배송지 변경</button></li>
+              <li class="cart-order-method">샛별배송</li>
+              <li><button type="button" class="cart-order-change">배송지 변경</button></li>
             </ul>
             <div class="cart-price">
               <section class="cart-price-details">
                 <dl>
                   <div class="cart-price-row">
                     <dt>상품금액</dt>
-                    <dd>50,000원</dd>
+                    <dd>
+                      50,000
+                      <span class="cart-price-unit">원</span>
+                    </dd>
                   </div>
                   <div class="cart-price-row">
                     <dt>상품할인금액</dt>
-                    <dd>-4,651원</dd>
+                    <dd>
+                      -4,651
+                      <span class="cart-price-unit">원</span>
+                    </dd>
                   </div>
                   <div class="cart-price-row">
                     <dt>배송비</dt>
-                    <dd>+3,000원</dd>
+                    <dd>
+                      +3,000
+                      <span class="cart-price-unit">원</span>
+                    </dd>
                   </div>
                 </dl>
               </section>
-              <section class="cart-price-total"></section>
+              <section class="cart-price-total">
+                <dl>
+                  <div class="cart-price-row">
+                    <dt>결제예정금액</dt>
+                    <dd>
+                      40,680
+                      <span class="cart-price-unit">원</span>
+                    </dd>
+                  </div>
+                  <div class="cart-price-point">
+                    <dt>적립</dt>
+                    <dd>최대 36원 적립 일반 0.1%</dd>
+                  </div>
+                </dl>
+              </section>
             </div>
-            <button type="button" class="cart-order-button">주문하기</button>
+            <button type="button" class="cart-order__button">주문하기</button>
 
             <ul class="cart-order-notice">
               <li>쿠폰/적립금은 주문서에서 사용 가능합니다.</li>
