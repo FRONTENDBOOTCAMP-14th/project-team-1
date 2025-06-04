@@ -13,8 +13,27 @@
 
 <body>
 
-  <div class="particles"></div>
+  <!-- 포트폴리오 안내 모달 -->
+  <dialog class="modal" id="disclaimerModal" role="dialog" aria-labelledby="modal__title" aria-modal="true">
+    <div class="modal__container">
+      <h2 class="modal__title">포트폴리오 면책 안내</h2>
+      <p class="modal__info">
+        해당 사이트는 가상의 사이트이며
+        <br />
+        <strong>비상업적 취업을 위한 포트폴리오</strong>
+        용으로만
+        <br />
+        사용하기 위해 제작된 사이트입니다.
+      </p>
+      <p class="modal__info">
+        실제 상품 판매나 결제 기능은 제공되지 않으며,
+        <br />
+        모든 콘텐츠는 데모 목적으로만 사용됩니다.
+      </p>
 
+      <button type="button" class="modal__check" onclick="closeModal()">확인했습니다</button>
+    </div>
+  </dialog>
   <main class="index">
     <h1 class="sr-only">1팀 발표용 페이지</h1>
     <!-- 메인 섹션 -->
@@ -222,7 +241,7 @@
                 부족한 역량으로 팀장의 자리를 맡게 되어 혼란스럽고 뜻대로 안 되던 순간도 많았지만<br>
                 협업에 있어 중요한 부분인 소통력과 이해심을 갈고닦을 수 있는 좋은 경험이었다고 생각합니다.<br>
                 프로젝트 일정이나 파트 분배 관련해서도 좀 더 면밀히 계획 후에 뛰어들었으면 어땠을까 하는 아쉬움이 많이 남습니다.<br>
-                정신없는 통솔에 군말 없이 따르고 격려해준 팀원분들께 감사합니다.
+                정신없는 통솔에 군말 없이 따르며 격려해준 팀원분들께 감사드립니다.
               </p>
             </div>
           </div>
@@ -482,51 +501,186 @@
       </div>
     </section>
 
+
     <!-- 다섯번째 섹션/프로젝트 상세 -->
     <section id="rules" class="index__rules section">
       <h2 class="section__title">PROJECT RULES</h2>
       <div class="section__container">
         <div class="rules__content">
           <div class="rules__grid">
-            <div class="rule__category">
-              <h3 class="rule__title">🎯 코딩 컨벤션</h3>
-              <ul class="rule__list">
-                <li>BEM 방법론을 활용한 CSS 클래스 네이밍</li>
-                <li>시맨틱 HTML 마크업 준수</li>
-                <li>Prettier 코드 포맷팅</li>
-                <li>컴포넌트 단위 파일 구성</li>
-              </ul>
-            </div>
-
-            <div class="rule__category">
-              <h3 class="rule__title">🌿 Git 규칙</h3>
-              <ul class="rule__list">
-                <li>feature/기능명 브랜치 전략</li>
-                <li>Conventional Commits 메시지 규칙</li>
-                <li>PR 리뷰 후 팀장이 Merge</li>
-                <li>코드 리뷰 필수</li>
-              </ul>
-            </div>
 
             <div class="rule__category">
               <h3 class="rule__title">📅 프로젝트 일정</h3>
               <ul class="rule__list">
-                <li>1주차: 기획 및 설계</li>
-                <li>2주차: 컴포넌트 개발</li>
-                <li>3주차: 페이지 통합</li>
-                <li>4주차: 테스트 및 배포</li>
+                <details class="rule__detail">
+                  <summary>스프린트 1주차 <span class="point">25. 05. 27 ~ 05. 29</span></summary>
+                  <ul>
+                    <li>시안 분석 및 UI 컴포넌트 12개 그룹으로 분류</li>
+                    <li>팀원별 역할 배분 (1인당 2~3개 컴포넌트 그룹 담당)</li>
+                    <li>컴포넌트 설계 및 구조 설정</li>
+                    <li>헤더/푸터를 제외한 기본 컴포넌트 제작 시작</li>
+                    <li>개발 환경 세팅 및 Git 워크플로우 구축</li>
+                  </ul>
+                </details>
+                <details class="rule__detail">
+                  <summary>스프린트 2주차 <span class="point">25. 05. 30 ~ 06. 01</span></summary>
+                  <ul>
+                    <li>헤더/푸터 포함 모든 UI 컴포넌트 1차 제작 완료</li>
+                    <li>컴포넌트 간 일관성 검토 및 리팩토링</li>
+                    <li>Login 페이지 레이아웃 구현 시작</li>
+                  </ul>
+                </details>
+                <details class="rule__detail">
+                  <summary>스프린트 3주차 <span class="point">25. 06. 02 ~ 06. 03</span></summary>
+                  <ul>
+                    <li>팀원별 페이지 담당 분배 및 구현</li>
+                    <li>Index 페이지 시안 기획 및 와이어프레임 작성</li>
+                    <li>CSS 모듈화 및 스타일 최적화</li>
+                    <li>크로스 브라우저 호환성 테스트</li>
+                  </ul>
+                </details>
+                <details class="rule__detail">
+                  <summary>스프린트 4주차 <span class="point">25. 06. 04 ~ 06. 05</span></summary>
+                  <ul>
+                    <li>중간점검 피드백 반영해 담당 페이지 리팩토링</li>
+                    <li>Google Lighthouse 성능 분석, 최적화</li>
+                    <li>웹 접근성, SEO 개선 작업</li>
+                    <li>로딩 성능 향상 및 이미지 최적화</li>
+                    <li>페이지 간 네비게이션 연결</li>
+                    <li>최종 배포 준비 및 문서화(위키, 리드미) 작업</li>
+                  </ul>
+                </details>
+              </ul>
+            </div>
+            <div class="rule__category">
+              <h3 class="rule__title">🎯 컨벤션/규칙</h3>
+              <ul class="rule__list">
+                <details class="rule__detail">
+                  <summary>프로젝트 공통 규칙</summary>
+                  <ul>
+                    <li>매일 수업 끝난 후 스크럼(진척 보고)</li>
+                    <li>모르면 바로바로 물어보기</li>
+                    <li>잠수 금지, 의견 적극적으로 내주기</li>
+                    <li>브랜치 1개당 1명씩만 작업</li>
+                    <li>브랜치는 PR 후 팀장이 merge</li>
+                  </ul>
+                </details>
+                <details class="rule__detail">
+                  <summary>코딩 컨벤션</summary>
+                  <ul>
+                    <li>클래스 네이밍은 BEM 방법론 사용</li>
+                    <li>들여쓰기는 2칸 공백 통일</li>
+                    <li>Prettier를 이용한 코드 포맷팅</li>
+                    <li>CSS는 레이아웃 중요도 순으로 나열</li>
+                  </ul>
+                </details>
+                <details class="rule__detail">
+                  <summary>커밋 메세지 컨벤션</summary>
+                  <ul>
+                    <li>
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>타입</th>
+                            <th>설명</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><code>init:</code></td>
+                            <td>초기 설정</td>
+                          </tr>
+                          <tr>
+                            <td><code>feat:</code></td>
+                            <td>새로운 기능 추가</td>
+                          </tr>
+                          <tr>
+                            <td><code>fix:</code></td>
+                            <td>버그 수정</td>
+                          </tr>
+                          <tr>
+                            <td><code>docs:</code></td>
+                            <td>문서 수정</td>
+                          </tr>
+                          <tr>
+                            <td><code>style:</code></td>
+                            <td>공백, 세미콜론 등 스타일 수정</td>
+                          </tr>
+                          <tr>
+                            <td><code>refactor:</code></td>
+                            <td>코드 리팩토링</td>
+                          </tr>
+                          <tr>
+                            <td><code>remove:</code></td>
+                            <td>파일/코드 삭제</td>
+                          </tr>
+                          <tr>
+                            <td><code>test:</code></td>
+                            <td>테스트 코드 추가/삭제</td>
+                          </tr>
+                          <tr>
+                            <td><code>chore:</code></td>
+                            <td>빌드 과정 또는 보조 기능(문서 생성기능 등) 수정</td>
+                          </tr>
+                          <tr>
+                            <td><code>ci:</code></td>
+                            <td>npm 모듈 패키지 설치 등</td>
+                          </tr>
+                          <tr>
+                            <td><code>comment:</code></td>
+                            <td>필요한 주석 추가 및 변경</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </li>
+                  </ul>
+                </details>
+                <details class="rule__detail">
+                  <summary>브랜치 전략</summary>
+                  <ul>
+                    <li>
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>브랜치명</th>
+                            <th>설명</th>
+                            <th>merge할 곳</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><code>main</code></td>
+                            <td>배포용 브랜치, 직접 작업 절대 X</td>
+                            <td>X</td>
+                          </tr>
+                          <tr>
+                            <td><code>develop</code></td>
+                            <td>개발용 브랜치.<br>모든 직업은 여기서 브랜치를 나눠 진행</td>
+                            <td><code>main</code></td>
+                          </tr>
+                          <tr>
+                            <td><code>feature/</code></td>
+                            <td>기능 개발 브랜치. 새로운 기능 추가 목적</td>
+                            <td><code>develop</code></td>
+                          </tr>
+                          <tr>
+                            <td><code>fix/</code></td>
+                            <td>버그 픽스 브랜치.</td>
+                            <td><code>develop</code></td>
+                          </tr>
+                          <tr>
+                            <td><code>docs/</code></td>
+                            <td>문서 브랜치. 문서 작성/수정/삭제 등</td>
+                            <td><code>develop</code></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </li>
+                  </ul>
+                </details>
               </ul>
             </div>
 
-            <div class="rule__category">
-              <h3 class="rule__title">🛠️ 사용 도구</h3>
-              <ul class="rule__list">
-                <li>HTML5, CSS3, JavaScript</li>
-                <li>Vite</li>
-                <li>GitHub, Notion, Discord</li>
-                <li>Figma</li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
@@ -750,6 +904,29 @@
       });
 
       currentSectionIndex = getCurrentSection();
+    });
+  </script>
+
+  <!-- portfolio dialog -->
+  <script>
+    const modal = document.getElementById('disclaimerModal');
+
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        modal.showModal();
+      }, 100);
+    });
+
+    function closeModal() {
+      modal.close();
+      localStorage.setItem('disclaimerSeen', 'true');
+    }
+
+    // ESC 키로 닫기
+    modal.addEventListener('keydown', e => {
+      if (e.key === 'Escape') {
+        closeModal();
+      }
     });
   </script>
 </body>

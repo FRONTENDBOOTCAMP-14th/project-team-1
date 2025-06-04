@@ -1,3 +1,9 @@
+button:focus-visible {
+  outline: 2px solid black;
+  outline-offset: 0.125rem;
+  border-radius: 0.125rem;
+}
+
 .product-wrapper {
   display: flex;
   width: 65.625rem;
@@ -39,11 +45,15 @@
   font-weight: 400;
   line-height: 1.6;
 }
+
 .price-info__number {
+  display: flex;
   font-size: var(--label---x-l);
   color: var(--content);
   font-weight: 600;
   line-height: 1.5;
+  align-items: center;
+  gap: 0.25rem;
 }
 .price-info__unit {
   font-size: var(--heading---medium);
@@ -205,26 +215,26 @@
 }
 .button-group__bookmark {
   display: flex;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 56px;
+  height: 56px;
   border: 0.0625rem solid var(--gray--100);
   border-radius: 0.25rem;
   padding: 0.25rem;
   justify-content: center;
   align-items: center;
-  flex: 0 0 3.5rem;
+  flex: 0 0 56px;
   box-sizing: border-box;
 }
 .button-group__notification {
   display: flex;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 56px;
+  height: 56px;
   padding: 0.25rem;
   border: 0.0625rem solid var(--gray--100);
   border-radius: 0.25rem;
   justify-content: center;
   align-items: center;
-  flex: 0 0 3.5rem;
+  flex: 0 0 56px;
   box-sizing: border-box;
 }
 .button-group__addcart {
@@ -253,7 +263,7 @@
 }
 .tab-menu__button {
   width: 100%;
-  height: 3.375rem;
+  height: 54px;
   background: var(--gray--50);
   border: 0.0625rem solid var(--gray--300);
   color: var(--content);
@@ -288,6 +298,7 @@
     padding-right: 0.9375rem;
     flex-flow: column nowrap;
     justify-content: center;
+    gap: 0.625rem;
   }
   .product-desc {
     width: 100%;
@@ -307,11 +318,26 @@
     padding-left: 1rem;
     padding-right: 1rem;
   }
+
+  .product-detail-image {
+    padding-left: 1rem;
+    padding-right: 0.9375rem;
+  }
+
+  .review-section {
+    padding-left: 1rem;
+    padding-right: 0.9375rem;
+  }
+  .support-section {
+    padding-left: 1rem;
+    padding-right: 0.9375rem;
+  }
 }
 .review-section {
   display: flex;
   flex-flow: column nowrap;
-  width: 65.625rem;
+  width: 100%;
+  max-width: 1050px;
   margin: 0 auto 4.5rem auto;
   gap: auto;
   .review-header-wrapper {
@@ -357,8 +383,10 @@
     border-radius: 0.25rem;
   }
 }
+
 .review-table-header {
   display: flex;
+
   margin-bottom: 1rem;
   justify-content: space-between;
   align-items: center;
@@ -398,7 +426,8 @@
 }
 .review-table-wrapper {
   display: flex;
-  width: 65.625rem;
+  width: 100%;
+  max-width: 65.625rem;
   flex-direction: column;
   .announcement-review-wrapper {
     border-top: 0.0625rem solid var(--content);
@@ -516,7 +545,8 @@
 .support-section {
   display: flex;
   flex-flow: column nowrap;
-  width: 65.625rem;
+  width: 100%;
+  max-width: 65.625rem;
   margin: 4.5rem auto 6rem auto;
   gap: auto;
   .support-header-wrapper {
@@ -557,8 +587,13 @@
   }
 }
 .support-table-wrapper {
+  width: 100%;
+  max-width: 65.625rem;
   border-top: 0.125rem solid var(--black);
+
   .table-header {
+    width: 100%;
+    max-width: 65.625rem;
     display: flex;
     height: 3.625rem;
     border-bottom: 0.0625rem solid var(--black);
@@ -568,14 +603,18 @@
     font-weight: 600;
     line-height: 1.5;
     .table-header__title {
-      width: 46.875rem;
+      flex: 3 1 0;
+      min-width: 0;
+      width: auto;
       text-align: center;
       flex-shrink: 0;
     }
     .table-header__author,
     .table-header__date,
     .table-header__status {
-      width: 6.25rem;
+      flex: 1 1 0;
+      min-width: 0;
+      width: auto;
       flex-shrink: 0;
       text-align: center;
     }
@@ -617,7 +656,7 @@
 }
 .author,
 .date,
-.staus {
+.status {
   color: var(--gray--400);
   font-size: var(--label---medium);
   font-weight: 600;
@@ -662,11 +701,16 @@
   display: flex;
   width: 65.625rem;
   justify-content: center;
-  margin: 0 auto 0 auto;
+  margin: 10px auto 0 auto;
 }
 .announcement-item {
   border-bottom: 0.0625rem solid var(--gray--100);
 }
 .question-item-context {
   border-bottom: 0.0625rem solid var(--gray--100);
+}
+
+.tab-menu__button:focus {
+  position: relative;
+  z-index: 1;
 }
