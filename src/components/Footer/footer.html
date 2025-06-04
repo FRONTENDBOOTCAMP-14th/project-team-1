@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../styles/variables.css" />
-    <link rel="stylesheet" href="../../styles/reset.css" />
-    <link rel="stylesheet" href="../../styles/base.css" />
-    <link rel="stylesheet" href="./footer.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Footer</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../styles/variables.css" />
+  <link rel="stylesheet" href="../../styles/reset.css" />
+  <link rel="stylesheet" href="../../styles/base.css" />
+  <link rel="stylesheet" href="./footer.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="component-wrapper">
+
+    <h1 class="component-name">Footer</h1>
     <footer class="footer">
       <div class="footer__container">
         <section class="footer__top">
@@ -76,15 +80,15 @@
                 <a class="inquiry-link" href="">사업자정보 확인</a>
               </li>
               <li class="company-info__list">
-                <span class="inquiry-text">통신판매업 : 제 2005-서울강남-00000 호 |</span>
+                <span class="inquiry-text">통신판매업 : 제 2005-서울강남-00000 호 <span aria-hidden="true">|</span></span>
                 <span class="inquiry-text">개인정보보호책임자 : 홍길동</span>
               </li>
               <li class="company-info__list">
-                <span class="inquiry-text">주소 : 서울특별시 강남구 테헤란로 5003, 28층(역삼동) |</span>
+                <span class="inquiry-text">주소 : 서울특별시 강남구 테헤란로 5003, 28층(역삼동) <span aria-hidden="true">|</span></span>
                 <span class="inquiry-text desktop-only">대표이사 : 심선범</span>
               </li>
               <li class="company-info__list">
-                <span class="inquiry-text desktop-only">입점문의 : 입점문의하기 |</span>
+                <span class="inquiry-text desktop-only">입점문의 : 입점문의하기 <span aria-hidden="true">|</span></span>
                 <span class="inquiry-text">제휴문의 :</span>
                 <a class="inquiry-link" href="mailto:business@karlycorp.com">business@karlycorp.com</a>
               </li>
@@ -111,27 +115,27 @@
             </p>
             <ul class="footer__sns">
               <li>
-                <a href="https://blog.naver.com" target="_blank">
+                <a href="https://blog.naver.com" target="_blank" rel="noopener noreferrer">
                   <img src="../../assets/sns_Blog.svg" alt="네이버 블로그 열기" />
                 </a>
               </li>
               <li>
-                <a href="https://facebook.com" target="_blank">
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                   <img src="../../assets/sns_FaceBook.svg" alt="페이스북 열기" />
                 </a>
               </li>
               <li>
-                <a href="https://instagram.com" target="_blank">
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
                   <img src="../../assets/sns_Instagram.svg" alt="인스타그램 열기" />
                 </a>
               </li>
               <li>
-                <a href="https://www.naver.com" target="_blank">
+                <a href="https://www.naver.com" target="_blank" rel="noopener noreferrer">
                   <img src="../../assets/sns_NaverPost.svg" alt="네이버포스트 열기" />
                 </a>
               </li>
               <li>
-                <a href="https://youtube.com" target="_blank">
+                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
                   <img src="../../assets/sns_Youtube.svg" alt="유튜브 열기" />
                 </a>
               </li>
@@ -188,5 +192,7 @@
         <small class="footer__copyright">© KURLY CORP. ALL RIGHTS RESERVED</small>
       </section>
     </footer>
-  </body>
+  </div>
+</body>
+
 </html>
