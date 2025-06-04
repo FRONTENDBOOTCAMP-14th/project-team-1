@@ -13,8 +13,27 @@
 
 <body>
 
-  <div class="particles"></div>
+  <!-- 포트폴리오 안내 모달 -->
+  <dialog class="modal" id="disclaimerModal" role="dialog" aria-labelledby="modal__title" aria-modal="true">
+    <div class="modal__container">
+      <h2 class="modal__title">포트폴리오 면책 안내</h2>
+      <p class="modal__info">
+        해당 사이트는 가상의 사이트이며
+        <br />
+        <strong>비상업적 취업을 위한 포트폴리오</strong>
+        용으로만
+        <br />
+        사용하기 위해 제작된 사이트입니다.
+      </p>
+      <p class="modal__info">
+        실제 상품 판매나 결제 기능은 제공되지 않으며,
+        <br />
+        모든 콘텐츠는 데모 목적으로만 사용됩니다.
+      </p>
 
+      <button type="button" class="modal__check" onclick="closeModal()">확인했습니다</button>
+    </div>
+  </dialog>
   <main class="index">
     <h1 class="sr-only">1팀 발표용 페이지</h1>
     <!-- 메인 섹션 -->
@@ -222,7 +241,7 @@
                 부족한 역량으로 팀장의 자리를 맡게 되어 혼란스럽고 뜻대로 안 되던 순간도 많았지만<br>
                 협업에 있어 중요한 부분인 소통력과 이해심을 갈고닦을 수 있는 좋은 경험이었다고 생각합니다.<br>
                 프로젝트 일정이나 파트 분배 관련해서도 좀 더 면밀히 계획 후에 뛰어들었으면 어땠을까 하는 아쉬움이 많이 남습니다.<br>
-                정신없는 통솔에 군말 없이 따르고 격려해준 팀원분들께 감사합니다.
+                정신없는 통솔에 군말 없이 따르며 격려해준 팀원분들께 감사드립니다.
               </p>
             </div>
           </div>
@@ -481,6 +500,7 @@
         </div>
       </div>
     </section>
+
 
     <!-- 다섯번째 섹션/프로젝트 상세 -->
     <section id="rules" class="index__rules section">
@@ -750,6 +770,29 @@
       });
 
       currentSectionIndex = getCurrentSection();
+    });
+  </script>
+
+  <!-- portfolio dialog -->
+  <script>
+    const modal = document.getElementById('disclaimerModal');
+
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        modal.showModal();
+      }, 100);
+    });
+
+    function closeModal() {
+      modal.close();
+      localStorage.setItem('disclaimerSeen', 'true');
+    }
+
+    // ESC 키로 닫기
+    modal.addEventListener('keydown', e => {
+      if (e.key === 'Escape') {
+        closeModal();
+      }
     });
   </script>
 </body>
