@@ -4,6 +4,16 @@ html {
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  background: transparent;
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--point);
+  /* border-radius: 3.125rem; */
+}
+
 .index {
   display: block;
   max-width: none;
@@ -27,7 +37,7 @@ html {
   min-height: 100vh;
   scroll-snap-align: start;
   scroll-snap-stop: always;
-  padding: 2rem clamp(1.25rem, 5vw, 6.25rem);
+  padding: 3.5rem clamp(1.25rem, 5vw, 6.25rem);
   position: relative;
 }
 
@@ -64,7 +74,7 @@ html {
   .index__content {
     display: flex;
     flex-direction: column;
-    row-gap: 4.5rem;
+    row-gap: 3rem;
     justify-content: center;
     align-items: center;
     padding: 2rem;
@@ -215,13 +225,17 @@ html {
       font-size: clamp(1rem, 1.4vw, 1.5rem);
       max-width: 50%;
 
+      .point {
+        font-weight: 600;
+      }
+
       p {
         margin-bottom: 2rem;
       }
     }
 
     .intro__mockup {
-      width: clamp(300px, 45vw, 600px);
+      width: clamp(400px, 48vw, 800px);
 
       img {
         width: 100%;
@@ -242,7 +256,7 @@ html {
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-    margin: 0 auto;
+    margin: auto;
   }
 
   .member {
@@ -341,7 +355,6 @@ html {
     padding: 2rem 3rem;
     max-width: 1000px;
     width: 90%;
-    max-height: 80vh;
     overflow-y: auto;
     position: relative;
     text-align: center;
@@ -415,7 +428,7 @@ html {
     .dialog-goal,
     .dialog-retrospective {
       border: 2px dashed #b253e980;
-      background: rgba(255, 255, 255, 0.1);
+      background: #ffffff10;
       padding: 1.5rem;
       border-radius: 12px;
       text-align: left;
@@ -440,6 +453,7 @@ html {
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin: auto;
   }
 
   .components-grid {
@@ -451,17 +465,14 @@ html {
   }
 
   .component-link {
-    width: 140px;
-    height: 140px;
+    width: 160px;
+    aspect-ratio: 1;
     border: 3px solid rgba(255, 255, 255, 0.4);
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.05);
     color: var(--white);
-    font-size: 0.85rem;
+    font-size: 1.3rem;
     font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: all 0.4s ease;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -469,6 +480,7 @@ html {
     letter-spacing: 0.05rem;
     position: relative;
     overflow: hidden;
+    transition: all 0.4s ease;
   }
 
   .component-link:hover {
@@ -581,8 +593,8 @@ html {
 
   .rule__category {
     padding: 2.5rem;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: #ffffff10;
+    border: 1px solid #ffffff20;
     border-radius: 20px;
     backdrop-filter: blur(20px);
     transition: transform 0.3s ease;
@@ -590,7 +602,7 @@ html {
 
   .rule__category:hover {
     transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.15);
+    background: #ffffff15;
   }
 
   .rule__title {
@@ -612,7 +624,7 @@ html {
 
   .rule__list li {
     padding: 0.75rem 1rem;
-    background: rgba(255, 255, 255, 0.1);
+    background: #ffffff10;
     border-left: 4px solid #a78bfa;
     border-radius: 0 8px 8px 0;
     font-size: 0.95rem;
@@ -632,10 +644,6 @@ html {
     .intro__text {
       max-width: 100%;
     }
-
-    .intro__mockup {
-      width: clamp(250px, 60vw, 500px);
-    }
   }
 
   .index__members .members-grid {
@@ -646,27 +654,6 @@ html {
     width: 200px;
     padding: 1.5rem 1rem;
   }
-}
-
-.index__components .components-grid {
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  max-width: 600px;
-}
-
-.index__components .component-link {
-  width: 120px;
-  height: 120px;
-  font-size: 0.75rem;
-}
-
-.index__pages .pages__grid {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-}
-
-.index__rules .rules__grid {
-  grid-template-columns: 1fr;
 }
 
 @media (max-width: 768px) {

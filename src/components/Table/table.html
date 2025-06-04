@@ -1,42 +1,34 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Input Components</title>
-    <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="/public/favicon.ico" type="image/svg" />
-    <link rel="stylesheet" href="../../styles/variables.css" />
-    <link rel="stylesheet" href="../../styles/reset.css" />
-    <link rel="stylesheet" href="../../styles/base.css" />
-    <link rel="stylesheet" href="/src/components/Table/table.css" />
-  </head>
-  <body class="body">
-    <h1>Table</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Input Components</title>
+  <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="/public/favicon.ico" type="image/svg" />
+  <link rel="stylesheet" href="../../styles/variables.css" />
+  <link rel="stylesheet" href="../../styles/reset.css" />
+  <link rel="stylesheet" href="../../styles/base.css" />
+  <link rel="stylesheet" href="/src/components/Table/table.css" />
+</head>
+
+<body class="body">
+  <div class="component-wrapper">
+
+    <h1 class="component-name">Table</h1>
     <div class="text-wrapper">
       <div class="headline">
         <div class="headline__secret">
           <span class="secret__text">비밀글입니다.</span>
-          <svg
-            class="secret__icon"
-            width="12"
-            height="14"
-            viewBox="0 0 12 14"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+          <svg class="secret__icon" width="12" height="14" viewBox="0 0 12 14" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
               d="M11.043 12.575C11.0425 12.6432 11.0151 12.7084 10.9668 12.7565C10.9185 12.8046 10.8532 12.8317 10.785 12.832H1.214C1.14583 12.8317 1.08051 12.8046 1.03221 12.7565C0.983908 12.7084 0.956526 12.6432 0.956 12.575V5.42C0.956 5.278 1.073 5.162 1.214 5.162H10.784C10.928 5.162 11.044 5.278 11.044 5.42V12.575H11.043ZM3.685 3.237C3.68579 2.63238 3.9264 2.05276 4.35403 1.62532C4.78165 1.19788 5.36138 0.957529 5.966 0.957C6.5707 0.957265 7.15058 1.19753 7.57826 1.62503C8.00595 2.05253 8.24647 2.6323 8.247 3.237V4.205H3.685V3.237ZM10.785 4.205H9.205V3.237C9.20394 2.3783 8.86215 1.55512 8.25467 0.948206C7.6472 0.341294 6.8237 0.000264295 5.965 0C5.10708 0.00132358 4.28472 0.342852 3.67826 0.949678C3.07181 1.5565 2.73079 2.37908 2.73 3.237V4.205H1.214C0.544 4.205 0 4.75 0 5.42V12.575C0 13.244 0.545 13.789 1.214 13.789H10.784C11.455 13.789 12 13.244 12 12.575V5.42C12 4.75 11.455 4.205 10.785 4.205Z"
-              fill="#B5B5B5"
-            />
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fill="#B5B5B5" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
               d="M5 8.19995C5 8.54295 5.184 8.83195 5.448 9.01195V10.342H6.551V9.01195C6.68673 8.92384 6.79868 8.80368 6.87698 8.66207C6.95529 8.52046 6.99754 8.36175 7 8.19995C7 7.93473 6.89464 7.68038 6.70711 7.49284C6.51957 7.30531 6.26522 7.19995 6 7.19995C5.73478 7.19995 5.48043 7.30531 5.29289 7.49284C5.10536 7.68038 5 7.93473 5 8.19995Z"
-              fill="#B5B5B5"
-            />
+              fill="#B5B5B5" />
           </svg>
         </div>
         <div class="headline__status">
@@ -51,14 +43,10 @@
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z"
-                fill="#A864D8"
-              />
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fill="#A864D8" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M11.946 7.5C14.402 7.5 16.392 9.49 16.392 11.946C16.392 12.853 16.121 13.696 15.655 14.399L16.5 15.242L15.242 16.5L14.399 15.655C13.696 16.121 12.853 16.392 11.946 16.392C9.491 16.392 7.5 14.402 7.5 11.946C7.5 9.491 9.49 7.5 11.946 7.5ZM11.946 9.278C10.473 9.278 9.278 10.473 9.278 11.946C9.278 13.419 10.473 14.614 11.946 14.614C12.358 14.614 12.748 14.52 13.096 14.354L12.727 13.984L13.985 12.727L14.354 13.096C14.52 12.748 14.614 12.358 14.614 11.946C14.614 10.473 13.419 9.278 11.946 9.278Z"
-                fill="white"
-              />
+                fill="white" />
             </svg>
           </div>
           <div class="question__text">
@@ -75,12 +63,10 @@
               <g clip-path="url(#clip0_7247_1516)">
                 <path
                   d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z"
-                  fill="#5F0080"
-                />
+                  fill="#5F0080" />
                 <path
                   d="M9.75961 15.708L10.2996 14.304H13.7556L14.3076 15.708H16.4556L12.9996 7.5H11.0676L7.59961 15.708H9.75961ZM13.0836 12.576H10.9716L12.0276 9.864L13.0836 12.576Z"
-                  fill="white"
-                />
+                  fill="white" />
               </g>
               <defs>
                 <clipPath id="clip0_7247_1516">
@@ -161,5 +147,7 @@
         </p>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
