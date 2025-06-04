@@ -37,6 +37,14 @@ dialog::backdrop {
   backdrop-filter: blur(4px);
 }
 
+.component-wrapper {
+  margin: 3.125rem !important;
+
+  .component-name {
+    margin-bottom: 3.125rem !important;
+  }
+}
+
 @media screen and (min-width: 48.0625rem) {
   .desktop-only {
     display: block;

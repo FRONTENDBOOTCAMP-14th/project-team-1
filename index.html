@@ -1,50 +1,757 @@
 <!DOCTYPE html>
-<html lang="ko-KR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>UI 프로젝트 - CSS</title>
-    <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" />
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
-    <script type="module" src="/src/main.js"></script>
+<html lang="ko">
 
-    <style>
-      body {
-        margin: 50px;
-        a:hover {
-          color: var(--primary);
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./src/styles/style.css" />
+  <link rel="stylesheet" href="./src/styles/index.css" />
+
+  <title>칼리 - 인덱스</title>
+</head>
+
+<body>
+
+  <div class="particles"></div>
+
+  <main class="index">
+    <h1 class="sr-only">1팀 발표용 페이지</h1>
+    <!-- 메인 섹션 -->
+    <section class="index__main">
+      <div class="index__content">
+        <div class="index__header">
+          <h1 class="index__title">HELLO <span aria-hidden="true">---</span> WE <span aria-hidden="true">-</span>
+            ARE<br> SUNSHINE <span aria-hidden="true">-</span> CODERS!</h1>
+          <strong class="index__badge">
+            ✨ 멋쟁이사자처럼 부트캠프 14기 UI 프로젝트 1팀 선샤인 코더스 ✨
+          </strong>
+        </div>
+
+        <div class="index__cards">
+          <a href="#intro" class="card">
+            <span class="card__icon">🤝</span>
+            <h3 class="card__title">INTRODUCTION</h3>
+            <p class="card__desc">
+              UI프로젝트 1조 프로젝트 소개 바로가기
+            </p>
+          </a>
+          <a href="#components" class="card">
+            <span class="card__icon">🎨</span>
+            <h3 class="card__title">COMPONENTS</h3>
+            <p class="card__desc">
+              재사용성을 고려한 컴포넌트 살펴보기
+            </p>
+          </a>
+          <a href="#pages" class="card">
+            <span class="card__icon">📱</span>
+            <h3 class="card__title">PAGES</h3>
+            <p class="card__desc">
+              반응형 칼리 페이지 구경하러 가기
+            </p>
+          </a>
+          <a href="#rules" class="card">
+            <span class="card__icon">📝</span>
+            <h3 class="card__title">RULES</h3>
+            <p class="card__desc">
+              컨벤션, 일정 등 프로젝트 상세 내용 바로가기
+            </p>
+          </a>
+        </div>
+
+        <div class="indicator">
+          <div class="indicator__arrow">⬇</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 첫번째 섹션/소개 -->
+    <section id="intro" class="index__intro section">
+      <h2 class="index__subtitle">INTRODUCTION</h2>
+      <div class="intro__content">
+        <div class="intro__text">
+          <p>
+            안녕하세요, 멋쟁이사자처럼 부트캠프 14기<br>
+            UI Project 1팀 <span class="point">SUNSHINE CODERS</span>입니다!<br>
+            저희 팀은 마켓 컬리의 UI를 벤치마킹하여<br>
+            반응형 쇼핑 플랫폼 <span class="point">칼리</span>를 제작했습니다.
+          </p>
+          <p>
+            컴포넌트 기반 설계를 통해 재사용성과 유지보수성을 높였으며<br>
+            각자의 책임감과 열정을 바탕으로 구현을 마무리했습니다.<br>
+            첫 프로젝트인 만큼 git을 통한 협업에 익숙해지면서<br>
+            <span class="point">한 사람도 뒤쳐지지 않게 하는 것</span>이 저희 팀의 공동 목표입니다.
+          </p>
+        </div>
+        <div class="intro__mockup">
+          <img src="./src/assets/index/mockup.webp" alt="칼리 목업" />
+        </div>
+      </div>
+    </section>
+
+    <!-- 두번째 섹션/팀원 -->
+    <section id="members" class="index__members section">
+      <h2 class="index__subtitle">TEAM MEMBERS</h2>
+
+      <div class="members-grid">
+        <!-- 문서영 -->
+        <div class="member" onclick="openDialog('member1')">
+          <div class="profile" style="background-image: url('./src/assets/index/moon.jpg');"></div>
+          <div class="name">
+            <strong>문서영</strong>
+            <div>SCRUM MASTER</div>
+          </div>
+          <div class="role">
+            <div class="role-row">
+              <div class="point">INDEX</div>
+              <div class="point">MAIN</div>
+            </div>
+            <div class="role-row">
+              <div>BUTTON</div>
+              <div>ICON</div>
+              <div>FOOTER</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 백창엽 -->
+        <div class="member" onclick="openDialog('member2')">
+          <div class="profile" style="background-image: url('./src/assets/index/baek.jpg');"></div>
+          <div class="name">
+            <strong>백창엽</strong>
+            <div>TEAM MEMBER</div>
+          </div>
+          <div class="role">
+            <div class="role-row">
+              <div class="point">PRODUCT DETAIL</div>
+            </div>
+            <div class="role-row">
+              <div>INPUT</div>
+              <div>TEXT</div>
+              <div>TABLE</div>
+              <div>MOBILE</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 윤정화 -->
+        <div class="member" onclick="openDialog('member3')">
+          <div class="profile" style="background-image: url('./src/assets/index/yoon.png');"></div>
+          <div class="name">
+            <strong>윤정화</strong>
+            <div>TEAM MEMBER</div>
+          </div>
+          <div class="role">
+            <div class="role-row">
+              <div class="point">LOGIN</div>
+              <div class="point">REGISTER</div>
+            </div>
+            <div class="role-row">
+              <div>BADGE</div>
+              <div>MENU</div>
+              <div>HEADER</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 이희륜 -->
+        <div class="member" onclick="openDialog('member4')">
+          <div class="profile" style="background-image: url('./src/assets/index/lee.png');"></div>
+          <div class="name">
+            <strong>이희륜</strong>
+            <div>TEAM MEMBER</div>
+          </div>
+          <div class="role">
+            <div class="role-row">
+              <div class="point">PRODUCT LIST</div>
+            </div>
+            <div class="role-row">
+              <div>PRODUCT</div>
+              <div>NOTICE</div>
+              <div>POPUP</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 박철순 -->
+        <div class="member" onclick="openDialog('member5')">
+          <div class="profile" style="background-image: url('./src/assets/index/park.png');"></div>
+          <div class="name">
+            <strong>박철순</strong>
+            <div>TEAM MEMBER</div>
+          </div>
+          <div class="role">
+            <div class="role-row">
+              <div class="point">CART</div>
+            </div>
+            <div class="role-row">
+              <div>ACCORDION</div>
+              <div>MOBILE-NAV</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <!-- Dialog들 -->
+      <div id="member1-dialog" class="member-dialog">
+        <div class="dialog-content">
+          <button class="close-btn" onclick="closeDialog('member1')">&times;</button>
+          <div class="dialog-profile" style="background-image: url('./src/assets/index/moon.jpg');"></div>
+          <div class="dialog-name">
+            <strong>문서영</strong>
+            <div>SCRUM MASTER</div>
+          </div>
+          <div class="dialog-bottom">
+            <div class="dialog-role">
+              <h4>담당 페이지/컴포넌트</h4>
+              <span class="point">INDEX</span>
+              <span class="point">MAIN</span>
+              <span>BUTTON</span>
+              <span>ICON</span>
+              <span>FOOTER</span>
+            </div>
+            <div class="dialog-goal">
+              <h4>개인 목표</h4>
+              <p>프로젝트 일정 관리하는 것에 익숙해지고 만족할 만한 결과 만들기</p>
+            </div>
+            <div class="dialog-retrospective">
+              <h4>프로젝트 회고</h4>
+              <p>
+                여러모로 기억에 남는 프로젝트일 것 같습니다.<br>
+                부족한 역량으로 팀장의 자리를 맡게 되어 혼란스럽고 뜻대로 안 되던 순간도 많았지만<br>
+                협업에 있어 중요한 부분인 소통력과 이해심을 갈고닦을 수 있는 좋은 경험이었다고 생각합니다.<br>
+                프로젝트 일정이나 파트 분배 관련해서도 좀 더 면밀히 계획 후에 뛰어들었으면 어땠을까 하는 아쉬움이 많이 남습니다.<br>
+                정신없는 통솔에 군말 없이 따르고 격려해준 팀원분들께 감사합니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="member2-dialog" class="member-dialog">
+        <div class="dialog-content">
+          <button class="close-btn" onclick="closeDialog('member2')">&times;</button>
+          <div class="dialog-profile" style="background-image: url('./src/assets/index/baek.jpg');"></div>
+          <div class="dialog-name">
+            <strong>백창엽</strong>
+            <div>TEAM MEMBER</div>
+          </div>
+          <div class="dialog-bottom">
+            <div class="dialog-role">
+              <h4>담당 페이지/컴포넌트</h4>
+              <span class="point">PRODUCT DETAIL</span>
+              <span>INPUT</span>
+              <span>TEXT</span>
+              <span>TABLE</span>
+              <span>MOBILE</span>
+            </div>
+            <div class="dialog-goal">
+              <h4>개인 목표</h4>
+              <p>협업 프로세스를 안해본 것과 해본 것의 차이가 크다고 생각하기 때문에 협업 방식과 과정에 대해서 이해하고, 여태 쌓아온 지식을 바탕으로 제 몫을 다해 공동의 목표를 달성하는 데에
+                기여하는 것</p>
+            </div>
+            <div class="dialog-retrospective">
+              <h4>프로젝트 회고</h4>
+              <p>
+                프로젝트를 하기 전에는 제 자신에 대해서 수 많은 의구심이 들었었습니다. 팀원들과 잘 소통할 수 있을지, 제 자신에게 주어진 몫을 다 할 수 있을지 등 많은 걱정과 함께 시작했었지만 협업
+                경험이 있어 먼저 이끌어주는 사람과 그 사람의 말에 귀를 기울이고 적극적으로 참여하려는 팀원들을 만나게 되었고, 모르는 부분, 이해가 안가는 부분, 파트 분배, 피드백 등 친절하게
+                대해주셨던
+                팀장 아래 모두가 같은 목표를 향해 달려가고 있는 모습을 보았습니다. 물론, 요구사항에 맞는 결과물을 내는 게 개발에 있어서 제일 중요하다고 생각하지만, 저는 이번 프로젝트를 협업에 첫
+                발을
+                내딛는 과정이라는 것에 의의를 두고 접근하였습니다. 저 뿐만이 아니라 팀원들도 과정을 거치면서 협업에 대한 프로세스와 책임감을 가짐으로써 앞으로 수없이 다가올 협업에 조금이라도 익숙해
+                졌다고
+                생각하고 앞으로 있을 협업에 있어서도 더 나은 개발자로서 참여한다면 이번 UI 프로젝트에서 충분히 성공했다고 생각이 들 것 같습니다. 최종 발표까지 약 2일의 준비기간이 남았는데,
+                팀원들과
+                소통하면서 준비과정에 부족한 부분들을 찾아서 더 나은 결과를 낼 수 있도록 최선을 다 할 예정입니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="member3-dialog" class="member-dialog">
+        <div class="dialog-content">
+          <button class="close-btn" onclick="closeDialog('member3')">&times;</button>
+          <div class="dialog-profile" style="background-image: url('./src/assets/index/yoon.png');"></div>
+          <div class="dialog-name">
+            <strong>윤정화</strong>
+            <div>TEAM MEMBER</div>
+          </div>
+          <div class="dialog-bottom">
+            <div class="dialog-role">
+              <h4>담당 페이지/컴포넌트</h4>
+              <span class="point">LOGIN</span>
+              <span class="point">REGISTER</span>
+              <span>BADGE</span>
+              <span>MENU</span>
+              <span>HEADER</span>
+            </div>
+            <div class="dialog-goal">
+              <h4>개인 목표</h4>
+              <p>슬비쌤과 배운 것들을 혼자 똑같이 카피해 만들어보고 블로그에 적어보고 했던 게 전부였던
+                내가 새로운 것을 만들어 낼 수 있을까, 한 사람 몫은 해내자!!</p>
+            </div>
+            <div class="dialog-retrospective">
+              <h4>프로젝트 회고</h4>
+              <p>
+                남은 것보다 날린 게 더 많았다고 할 수 있을만큼 GIT 은 어려웠다.<br>
+                코드도 어려웠지만 코드 짜는 것보다 GIT 이 최고로 어려웠다.<br>
+                팀을 잘 만난게 최고 행운이었던 것 같다. 1팀 감사합니다♡
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="member4-dialog" class="member-dialog">
+        <div class="dialog-content">
+          <button class="close-btn" onclick="closeDialog('member4')">&times;</button>
+          <div class="dialog-profile" style="background-image: url('./src/assets/index/lee.png');"></div>
+          <div class="dialog-name">
+            <strong>이희륜</strong>
+            <div>TEAM MEMBER</div>
+          </div>
+          <div class="dialog-bottom">
+            <div class="dialog-role">
+              <h4>담당 페이지/컴포넌트</h4>
+              <span class="point">PRODUCT LIST</span>
+              <span>PRODUCT</span>
+              <span>NOTICE</span>
+              <span>POPUP</span>
+            </div>
+            <div class="dialog-goal">
+              <h4>개인 목표</h4>
+              <p>경험해 보지 못한 것들을 내 것으로 만들고 싶었다.</p>
+            </div>
+            <div class="dialog-retrospective">
+              <h4>프로젝트 회고</h4>
+              <p>
+                부트캠프에 들어오기 전에도 피그마 작업을 자주 했기 때문에 디자인 쪽은 금방 익숙해질 줄 알았지만 실제 협업 과정에서는 처음 접하는 방식들이 많았고, 특히 컨벤션이나 Git을 활용한 협업
+                경험이 없었던 터라 초반에는 다소 어려움을 느꼈다.<br>
+                그럼에도 불구하고 새로운 도구와 방식들을 익혀가는 과정이 굉장히 흥미로웠고,<br>
+                특히 컴포넌트를 직접 만들고 조립하는 과정에서 실무에 가까운 흐름을 체감할 수 있어 큰 성취감을
+                느꼈다.<br>
+                팀원들의 도움이 없었다면 여기까지 오지 못했을 것이다. 항상 감사하고 있다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="member5-dialog" class="member-dialog">
+        <div class="dialog-content">
+          <button class="close-btn" onclick="closeDialog('member5')">&times;</button>
+          <div class="dialog-profile"
+            style="background-image: url('./src/assets/index/park.png'); background-position: 0 -70px;"></div>
+          <div class="dialog-name">
+            <strong>박철순</strong>
+            <div>TEAM MEMBER</div>
+          </div>
+          <div class="dialog-bottom">
+            <div class="dialog-role">
+              <h4>담당 페이지/컴포넌트</h4>
+              <span class="point">CART</span>
+              <span>ACCORDION</span>
+              <span>MOBILE-NAV</span>
+            </div>
+            <div class="dialog-goal">
+              <h4>개인 목표</h4>
+              <p>배운 기술 잘 활용해보기</p>
+            </div>
+            <div class="dialog-retrospective">
+              <h4>프로젝트 회고</h4>
+              <p>
+                시멘틱 마크업, 클래스 네이밍, flexbox 활용 등에서 많은 어려움을 겪었지만 이 과정에서 많은 고민과 경험을 함으로써 한 단계 성장한 것 같다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 세번째 섹션/컴포넌트 -->
+    <section id="components" class="index__components section">
+      <h2 class="index__subtitle">COMPONENTS</h2>
+
+      <div class="components-container">
+        <div class="components-grid">
+          <a href="./src/components/Accordion/Accordion.html" target="_blank" rel="noopener noreferrer"
+            class="component-link">
+            <span>ACCORDION</span>
+          </a>
+          <a href="./src/components/Badge/badge.html" target="_blank" rel="noopener noreferrer" class="component-link">
+            <span>BADGE</span>
+          </a>
+          <a href="./src/components/Button/Button.html" target="_blank" rel="noopener noreferrer"
+            class="component-link">
+            <span>BUTTON</span>
+          </a>
+          <a href="./src/components/Menu/menu.html" target="_blank" rel="noopener noreferrer" class="component-link">
+            <span>MENU</span>
+          </a>
+          <a href="./src/components/Product/product.html" target="_blank" rel="noopener noreferrer"
+            class="component-link">
+            <span>PRODUCT</span>
+          </a>
+          <a href="./src/components/Notice/notice.html" target="_blank" rel="noopener noreferrer"
+            class="component-link">
+            <span>NOTICE</span>
+          </a>
+          <a href="./src/components/Table/table.html" target="_blank" rel="noopener noreferrer" class="component-link">
+            <span>TABLE</span>
+          </a>
+          <a href="./src/components/popup/popup-review.html" target="_blank" rel="noopener noreferrer"
+            class="component-link">
+            <span>POPUP</span>
+          </a>
+          <a href="./src/components/Text/text.html" target="_blank" rel="noopener noreferrer" class="component-link">
+            <span>TEXT</span>
+          </a>
+          <a href="./src/components/Header/header.html" target="_blank" rel="noopener noreferrer"
+            class="component-link">
+            <span>HEADER</span>
+          </a>
+          <a href="./src/components/Footer/footer.html" target="_blank" rel="noopener noreferrer"
+            class="component-link">
+            <span>FOOTER</span>
+          </a>
+          <a href="./src/components/Mobile/mobile.html" target="_blank" rel="noopener noreferrer"
+            class="component-link">
+            <span>MOBILE</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 네번째 섹션/페이지 -->
+    <section id="pages" class="index__pages section">
+      <h2 class="section__title">PAGES</h2>
+      <div class="section__container">
+        <div class="pages__grid">
+          <a href="./src/pages/Main/main.html" target="_blank" rel="noopener noreferrer" class="page__item">
+            <div class="page__card">
+              <div class="page__icon">🏠</div>
+              <h3 class="page__name">메인</h3>
+              <p class="page__desc">MAIN PAGE</p>
+            </div>
+          </a>
+
+          <a href="./src/pages/login/login.html" target="_blank" rel="noopener noreferrer" class="page__item">
+            <div class="page__card">
+              <div class="page__icon">🔐</div>
+              <h3 class="page__name">로그인</h3>
+              <p class="page__desc">LOGIN</p>
+            </div>
+          </a>
+
+          <a href="./src/pages/Register/Register.html" target="_blank" rel="noopener noreferrer" class="page__item">
+            <div class="page__card">
+              <div class="page__icon">📝</div>
+              <h3 class="page__name">회원가입</h3>
+              <p class="page__desc">REGISTER</p>
+            </div>
+          </a>
+
+          <a href="./src/pages/Product_list/product_list.html" target="_blank" rel="noopener noreferrer"
+            class="page__item">
+            <div class="page__card">
+              <div class="page__icon">📋</div>
+              <h3 class="page__name">상품 목록</h3>
+              <p class="page__desc">PRODUCT LIST</p>
+            </div>
+          </a>
+
+          <a href="./src/pages/product-detail/product-detail.html" target="_blank" rel="noopener noreferrer"
+            class="page__item">
+            <div class="page__card">
+              <div class="page__icon">🛍️</div>
+              <h3 class="page__name">상품 상세</h3>
+              <p class="page__desc">PRODUCT DETAIL</p>
+            </div>
+          </a>
+
+          <a href="./src/pages/cart/cart.html" target="_blank" rel="noopener noreferrer" class="page__item">
+            <div class="page__card">
+              <div class="page__icon">🛒</div>
+              <h3 class="page__name">장바구니</h3>
+              <p class="page__desc">SHOPPING CART</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 다섯번째 섹션/프로젝트 상세 -->
+    <section id="rules" class="index__rules section">
+      <h2 class="section__title">PROJECT RULES</h2>
+      <div class="section__container">
+        <div class="rules__content">
+          <div class="rules__grid">
+            <div class="rule__category">
+              <h3 class="rule__title">🎯 코딩 컨벤션</h3>
+              <ul class="rule__list">
+                <li>BEM 방법론을 활용한 CSS 클래스 네이밍</li>
+                <li>시맨틱 HTML 마크업 준수</li>
+                <li>Prettier 코드 포맷팅</li>
+                <li>컴포넌트 단위 파일 구성</li>
+              </ul>
+            </div>
+
+            <div class="rule__category">
+              <h3 class="rule__title">🌿 Git 규칙</h3>
+              <ul class="rule__list">
+                <li>feature/기능명 브랜치 전략</li>
+                <li>Conventional Commits 메시지 규칙</li>
+                <li>PR 리뷰 후 팀장이 Merge</li>
+                <li>코드 리뷰 필수</li>
+              </ul>
+            </div>
+
+            <div class="rule__category">
+              <h3 class="rule__title">📅 프로젝트 일정</h3>
+              <ul class="rule__list">
+                <li>1주차: 기획 및 설계</li>
+                <li>2주차: 컴포넌트 개발</li>
+                <li>3주차: 페이지 통합</li>
+                <li>4주차: 테스트 및 배포</li>
+              </ul>
+            </div>
+
+            <div class="rule__category">
+              <h3 class="rule__title">🛠️ 사용 도구</h3>
+              <ul class="rule__list">
+                <li>HTML5, CSS3, JavaScript</li>
+                <li>Vite</li>
+                <li>GitHub, Notion, Discord</li>
+                <li>Figma</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- profile dialog -->
+  <script>
+    function openDialog(memberId) {
+      const dialog = document.getElementById(memberId + '-dialog');
+      if (dialog) {
+        dialog.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function closeDialog(memberId) {
+      const dialog = document.getElementById(memberId + '-dialog');
+      if (dialog) {
+        dialog.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    }
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        const activeDialog = document.querySelector('.member-dialog.active');
+        if (activeDialog) {
+          activeDialog.classList.remove('active');
+          document.body.style.overflow = '';
         }
       }
-    </style>
-  </head>
-  <body>
-    <ul>
-      <li><a href="src/components/Button/button.html">Button</a></li>
-      <li><a href="src/components/Icon/icon.html">Icon</a></li>
-      <li><a href="src/components/Footer/footer.html">Footer</a></li>
-      <li><a href="src/components/Notice/notice.html"></a></li>
-      <li><a href="src/components/Badge/badge.html">badge</a></li>
-      <li><a href="src/components/Menu/menu.html">menu</a></li>
-      <li><a href="src/components/Input/input.html">input</a></li>
-      <li><a href="src/components/Button/button.html">Button</a></li>
-      <li><a href="src/components/Icon/icon.html">Icon</a></li>
-      <li><a href="src/components/Footer/footer.html">Footer</a></li>
-      <li><a href="src/components/Table/table.html">Table</a></li>
-      <li><a href="src/components/Button/Button.html">Button</a></li>
-      <li><a href="src/components/Icon/Icon.html">Icon</a></li>
-      <li><a href="src/components/Table/table.html">Table</a></li>
-      <li><a href="src/components/Header/header.html">header</a></li>
-      <li><a href="src/components/Header/smallheader.html">smallheader</a></li>
-      <li><a href="src/components/Text/text.html">Text</a></li>
-      <li><a href="src/components/login/login.html">login</a></li>
-      <li>
-        <a href="src/components/mobile-baek/mobile-baek.html">Mobile-baek</a>
-      </li>
-      <li>
-        <a href="src/pages/product-detail/product-detail.html">Product-detail</a>
-      </li>
-      <li><a href="src/pages/Register/Register.html">register</a></li>
-    </ul>
-  </body>
+    });
+
+    document.querySelectorAll('.member-dialog').forEach(dialog => {
+      dialog.addEventListener('click', function (e) {
+        if (e.target === dialog) {
+          dialog.classList.remove('active');
+          document.body.style.overflow = '';
+        }
+      });
+    });
+  </script>
+
+  <!-- scroll smooth -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const cards = document.querySelectorAll('.card[href^="#"]');
+
+      cards.forEach(card => {
+        card.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute('href').substring(1);
+          const targetSection = document.getElementById(targetId);
+
+          if (targetSection) {
+            targetSection.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start',
+              inline: 'nearest'
+            });
+
+            this.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+              this.style.transform = '';
+            }, 150);
+          }
+        });
+      });
+
+      let isScrolling = false;
+      let scrollTimeout;
+      const sections = document.querySelectorAll('.section, .index__main');
+      let currentSectionIndex = 0;
+
+      function getCurrentSection() {
+        const scrollPosition = window.scrollY;
+        const windowHeight = window.innerHeight;
+
+        for (let i = 0; i < sections.length; i++) {
+          const section = sections[i];
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.offsetHeight;
+
+          if (scrollPosition >= sectionTop - windowHeight * 0.2 &&
+            scrollPosition < sectionTop + sectionHeight - windowHeight * 0.2) {
+            return i;
+          }
+        }
+        return currentSectionIndex;
+      }
+
+      function snapToSection(index) {
+        if (index >= 0 && index < sections.length) {
+          isScrolling = true;
+          sections[index].scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+
+          setTimeout(() => {
+            isScrolling = false;
+          }, 1000);
+        }
+      }
+
+      window.addEventListener('scroll', function () {
+        if (isScrolling) return;
+
+        clearTimeout(scrollTimeout);
+
+        scrollTimeout = setTimeout(() => {
+          const newSectionIndex = getCurrentSection();
+
+          if (newSectionIndex !== currentSectionIndex) {
+            currentSectionIndex = newSectionIndex;
+            snapToSection(currentSectionIndex);
+          }
+        }, 100);
+      });
+
+      let wheelTimeout;
+
+      window.addEventListener('wheel', function (e) {
+        if (isScrolling) {
+          e.preventDefault();
+          return;
+        }
+
+        clearTimeout(wheelTimeout);
+
+        wheelTimeout = setTimeout(() => {
+          const delta = e.deltaY;
+          const scrollThreshold = 100;
+
+          if (Math.abs(delta) > scrollThreshold) {
+            if (delta > 0 && currentSectionIndex < sections.length - 1) {
+              currentSectionIndex++;
+              snapToSection(currentSectionIndex);
+            } else if (delta < 0 && currentSectionIndex > 0) {
+              currentSectionIndex--;
+              snapToSection(currentSectionIndex);
+            }
+          }
+        }, 50);
+      }, { passive: false });
+
+      document.addEventListener('keydown', function (e) {
+        if (isScrolling) return;
+
+        switch (e.key) {
+          case 'ArrowDown':
+          case 'PageDown':
+            e.preventDefault();
+            if (currentSectionIndex < sections.length - 1) {
+              currentSectionIndex++;
+              snapToSection(currentSectionIndex);
+            }
+            break;
+
+          case 'ArrowUp':
+          case 'PageUp':
+            e.preventDefault();
+            if (currentSectionIndex > 0) {
+              currentSectionIndex--;
+              snapToSection(currentSectionIndex);
+            }
+            break;
+
+          case 'Home':
+            e.preventDefault();
+            currentSectionIndex = 0;
+            snapToSection(currentSectionIndex);
+            break;
+
+          case 'End':
+            e.preventDefault();
+            currentSectionIndex = sections.length - 1;
+            snapToSection(currentSectionIndex);
+            break;
+        }
+      });
+
+      let touchStartY = 0;
+      let touchEndY = 0;
+
+      document.addEventListener('touchstart', function (e) {
+        touchStartY = e.changedTouches[0].screenY;
+      }, { passive: true });
+
+      document.addEventListener('touchend', function (e) {
+        if (isScrolling) return;
+
+        touchEndY = e.changedTouches[0].screenY;
+        const touchDiff = touchStartY - touchEndY;
+        const minSwipeDistance = 50;
+
+        if (Math.abs(touchDiff) > minSwipeDistance) {
+          if (touchDiff > 0 && currentSectionIndex < sections.length - 1) {
+            currentSectionIndex++;
+            snapToSection(currentSectionIndex);
+          } else if (touchDiff < 0 && currentSectionIndex > 0) {
+            currentSectionIndex--;
+            snapToSection(currentSectionIndex);
+          }
+        }
+      }, { passive: true });
+
+      window.addEventListener('hashchange', function () {
+        const hash = window.location.hash.substring(1);
+        const targetSection = document.getElementById(hash);
+
+        if (targetSection) {
+          const sectionIndex = Array.from(sections).indexOf(targetSection);
+          if (sectionIndex !== -1) {
+            currentSectionIndex = sectionIndex;
+            snapToSection(currentSectionIndex);
+          }
+        }
+      });
+
+      currentSectionIndex = getCurrentSection();
+    });
+  </script>
+</body>
+
 </html>
