@@ -27,5 +27,6 @@
 @import url('../pages/Main/main.css');
 @import url('../pages/login/login.css');
 @import url('../pages/product-detail/product-detail.css');
-@import url('../Pages/Product_list/product_list.css');
+@import url('../pages/Product_list/product_list.css');
 @import url('../pages/Register/Register.css');
+@import url('../pages/Cart/cart.css');
