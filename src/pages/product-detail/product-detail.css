@@ -1,3 +1,9 @@
+button:focus {
+  outline: 3px solid black;
+  outline-offset: 0.125rem;
+  border-radius: 0.125rem;
+}
+
 .product-wrapper {
   display: flex;
   width: 65.625rem;
@@ -39,11 +45,15 @@
   font-weight: 400;
   line-height: 1.6;
 }
+
 .price-info__number {
+  display: flex;
   font-size: var(--label---x-l);
   color: var(--content);
   font-weight: 600;
   line-height: 1.5;
+  align-items: center;
+  gap: 0.25rem;
 }
 .price-info__unit {
   font-size: var(--heading---medium);
@@ -662,11 +672,16 @@
   display: flex;
   width: 65.625rem;
   justify-content: center;
-  margin: 0 auto 0 auto;
+  margin: 10px auto 0 auto;
 }
 .announcement-item {
   border-bottom: 0.0625rem solid var(--gray--100);
 }
 .question-item-context {
   border-bottom: 0.0625rem solid var(--gray--100);
+}
+
+.tab-menu__button:focus {
+  position: relative;
+  z-index: 1;
 }

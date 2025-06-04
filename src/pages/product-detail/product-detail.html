@@ -15,6 +15,7 @@
 </head>
 
 <body>
+  <h1 class="sr-only"> 칼리 상품 상세정보 페이지</h1>
   <!-- header -->
   <header class="header">
     <div class="header__top">
@@ -28,13 +29,13 @@
       </ul>
       <div class="header__middle">
         <div class="logo-area">
-          <a href="#"><img src="../../assets/logo.svg" alt="/" /></a>
+          <a href="#"><img src="../../assets/logo.svg" alt="칼리 로고" /></a>
           <ul>
             <li><a class="purple" href="/">마켓칼리</a></li>
             <li class="new">
               <a class="gray" href="/">
                 뷰티칼리
-                <img class="new__icon" src="../../assets/icon_new.svg" alt="/" loading="eager" />
+                <img class="new__icon" src="../../assets/icon_new.svg" alt="" loading="eager" />
               </a>
             </li>
           </ul>
@@ -162,13 +163,14 @@
         <span class="delivery-type">샛별배송</span>
         <section class="product-title">
           <h2 class="product-title__primary">[풀무원] 탱탱쫄면 (4개입)</h2>
-          <p class="product-title__sub">튀기지 않아 부담 없는 매콤함</p>
+          <span class="product-title__sub">튀기지 않아 부담 없는 매콤함</span>
         </section>
         <section class="price-info">
-          <span class="price-info__number">4,980</span>
-          <span class="price-info__unit">원</span>
+          <span class="price-info__number">4,980
+            <span class="price-info__unit">원</span>
+          </span>
         </section>
-        <p class="login-benefit"><a href="/">로그인 후, 적립 혜택이 제공됩니다</a></p>
+        <p class="login-benefit"><a href="/" aria-label="적립 혜택을 받기 위해 로그인 하기">로그인 후, 적립 혜택이 제공됩니다</a></p>
       </article>
       <!-- product spec -->
       <ul class="product-spec">
@@ -226,7 +228,7 @@
                     <path d="M10 0V2H0V0H10Z" fill="#A6A6A6" />
                   </svg>
                 </button>
-                <span class="quantity-selector__value">1</span>
+                <span class="quantity-selector__value" aria-live="polite">1</span>
                 <button class="quantity-selector__button quantity-selector__button--plus" aria-label="수량 증가">
                   <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6 0V4H10V6H6V10H4V6H0V4H4V0H6Z" fill="#333333" />
@@ -241,7 +243,7 @@
       <div class="order-summary">
         <div class="order-summary__group">
           <span class="order-summary__label">총 상품금액:</span>
-          <span class="order-summary__price">4,980</span>
+          <span class="order-summary__price" aria-live="polite">4,980</span>
           <span class="order-summary__unit">원</span>
         </div>
         <div class="order-summary__reward">
@@ -250,16 +252,18 @@
         </div>
       </div>
       <!-- icon & button -->
-      <div class="button-group">
-        <button class="button-group__bookmark">
-          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <div class="button-group" role="group" aria-label="상품 액션 버튼">
+        <button class="button-group__bookmark" aria-label="북마크 추가">
+          <svg aria-hidden="true" width="36" height="36" viewBox="0 0 36 36" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M28.9269 8.89295C28.3269 8.29261 27.6146 7.81636 26.8305 7.49144C26.0465 7.16651 25.2061 6.99927 24.3574 6.99927C23.5086 6.99927 22.6682 7.16651 21.8842 7.49144C21.1001 7.81636 20.3878 8.29261 19.7879 8.89295L17.9589 10.7209L16.1319 8.89295C14.9201 7.68091 13.2765 6.99989 11.5626 6.9997C9.84867 6.99951 8.2049 7.68017 6.99286 8.89195C5.78082 10.1037 5.0998 11.7473 5.09961 13.4612C5.09942 15.1751 5.78008 16.8189 6.99186 18.0309L8.81986 19.8599L17.2519 28.2939C17.4394 28.4814 17.6937 28.5867 17.9589 28.5867C18.224 28.5867 18.4783 28.4814 18.6659 28.2939L27.0989 19.8599L28.9269 18.0319C29.5271 17.432 30.0032 16.7198 30.328 15.9358C30.6528 15.1518 30.82 14.3115 30.82 13.4629C30.82 12.6144 30.6528 11.7741 30.328 10.9901C30.0032 10.2061 29.5271 9.49386 28.9269 8.89395V8.89295Z"
               stroke="#5F0080" stroke-width="1.7" stroke-linecap="round" />
           </svg>
         </button>
-        <button class="button-group__notification">
-          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <button class="button-group__notification" aria-label="알림 설정">
+          <svg aria-hidden="true" width="36" height="36" viewBox="0 0 36 36" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <path
               d="M14.249 25.875C14.249 26.8695 14.6441 27.8232 15.3473 28.5264C16.0505 29.2296 17.0042 29.6246 17.9986 29.6246C18.9931 29.6246 19.9468 29.2296 20.65 28.5264C21.3532 27.8232 21.7483 26.8695 21.7483 25.875"
               stroke="#E1E1E1" stroke-width="1.6" />
@@ -268,36 +272,38 @@
               stroke="#E1E1E1" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </button>
-        <button class="button-group__addcart">장바구니 담기</button>
+        <button class="button-group__addcart" aria-label="장바구니 담기">장바구니 담기</button>
       </div>
     </div>
   </div>
   </div>
   <!-- tab menu -->
   <nav aria-label="상품 정보 탭">
-    <ul class="tab-menu">
-      <li class="tab-menu__list"><button class="tab-menu__button" type="button" aria-selected="true"
-          aria-controls="tab-desc" id="tab-desc-btn">상품설명</button></li>
-      <li class="tab-menu__list"><button class="tab-menu__button" type="button" aria-selected="false"
+    <ul class="tab-menu" role="tablist">
+      <li class="tab-menu__list">
+        <button class="tab-menu__button" type="button" aria-selected="true" role="tab" aria-controls="tab-desc"
+          id="tab-desc-btn">상품설명</button>
+      </li>
+      <li class="tab-menu__list"><button class="tab-menu__button" type="button" role="tab" aria-selected="false"
           aria-controls="tab-detail" id="tab-detail-btn">상세정보</button></li>
-      <li class="tab-menu__list"><button class="tab-menu__button" type="button" aria-selected="false"
+      <li class="tab-menu__list"><button class="tab-menu__button" type="button" role="tab" aria-selected="false"
           aria-controls="tab-review" id="tab-review-btn">
           <span class="rewiew-label">후기</span>
           <span class="review-count">(1,000)</span>
         </button></li>
-      <li class="tab-menu__list"><button class="tab-menu__button" type="button" aria-selected="false"
+      <li class="tab-menu__list"><button class="tab-menu__button" type="button" role="tab" aria-selected="false"
           aria-controls="tab-qna" id="tab-qna-btn">문의</button></li>
     </ul>
   </nav>
   <picture>
     <source srcset="../../assets/product-detail/product-detail-1.webp" type="image/webp" />
     <img class="product-detail-image" src="../../assets/product-detail/product-detail-1.png" alt="상품 상세정보 첫번째 이미지"
-      style="max-width:100%;height:auto;" />
+      width="131.25rem" height="207rem" style="max-width:100%;height:auto;" />
   </picture>
   <picture>
     <source srcset="../../assets/product-detail/product-detail-2.webp" type="image/webp" />
-    <img class="product-detail-image" src="../../assets/product-detail/product-detail-2.png" alt="상품 상세정보 첫번째 이미지"
-      style="max-width:100%;height:auto;" />
+    <img class="product-detail-image" src="../../assets/product-detail/product-detail-2.png" alt="상품 상세정보 두번째 이미지"
+      width="131.25rem" height="239.875rem" style="max-width:100%;height:auto;" />
   </picture>
   <section class="review-section">
     <div class="review-header-wrapper">
@@ -311,12 +317,12 @@
         </ul>
       </div>
       <div class="review-write">
-        <button class="review-write-btn" type="button" aria-selected="true">후기 작성하기</button>
+        <button class="review-write-btn" type="button">후기 작성하기</button>
       </div>
     </div>
     <div class="review-table-wrapper">
       <div class="review-table-header">
-        <h2 class="review-count"> 총 2개</h2>
+        <span class="review-count" aria-live="polite"> 총 2개</span>
         <fieldset class="review-sort-wrapper">
           <legend class="sr-only">정렬 기준 선택</legend>
           <label class="review-sort">
@@ -331,7 +337,6 @@
         </fieldset>
       </div>
       <div aria-labelledby="review-list-title" class="announcement-review-wrapper">
-        <h2 id="review-list-title" class="sr-only">공지 및 상품 후기 목록</h2>
         <ul class="announcement-list">
           <li class="announcement-item">
             <span class="badge-announcement">공지</span>
@@ -350,7 +355,7 @@
               <span class="review-author">김*진</span>
             </div>
             <div class="review-content">
-              <span> [풀무원] 탱탱쫄면 (4개입)</span>
+              <h3> [풀무원] 탱탱쫄면 (4개입)</h3>
               <p>너무 맛있어여~ <br />면이 쫄깃하고 양념도 짱맛나요!!</p>
               <time class="review-date" datetime="2022-11-10">2022.11.10</time>
             </div>
@@ -362,10 +367,10 @@
               <span class="review-author">김*식</span>
             </div>
             <div class="review-content">
-              <span> [풀무원] 탱탱쫄면 (4개입)</span>
+              <h3> [풀무원] 탱탱쫄면 (4개입)</h3>
               <p>또 주문할것 같습니다. <br />
                 너무 맛있어요 내스타일이야~!</p>
-              <time class="review-date" datetime="2025-06-03">2022.11.10</time>
+              <time class="review-date" datetime="2022.11.10">2022.11.10</time>
             </div>
           </li>
           <li class="review-item">
@@ -375,19 +380,19 @@
               <span class="review-author">김*범</span>
             </div>
             <div class="review-content">
-              <span> [풀무원] 탱탱쫄면 (4개입)</span>
+              <h3> [풀무원] 탱탱쫄면 (4개입)</h3>
               <p>너무 맛있어여~ <br />면이 쫄깃하고 양념도 짱맛나요!!</p>
-              <time class="review-date" datetime="2025-06-03">2022.11.10</time>
+              <time class="review-date" datetime="2022-11-10">2022.11.10</time>
             </div>
           </li>
         </ul>
         <div class="paging-button-wrapper">
-          <button type="button" class="previous-page">
+          <button type="button" class="previous-page" aria-label="상품리뷰 이전 페이지로 이동">
             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M22 26L14 18L22 10" stroke="#E1E1E1" stroke-width="1.2" />
             </svg>
           </button>
-          <button type="button" class="previous-page">
+          <button type="button" class="previous-page" aria-label="상품리뷰 다음 페이지로 이동">
             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M14 10L22 18L14 26" stroke="#5F0080" stroke-width="1.2" />
             </svg>
@@ -396,17 +401,18 @@
       </div>
     </div>
   </section>
+  <!-- 상품문의 -->
   <section class="support-section">
     <div class="support-header-wrapper">
       <div class="support-header">
-        <h2 class="support-title">상품 문의</h2>
+        <h2 class="support-title">상품문의</h2>
         <ul class="support-info__list">
           <li class="support-info__item">상품에 대한 문의를 남기는 공간입니다. 해당 게시판의 성격과 다른 글은 사전동의 없이 담당 게시판으로 이동될 수 있습니다.</li>
           <li class="support-info__item">배송관련, 주문(취소/교환/환불)관련 문의 및 요청사항은 마이컬리 내 1:1 문의에 남겨주세요</li>
         </ul>
       </div>
       <div class="support-ask">
-        <button class="support-ask-btn" type="button" aria-selected="true">문의하기</button>
+        <button class="support-ask-btn" type="button">문의하기</button>
       </div>
     </div>
     <div class="support-table-wrapper">
@@ -434,7 +440,7 @@
             <span class="author announcement-author">칼리</span>
           </div>
           <div class="announcement-date-wrapper">
-            <span class="date announcement-date">2017.02.01</span>
+            <time class="date announcement-date" datetime="2017-02-01">2017.02.01</time>
           </div>
           <div class="announcement-status-wrapper">
             <span class="status announcement-status">-</span>
@@ -445,13 +451,13 @@
         <li class="question-item">
           <div class="question-item-header">
             <div class="question-title-wrapper">
-              <span class="title title-question">팩이 터져서 왔어요</span>
+              <h3 class="title title-question">팩이 터져서 왔어요</h3>
             </div>
             <div class="question-author-wrapper">
               <span class="author question-author">김*식</span>
             </div>
             <div class="question-date-wrapper">
-              <span class="date question-date">2022.11.11</span>
+              <time class="date question-date" datetime="2022-11-11">2022.11.11</time>
             </div>
             <div class="question-status-wrapper">
               <span class="status question-status">답변대기</span>
@@ -516,7 +522,7 @@
                     <br />
                     칼리 드림.
                   </div>
-                  <div class="answer__date">2022.11.11</div>
+                  <time class="answer__date" datetime="2022-11-11">2022.11.11</time>
                 </div>
               </div>
             </div>
@@ -524,8 +530,8 @@
         </li>
         <li class="headline">
           <div class="headline__secret">
-            <span class="title secret__text">비밀글입니다.</span>
-            <svg class="secret__icon" width="12" height="14" viewBox="0 0 12 14" fill="none"
+            <h3 class="title secret__text">비밀글입니다.</h3>
+            <svg aria-hidden="true" class="secret__icon" width="12" height="14" viewBox="0 0 12 14" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M11.043 12.575C11.0425 12.6432 11.0151 12.7084 10.9668 12.7565C10.9185 12.8046 10.8532 12.8317 10.785 12.832H1.214C1.14583 12.8317 1.08051 12.8046 1.03221 12.7565C0.983908 12.7084 0.956526 12.6432 0.956 12.575V5.42C0.956 5.278 1.073 5.162 1.214 5.162H10.784C10.928 5.162 11.044 5.278 11.044 5.42V12.575H11.043ZM3.685 3.237C3.68579 2.63238 3.9264 2.05276 4.35403 1.62532C4.78165 1.19788 5.36138 0.957529 5.966 0.957C6.5707 0.957265 7.15058 1.19753 7.57826 1.62503C8.00595 2.05253 8.24647 2.6323 8.247 3.237V4.205H3.685V3.237ZM10.785 4.205H9.205V3.237C9.20394 2.3783 8.86215 1.55512 8.25467 0.948206C7.6472 0.341294 6.8237 0.000264295 5.965 0C5.10708 0.00132358 4.28472 0.342852 3.67826 0.949678C3.07181 1.5565 2.73079 2.37908 2.73 3.237V4.205H1.214C0.544 4.205 0 4.75 0 5.42V12.575C0 13.244 0.545 13.789 1.214 13.789H10.784C11.455 13.789 12 13.244 12 12.575V5.42C12 4.75 11.455 4.205 10.785 4.205Z"
@@ -540,7 +546,7 @@
               <span>김*진</span>
             </div>
             <div class="date headline__postdate">
-              <span>2022.10.09</span>
+              <time datetime="2022-10-09">2022.10.09</time>
             </div>
             <div class="status headline__answer">
               <span>답변대기</span>
@@ -549,8 +555,8 @@
         </li>
         <li class="headline">
           <div class="headline__secret">
-            <span class="title secret__text">비밀글입니다.</span>
-            <svg class="secret__icon" width="12" height="14" viewBox="0 0 12 14" fill="none"
+            <h3 class="title secret__text">비밀글입니다.</h3>
+            <svg aria-hidden="true" class="secret__icon" width="12" height="14" viewBox="0 0 12 14" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M11.043 12.575C11.0425 12.6432 11.0151 12.7084 10.9668 12.7565C10.9185 12.8046 10.8532 12.8317 10.785 12.832H1.214C1.14583 12.8317 1.08051 12.8046 1.03221 12.7565C0.983908 12.7084 0.956526 12.6432 0.956 12.575V5.42C0.956 5.278 1.073 5.162 1.214 5.162H10.784C10.928 5.162 11.044 5.278 11.044 5.42V12.575H11.043ZM3.685 3.237C3.68579 2.63238 3.9264 2.05276 4.35403 1.62532C4.78165 1.19788 5.36138 0.957529 5.966 0.957C6.5707 0.957265 7.15058 1.19753 7.57826 1.62503C8.00595 2.05253 8.24647 2.6323 8.247 3.237V4.205H3.685V3.237ZM10.785 4.205H9.205V3.237C9.20394 2.3783 8.86215 1.55512 8.25467 0.948206C7.6472 0.341294 6.8237 0.000264295 5.965 0C5.10708 0.00132358 4.28472 0.342852 3.67826 0.949678C3.07181 1.5565 2.73079 2.37908 2.73 3.237V4.205H1.214C0.544 4.205 0 4.75 0 5.42V12.575C0 13.244 0.545 13.789 1.214 13.789H10.784C11.455 13.789 12 13.244 12 12.575V5.42C12 4.75 11.455 4.205 10.785 4.205Z"
@@ -565,7 +571,7 @@
               <span>김*범</span>
             </div>
             <div class="date headline__postdate">
-              <span>2022.09.13</span>
+              <time datetime="2022-09-13">2022.09.13</time>
             </div>
             <div class="status headline__answer-complete">
               <span>답변완료</span>
@@ -574,8 +580,8 @@
         </li>
         <li class="headline">
           <div class="headline__secret">
-            <span class="title secret__text">비밀글입니다.</span>
-            <svg class="secret__icon" width="12" height="14" viewBox="0 0 12 14" fill="none"
+            <h3 class="title secret__text">비밀글입니다.</h3>
+            <svg aria-hidden="true" class="secret__icon" width="12" height="14" viewBox="0 0 12 14" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M11.043 12.575C11.0425 12.6432 11.0151 12.7084 10.9668 12.7565C10.9185 12.8046 10.8532 12.8317 10.785 12.832H1.214C1.14583 12.8317 1.08051 12.8046 1.03221 12.7565C0.983908 12.7084 0.956526 12.6432 0.956 12.575V5.42C0.956 5.278 1.073 5.162 1.214 5.162H10.784C10.928 5.162 11.044 5.278 11.044 5.42V12.575H11.043ZM3.685 3.237C3.68579 2.63238 3.9264 2.05276 4.35403 1.62532C4.78165 1.19788 5.36138 0.957529 5.966 0.957C6.5707 0.957265 7.15058 1.19753 7.57826 1.62503C8.00595 2.05253 8.24647 2.6323 8.247 3.237V4.205H3.685V3.237ZM10.785 4.205H9.205V3.237C9.20394 2.3783 8.86215 1.55512 8.25467 0.948206C7.6472 0.341294 6.8237 0.000264295 5.965 0C5.10708 0.00132358 4.28472 0.342852 3.67826 0.949678C3.07181 1.5565 2.73079 2.37908 2.73 3.237V4.205H1.214C0.544 4.205 0 4.75 0 5.42V12.575C0 13.244 0.545 13.789 1.214 13.789H10.784C11.455 13.789 12 13.244 12 12.575V5.42C12 4.75 11.455 4.205 10.785 4.205Z"
@@ -590,7 +596,7 @@
               <span>심*범</span>
             </div>
             <div class="date headline__postdate">
-              <span>2022.08.30</span>
+              <time datetime="2022-08-30">2022.08.30</time>
             </div>
             <div class="status headline__answer-complete">
               <span>답변완료</span>
@@ -599,8 +605,8 @@
         </li>
         <li class="headline">
           <div class="headline__secret">
-            <span class="title secret__text">비밀글입니다.</span>
-            <svg class="secret__icon" width="12" height="14" viewBox="0 0 12 14" fill="none"
+            <h3 class="title secret__text">비밀글입니다.</h3>
+            <svg aria-hidden="true" class="secret__icon" width="12" height="14" viewBox="0 0 12 14" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M11.043 12.575C11.0425 12.6432 11.0151 12.7084 10.9668 12.7565C10.9185 12.8046 10.8532 12.8317 10.785 12.832H1.214C1.14583 12.8317 1.08051 12.8046 1.03221 12.7565C0.983908 12.7084 0.956526 12.6432 0.956 12.575V5.42C0.956 5.278 1.073 5.162 1.214 5.162H10.784C10.928 5.162 11.044 5.278 11.044 5.42V12.575H11.043ZM3.685 3.237C3.68579 2.63238 3.9264 2.05276 4.35403 1.62532C4.78165 1.19788 5.36138 0.957529 5.966 0.957C6.5707 0.957265 7.15058 1.19753 7.57826 1.62503C8.00595 2.05253 8.24647 2.6323 8.247 3.237V4.205H3.685V3.237ZM10.785 4.205H9.205V3.237C9.20394 2.3783 8.86215 1.55512 8.25467 0.948206C7.6472 0.341294 6.8237 0.000264295 5.965 0C5.10708 0.00132358 4.28472 0.342852 3.67826 0.949678C3.07181 1.5565 2.73079 2.37908 2.73 3.237V4.205H1.214C0.544 4.205 0 4.75 0 5.42V12.575C0 13.244 0.545 13.789 1.214 13.789H10.784C11.455 13.789 12 13.244 12 12.575V5.42C12 4.75 11.455 4.205 10.785 4.205Z"
@@ -615,7 +621,7 @@
               <span>아*</span>
             </div>
             <div class="date headline__postdate">
-              <span>2022.08.12</span>
+              <time datetime="2022-08-12">2022.08.12</time>
             </div>
             <div class="status headline__answer-complete">
               <span>답변완료</span>
@@ -624,8 +630,8 @@
         </li>
         <li class="headline">
           <div class="headline__secret">
-            <span class="title secret__text">비밀글입니다.</span>
-            <svg class="secret__icon" width="12" height="14" viewBox="0 0 12 14" fill="none"
+            <h3 class="title secret__text">비밀글입니다.</h3>
+            <svg aria-hidden="true" class="secret__icon" width="12" height="14" viewBox="0 0 12 14" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M11.043 12.575C11.0425 12.6432 11.0151 12.7084 10.9668 12.7565C10.9185 12.8046 10.8532 12.8317 10.785 12.832H1.214C1.14583 12.8317 1.08051 12.8046 1.03221 12.7565C0.983908 12.7084 0.956526 12.6432 0.956 12.575V5.42C0.956 5.278 1.073 5.162 1.214 5.162H10.784C10.928 5.162 11.044 5.278 11.044 5.42V12.575H11.043ZM3.685 3.237C3.68579 2.63238 3.9264 2.05276 4.35403 1.62532C4.78165 1.19788 5.36138 0.957529 5.966 0.957C6.5707 0.957265 7.15058 1.19753 7.57826 1.62503C8.00595 2.05253 8.24647 2.6323 8.247 3.237V4.205H3.685V3.237ZM10.785 4.205H9.205V3.237C9.20394 2.3783 8.86215 1.55512 8.25467 0.948206C7.6472 0.341294 6.8237 0.000264295 5.965 0C5.10708 0.00132358 4.28472 0.342852 3.67826 0.949678C3.07181 1.5565 2.73079 2.37908 2.73 3.237V4.205H1.214C0.544 4.205 0 4.75 0 5.42V12.575C0 13.244 0.545 13.789 1.214 13.789H10.784C11.455 13.789 12 13.244 12 12.575V5.42C12 4.75 11.455 4.205 10.785 4.205Z"
@@ -640,7 +646,7 @@
               <span>김**사</span>
             </div>
             <div class="date headline__postdate">
-              <span>2022.07.23</span>
+              <time datetime="2022-07-23">2022.07.23</time>
             </div>
             <div class="status headline__answer-complete">
               <span>답변완료</span>
@@ -649,13 +655,15 @@
         </li>
       </ul>
       <div class="paging-button-wrapper">
-        <button type="button" class="previous-page">
-          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <button type="button" class="previous-page" aria-label="상품문의 이전 페이지로 이동">
+          <svg aria-hidden="true" width="36" height="36" viewBox="0 0 36 36" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <path d="M22 26L14 18L22 10" stroke="#E1E1E1" stroke-width="1.2" />
           </svg>
         </button>
-        <button type="button" class="previous-page">
-          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <button type="button" class="previous-page" aria-label="상품문의 다음 페이지로 이동">
+          <svg aria-hidden="true" width="36" height="36" viewBox="0 0 36 36" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <path d="M14 10L22 18L14 26" stroke="#5F0080" stroke-width="1.2" />
           </svg>
 
