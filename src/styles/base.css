@@ -38,10 +38,10 @@ dialog::backdrop {
 }
 
 .component-wrapper {
-  margin: 3.125rem;
+  margin: 3.125rem !important;
 
   .component-name {
-    margin-bottom: 3.125rem;
+    margin-bottom: 3.125rem !important;
   }
 }
 
