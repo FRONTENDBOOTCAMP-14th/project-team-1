@@ -245,6 +245,7 @@ html {
   }
 }
 
+/* 팀원 섹션 */
 .index__members {
   display: flex;
   flex-direction: column;
@@ -331,22 +332,28 @@ html {
   }
 
   .member-dialog {
-    color: var(--content);
-    display: none;
+    color: #333333;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: #00000060;
+    background: #00000000;
     z-index: 999;
-    backdrop-filter: blur(10px);
-  }
-
-  .member-dialog.active {
+    backdrop-filter: blur(0px);
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .member-dialog.active {
+    opacity: 1;
+    visibility: visible;
+    background: #00000060;
+    backdrop-filter: blur(10px);
   }
 
   .dialog-content {
@@ -470,7 +477,6 @@ html {
     border: 3px solid rgba(255, 255, 255, 0.4);
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.05);
-    color: var(--white);
     font-size: 1.3rem;
     font-weight: 700;
     display: flex;
@@ -484,19 +490,15 @@ html {
   }
 
   .component-link:hover {
-    border-color: rgba(255, 255, 255, 0.8);
-    background: rgba(255, 255, 255, 0.5);
+    border-color: rgba(255, 255, 255, 0.6);
+    background: var(--point);
+    color: #b253e9;
+    font-weight: 900;
     transform: scale(1.05);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-    color: var(--white);
-  }
-
-  .component-link:active {
-    transform: translateY(-5px) scale(0.98);
   }
 
   .component-link span {
-    position: relative;
     z-index: 1;
   }
 }
@@ -515,7 +517,7 @@ html {
   .pages__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 3rem;
     max-width: 900px;
     margin: 0 auto;
   }
@@ -532,8 +534,8 @@ html {
 
   .page__card {
     padding: 3rem 2rem;
-    background: linear-gradient(135deg, #ff6b6b, #ffa726);
-    border: none;
+    background: linear-gradient(-30deg, #eecda340, #ef629f40);
+    border: 1px solid #ffffff40;
     border-radius: 16px;
     text-align: center;
     transition: all 0.3s ease;
@@ -557,7 +559,6 @@ html {
     font-size: 1.3rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
-    color: #ffffff;
   }
 
   .page__desc {
@@ -565,7 +566,6 @@ html {
     opacity: 0.9;
     text-transform: uppercase;
     letter-spacing: 0.05rem;
-    color: #ffffff;
   }
 }
 
@@ -634,7 +634,7 @@ html {
 }
 
 @media (max-width: 1024px) {
-  .index__intro .intro__content {
+  .intro__content {
     flex-direction: column;
     gap: 3rem;
     text-align: center;
@@ -646,13 +646,15 @@ html {
     }
   }
 
-  .index__members .members-grid {
-    gap: 1.5rem;
-  }
+  .index__members {
+    .members-grid {
+      gap: 1.5rem;
+    }
 
-  .index__members .member {
-    width: 200px;
-    padding: 1.5rem 1rem;
+    .member {
+      width: 200px;
+      padding: 1.5rem 1rem;
+    }
   }
 }
 
@@ -661,52 +663,58 @@ html {
     padding: 1.5rem 1rem;
   }
 
-  .index__main .index__cards {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-
-  .index__members .members-grid {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .index__members .member {
-    width: 250px;
-  }
-
-  .index__members .dialog-content {
-    padding: 2rem;
-    margin: 1rem;
-
-    .dialog-bottom {
+  .index__main {
+    .index__cards {
       grid-template-columns: 1fr;
       gap: 1.5rem;
     }
+  }
+  .index__members {
+    .members-grid {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
 
-    .dialog-retrospective {
-      grid-column: span 1;
+    .member {
+      width: 250px;
+    }
+
+    .dialog-content {
+      padding: 2rem;
+      margin: 1rem;
+
+      .dialog-bottom {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .dialog-retrospective {
+        grid-column: span 1;
+      }
+    }
+  }
+  .index__components {
+    .components-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      max-width: 400px;
+    }
+
+    .component-link {
+      width: 100px;
+      height: 100px;
+      font-size: 0.7rem;
     }
   }
 
-  .index__components .components-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    max-width: 400px;
-  }
+  .index__pages {
+    .pages__grid {
+      grid-template-columns: 1fr;
+    }
 
-  .index__components .component-link {
-    width: 100px;
-    height: 100px;
-    font-size: 0.7rem;
-  }
-
-  .index__pages .pages__grid {
-    grid-template-columns: 1fr;
-  }
-
-  .index__pages .page__card {
-    padding: 2rem 1.5rem;
+    .page__card {
+      padding: 2rem 1.5rem;
+    }
   }
 }

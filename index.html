@@ -12,9 +12,11 @@
 </head>
 
 <body>
-  <h1 class="sr-only">1팀 발표용 페이지</h1>
+
+  <div class="particles"></div>
 
   <main class="index">
+    <h1 class="sr-only">1팀 발표용 페이지</h1>
     <!-- 메인 섹션 -->
     <section class="index__main">
       <div class="index__content">
@@ -86,6 +88,8 @@
         </div>
       </div>
     </section>
+
+    <!-- 두번째 섹션/팀원 -->
     <section id="members" class="index__members section">
       <h2 class="index__subtitle">TEAM MEMBERS</h2>
 
@@ -214,9 +218,11 @@
             <div class="dialog-retrospective">
               <h4>프로젝트 회고</h4>
               <p>
-                어쩌다 팀장을 맡게 되어 스스로 통솔력의 한계를 느끼던 순간이 많았습니다.<br>
-                그럴 때마다 상대방의 입장에서 먼저 생각하자, 반복 설명하는 것을 귀찮아하지 말자며 마음 속으로 수 없이 되새겼습니다. 결과에 대한
-                욕심을 버리고 한 걸음 물러서 바라보니 비로소 무리한 일정을 군말 없이 따라와 주는 팀원들과 그들의 따뜻한 격려가 보이더군요. 이번 프로젝트는 특히나 과정이 기억에 남을 것 같습니다.
+                여러모로 기억에 남는 프로젝트일 것 같습니다.<br>
+                부족한 역량으로 팀장의 자리를 맡게 되어 혼란스럽고 뜻대로 안 되던 순간도 많았지만<br>
+                협업에 있어 중요한 부분인 소통력과 이해심을 갈고닦을 수 있는 좋은 경험이었다고 생각합니다.<br>
+                프로젝트 일정이나 파트 분배 관련해서도 좀 더 면밀히 계획 후에 뛰어들었으면 어땠을까 하는 아쉬움이 많이 남습니다.<br>
+                정신없는 통솔에 군말 없이 따르고 격려해준 팀원분들께 감사합니다.
               </p>
             </div>
           </div>
@@ -364,7 +370,7 @@
       </div>
     </section>
 
-    <!-- 두번째 섹션/컴포넌트 -->
+    <!-- 세번째 섹션/컴포넌트 -->
     <section id="components" class="index__components section">
       <h2 class="index__subtitle">COMPONENTS</h2>
 
@@ -418,7 +424,7 @@
       </div>
     </section>
 
-    <!-- 세번째 섹션/페이지 -->
+    <!-- 네번째 섹션/페이지 -->
     <section id="pages" class="index__pages section">
       <h2 class="section__title">PAGES</h2>
       <div class="section__container">
@@ -476,7 +482,7 @@
       </div>
     </section>
 
-    <!-- 네번째 섹션/프로젝트 상세 -->
+    <!-- 다섯번째 섹션/프로젝트 상세 -->
     <section id="rules" class="index__rules section">
       <h2 class="section__title">PROJECT RULES</h2>
       <div class="section__container">
@@ -565,11 +571,9 @@
     });
   </script>
 
+  <!-- scroll smooth -->
   <script>
-    // 부드러운 스크롤 및 스냅 기능
     document.addEventListener('DOMContentLoaded', function () {
-
-      // 카드 클릭 시 부드러운 스크롤
       const cards = document.querySelectorAll('.card[href^="#"]');
 
       cards.forEach(card => {
@@ -580,14 +584,12 @@
           const targetSection = document.getElementById(targetId);
 
           if (targetSection) {
-            // 부드러운 스크롤 애니메이션
             targetSection.scrollIntoView({
               behavior: 'smooth',
               block: 'start',
               inline: 'nearest'
             });
 
-            // 추가 시각적 피드백
             this.style.transform = 'scale(0.95)';
             setTimeout(() => {
               this.style.transform = '';
@@ -596,7 +598,6 @@
         });
       });
 
-      // 스크롤 스냅 기능 (20% 스크롤 시 다음 섹션으로)
       let isScrolling = false;
       let scrollTimeout;
       const sections = document.querySelectorAll('.section, .index__main');
@@ -633,7 +634,6 @@
         }
       }
 
-      // 스크롤 이벤트 리스너
       window.addEventListener('scroll', function () {
         if (isScrolling) return;
 
@@ -649,7 +649,6 @@
         }, 100);
       });
 
-      // 휠 이벤트로 섹션 간 이동 (선택사항)
       let wheelTimeout;
 
       window.addEventListener('wheel', function (e) {
@@ -666,11 +665,9 @@
 
           if (Math.abs(delta) > scrollThreshold) {
             if (delta > 0 && currentSectionIndex < sections.length - 1) {
-              // 아래로 스크롤
               currentSectionIndex++;
               snapToSection(currentSectionIndex);
             } else if (delta < 0 && currentSectionIndex > 0) {
-              // 위로 스크롤
               currentSectionIndex--;
               snapToSection(currentSectionIndex);
             }
@@ -678,7 +675,6 @@
         }, 50);
       }, { passive: false });
 
-      // 키보드 네비게이션 (화살표 키)
       document.addEventListener('keydown', function (e) {
         if (isScrolling) return;
 
@@ -731,18 +727,15 @@
 
         if (Math.abs(touchDiff) > minSwipeDistance) {
           if (touchDiff > 0 && currentSectionIndex < sections.length - 1) {
-            // 위로 스와이프 (아래 섹션으로)
             currentSectionIndex++;
             snapToSection(currentSectionIndex);
           } else if (touchDiff < 0 && currentSectionIndex > 0) {
-            // 아래로 스와이프 (위 섹션으로)
             currentSectionIndex--;
             snapToSection(currentSectionIndex);
           }
         }
       }, { passive: true });
 
-      // 브라우저 뒤로가기/앞으로가기 지원
       window.addEventListener('hashchange', function () {
         const hash = window.location.hash.substring(1);
         const targetSection = document.getElementById(hash);
@@ -756,11 +749,9 @@
         }
       });
 
-      // 초기화 시 현재 섹션 감지
       currentSectionIndex = getCurrentSection();
     });
   </script>
-
 </body>
 
 </html>
