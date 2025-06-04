@@ -266,7 +266,6 @@ header {
   .btn-normal--fill {
     display: flex;
     width: 21.25rem;
-    height: 3.375rem;
     justify-content: center;
     align-items: center;
   }

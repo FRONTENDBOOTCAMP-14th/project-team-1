@@ -4,6 +4,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="신선한 식품과 생필품을 집까지 배송해드리는 칼리. 샛별배송으로 새벽에 주문하면 오늘 도착! 100원 할인 혜택까지." />
+  <meta name="keywords" content="칼리, 마켓칼리, 신선식품, 식료품, 새벽배송, 샛별배송" />
+  <meta name="author" content="칼리" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#5f0080" />
+  <meta name="application-name" content="칼리" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Karly" />
+  <meta property="og:title" content="마켓 칼리 Market Karly" />
+  <meta property="og:description" content="신선한 식품을 문 앞까지, 마켓 칼리!" />
+  <meta property="og:image" content="../../assets/cover.jpg" />
+  <meta property="og:url" content="https://ui-team-1.netlify.app" />
+  <meta property="og:locale" content="ko_KR" />
+  <title>Document</title>
   <title>Docum</title>
 
 
@@ -16,113 +32,119 @@
   <!-- Pretendard CDN -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
 
-  <link rel="stylesheet" href="/project-team-1/src/styles/style.css">
+  <link rel="stylesheet" href="../../styles/style.css">
 
 </head>
 
 <body class="popup-review__body">
+  <div class="component-wrapper">
 
-  <div class="popup-review-container">
-    <div class="popup-review-title__box">
-      <h2 class="popup-review__review font-weight__700 line-height__140">후기 작성</h2><span
-        class="popup-review-title__xmark"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-          viewBox="0 0 30 30" fill="none">
-          <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M21 9.762L20.238 9L15 14.238L9.762 9L9 9.762L14.238 15L9 20.238L9.762 21L15 15.762L20.238 21L21 20.238L15.762 15L21 9.762Z"
-            fill="#CCCCCC" />
-        </svg></span>
-    </div>
+    <h1 class="component-name">popup-inquiry</h1>
 
-    <div class="popup-review-product">
-      <figure class="popup-review-product__wrapper">
-        <img class="popup-image" src="../../assets/product01.png" alt="">
-        <figcaption class="popup-image__info line-height__150">[풀무원] 탱탱쫄면 (4개입)</figcaption>
-      </figure>
+    <div class="popup-review-container">
+      <div class="popup-review-title__box">
+        <h2 class="popup-review__review font-weight__700 line-height__140">후기 작성</h2><span
+          class="popup-review-title__xmark"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+            viewBox="0 0 30 30" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M21 9.762L20.238 9L15 14.238L9.762 9L9 9.762L14.238 15L9 20.238L9.762 21L15 15.762L20.238 21L21 20.238L15.762 15L21 9.762Z"
+              fill="#CCCCCC" />
+          </svg></span>
+      </div>
 
-    </div>
-    <div>
-      <form action="/" method="POST">
-        <div class="pop-review-title__container">
-          <label class="popup-review__title font-weight__400 line-height__150 "
-            for="popup-review-title">제목</label><input type="text" class="popup-review-title__info"
-            id="popup-review-title" name="" placeholder="제목을 입력해 주세요" required />
-        </div>
+      <div class="popup-review-product">
+        <figure class="popup-review-product__wrapper">
+          <img class="popup-image" src="../../assets/product01.png" alt="">
+          <figcaption class="popup-image__info line-height__150">[풀무원] 탱탱쫄면 (4개입)</figcaption>
+        </figure>
 
-
-
-        <div class="popup-review-info__wapper"> <!--여기 ㅇㅇㅇㅇㅇㅇㅇㅇ-->
-          <label class="popup-review-info-title line-height__150 font-weight__600" for="popup-review___info">내용</label>
-
-          <div class="popup-review-info__mini-wapper">
-            <div class="popup-review___info"> <!-- /*여기는 p태그랑 ul태그를 감싸는 태그그*/-->
-
-
-               <span class="popup-review__caution line-height__150 font-weight__600">상품문의 작성 전 확인해 주세요</span>
-              <ul class="popup-review__list-wrapper">
-                <li class="popup-review__list">답변은 영업일 기준 2~3일 소요됩니다.</li>
-                <li class="popup-review__list">해당 게시판의 성격과 다른 글은 사전동의 없이 담당 게시판으로 이동될 수 있습니다.</li>
-                <li class="popup-review__list">배송관련, 주문(취소/교환/환불)관련 문의 및 요청사항은 마이칼리 내 1:1 문의에 남겨주세요.</li>
-              </ul>
-
-              <span class="popup-review__caution line-height__150 font-weight__600">제품</span>
-              <ul class="popup-review__list-wrapper">
-                <li class="popup-review__list">입고일 : 품절 상품 입고 일이 확정된 경우, 섬네일에 기재되어 있습니다. (종 모양을 클릭하여, 재입고 알림 설정 가능)</li>
-                <li class="popup-review__list">제품 상세정보 : 영양성분 및 함량, 용량, 보관 및 취급 방법 등 제품 정보는 상세이미지 또는 상세정보에서 확인 가능합니다.</li>
-                <hr class="popup-review__list__hr">
-                 <li class="popup-review__list ">의약외품을 의약품으로 오인하게 하는 표현</li>
-                <li class="popup-review__list ">생활화학제품을 본래 용도와 다르게 사용하는 내용 및 효능효과를 과장하는 내용</li>
-                <li class="popup-review__list ">의약외품을 의약품으로 오인하게 하는 표현</li>
-                <li class="popup-review__list ">생활화학제품을 본래 용도와 다르게 사용하는 내용 및 효능효과를 과장하는 내용</li>
-                <li class="popup-review__list ">의약외품을 의약품으로 오인하게 하는 표현</li>
-                <li class="popup-review__list ">생활화학제품을 본래 용도와 다르게 사용하는 내용 및 효능효과를 과장하는 내용</li>
-                <li class="popup-review__list ">의약외품을 의약품으로 오인하게 하는 표현</li>
-                <li class="popup-review__list ">생활화학제품을 본래 용도와 다르게 사용하는 내용 및 효능효과를 과장하는 내용</li>
-                <li class="popup-review__list ">의약외품을 의약품으로 오인하게 하는 표현</li>
-                <li class="popup-review__list ">생활화학제품을 본래 용도와 다르게 사용하는 내용 및 효능효과를 과장하는 내용</li>
-                <li class="popup-review__list ">의약외품을 의약품으로 오인하게 하는 표현</li>
-                <li class="popup-review__list ">생활화학제품을 본래 용도와 다르게 사용하는 내용 및 효능효과를 과장하는 내용</li>
-                <li class="popup-review__list ">의약외품을 의약품으로 오인하게 하는 표현</li>
-                <li class="popup-review__list ">생활화학제품을 본래 용도와 다르게 사용하는 내용 및 효능효과를 과장하는 내용</li>
-                <li class="popup-review__list ">의약외품을 의약품으로 오인하게 하는 표현</li>
-                <li class="popup-review__list ">생활화학제품을 본래 용도와 다르게 사용하는 내용 및 효능효과를 과장하는 내용</li>
-                <li class="popup-review__list ">의약외품을 의약품으로 오인하게 하는 표현</li>
-                <li class="popup-review__list ">생활화학제품을 본래 용도와 다르게 사용하는 내용 및 효능효과를 과장하는 내용</li>
-                <li class="popup-review__list ">의약외품을 의약품으로 오인하게 하는 표현</li>
-                <li class="popup-review__list ">생활화학제품을 본래 용도와 다르게 사용하는 내용 및 효능효과를 과장하는 내용</li>
-                <li class="popup-review__list ">의약외품을 의약품으로 오인하게 하는 표현</li>
-              </ul>
-            </div>
-
-            <textarea class="popup-review__notice" name="" id="popup-review___info"></textarea>
-            <span class="popup-review__max font-weight__400 line-height__160">0 / 5,000</span>
-
-            <p class="popup-review-check__wrapper"><span class="popup-review__check"><svg width="24" height="24"
-                  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_84_3007)">
-                    <path
-                      d="M12 23.5C18.3513 23.5 23.5 18.3513 23.5 12C23.5 5.64873 18.3513 0.5 12 0.5C5.64873 0.5 0.5 5.64873 0.5 12C0.5 18.3513 5.64873 23.5 12 23.5Z"
-                      stroke="#C4C4C4" />
-                    <path d="M7 12.667L10.385 16L18 8.5" stroke="#C4C4C4" stroke-width="1.5" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_84_3007">
-                      <rect width="24" height="24" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </span><span class="popup-review__check-text font-weight__400 line-height__160">비밀글로 문의하기</span></p>
+      </div>
+      <div>
+        <form action="/" method="POST">
+          <div class="pop-review-title__container">
+            <label class="popup-review__title font-weight__400 line-height__150 "
+              for="popup-review-title">제목</label><input type="text" class="popup-review-title__info"
+              id="popup-review-title" name="" placeholder="제목을 입력해 주세요" required />
           </div>
-        </div>
 
-      </form>
-    </div>
-    <div class="popup-review__button-container">
-      <button type="button" class="popup-review__button">취소</button>
-      <button type="submit" class="popup-review__button commit">등록</button>
+
+
+          <div class="popup-review-info__wapper"> <!--여기 ㅇㅇㅇㅇㅇㅇㅇㅇ-->
+            <label class="popup-review-info-title line-height__150 font-weight__600"
+              for="popup-review___info">내용</label>
+
+            <div class="popup-review-info__mini-wapper">
+              <div class="popup-review___info"> <!-- /*여기는 p태그랑 ul태그를 감싸는 태그그*/-->
+
+
+                <span class="popup-review__caution line-height__150 font-weight__600">상품문의 작성 전 확인해 주세요</span>
+                <ul class="popup-review__list-wrapper">
+                  <li class="popup-review__list">답변은 영업일 기준 2~3일 소요됩니다.</li>
+                  <li class="popup-review__list">해당 게시판의 성격과 다른 글은 사전동의 없이 담당 게시판으로 이동될 수 있습니다.</li>
+                  <li class="popup-review__list">배송관련, 주문(취소/교환/환불)관련 문의 및 요청사항은 마이칼리 내 1:1 문의에 남겨주세요.</li>
+                </ul>
+
+                <span class="popup-review__caution line-height__150 font-weight__600">제품</span>
+                <ul class="popup-review__list-wrapper">
+                  <li class="popup-review__list">입고일 : 품절 상품 입고 일이 확정된 경우, 섬네일에 기재되어 있습니다. (종 모양을 클릭하여, 재입고 알림 설정 가능)
+                  </li>
+                  <li class="popup-review__list">제품 상세정보 : 영양성분 및 함량, 용량, 보관 및 취급 방법 등 제품 정보는 상세이미지 또는 상세정보에서 확인 가능합니다.
+                  </li>
+                  <hr class="popup-review__list__hr">
+                  <li class="popup-review__list ">의약외품을 의약품으로 오인하게 하는 표현</li>
+                  <li class="popup-review__list ">생활화학제품을 본래 용도와 다르게 사용하는 내용 및 효능효과를 과장하는 내용</li>
+                  <li class="popup-review__list ">의약외품을 의약품으로 오인하게 하는 표현</li>
+                  <li class="popup-review__list ">생활화학제품을 본래 용도와 다르게 사용하는 내용 및 효능효과를 과장하는 내용</li>
+                  <li class="popup-review__list ">의약외품을 의약품으로 오인하게 하는 표현</li>
+                  <li class="popup-review__list ">생활화학제품을 본래 용도와 다르게 사용하는 내용 및 효능효과를 과장하는 내용</li>
+                  <li class="popup-review__list ">의약외품을 의약품으로 오인하게 하는 표현</li>
+                  <li class="popup-review__list ">생활화학제품을 본래 용도와 다르게 사용하는 내용 및 효능효과를 과장하는 내용</li>
+                  <li class="popup-review__list ">의약외품을 의약품으로 오인하게 하는 표현</li>
+                  <li class="popup-review__list ">생활화학제품을 본래 용도와 다르게 사용하는 내용 및 효능효과를 과장하는 내용</li>
+                  <li class="popup-review__list ">의약외품을 의약품으로 오인하게 하는 표현</li>
+                  <li class="popup-review__list ">생활화학제품을 본래 용도와 다르게 사용하는 내용 및 효능효과를 과장하는 내용</li>
+                  <li class="popup-review__list ">의약외품을 의약품으로 오인하게 하는 표현</li>
+                  <li class="popup-review__list ">생활화학제품을 본래 용도와 다르게 사용하는 내용 및 효능효과를 과장하는 내용</li>
+                  <li class="popup-review__list ">의약외품을 의약품으로 오인하게 하는 표현</li>
+                  <li class="popup-review__list ">생활화학제품을 본래 용도와 다르게 사용하는 내용 및 효능효과를 과장하는 내용</li>
+                  <li class="popup-review__list ">의약외품을 의약품으로 오인하게 하는 표현</li>
+                  <li class="popup-review__list ">생활화학제품을 본래 용도와 다르게 사용하는 내용 및 효능효과를 과장하는 내용</li>
+                  <li class="popup-review__list ">의약외품을 의약품으로 오인하게 하는 표현</li>
+                  <li class="popup-review__list ">생활화학제품을 본래 용도와 다르게 사용하는 내용 및 효능효과를 과장하는 내용</li>
+                  <li class="popup-review__list ">의약외품을 의약품으로 오인하게 하는 표현</li>
+                </ul>
+              </div>
+
+              <textarea class="popup-review__notice" name="" id="popup-review___info"></textarea>
+              <span class="popup-review__max font-weight__400 line-height__160">0 / 5,000</span>
+
+              <p class="popup-review-check__wrapper"><span class="popup-review__check"><svg width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_84_3007)">
+                      <path
+                        d="M12 23.5C18.3513 23.5 23.5 18.3513 23.5 12C23.5 5.64873 18.3513 0.5 12 0.5C5.64873 0.5 0.5 5.64873 0.5 12C0.5 18.3513 5.64873 23.5 12 23.5Z"
+                        stroke="#C4C4C4" />
+                      <path d="M7 12.667L10.385 16L18 8.5" stroke="#C4C4C4" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_84_3007">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </span><span class="popup-review__check-text font-weight__400 line-height__160">비밀글로 문의하기</span></p>
+            </div>
+          </div>
+
+        </form>
+      </div>
+      <div class="popup-review__button-container">
+        <button type="button" class="popup-review__button">취소</button>
+        <button type="submit" class="popup-review__button commit">등록</button>
+      </div>
     </div>
   </div>
-
 
 
 

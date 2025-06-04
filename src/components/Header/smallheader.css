@@ -30,13 +30,64 @@
   }
 }
 
-.main-nav__hamburger a {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+.under-category {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 0.0625rem solid #ddd;
+  padding: 0.75rem;
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  width: 18.75rem;
+  flex-direction: column;
+
+  .category__panel {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: start;
+    justify-content: start;
+    color: var(--black);
+
+    li {
+      display: flex;
+      align-items: center;
+
+      svg {
+        width: 1.25rem;
+        height: 1.25rem;
+        margin-right: 0.5rem;
+        /* justify-content: start; */
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+      }
+    }
+  }
 }
 
-.search__bar {
+.main-nav__hamburger {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  position: relative;
+  cursor: pointer;
+
+  &:hover .under-category {
+    display: flex;
+  }
+}
+
+.main-nav__hamburger:hover .under-category {
+  display: flex;
+}
+
+.main-nav .search__bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -46,24 +97,24 @@
   height: 2.25rem;
   width: 12.125rem;
   box-sizing: border-box;
-}
 
-.search__field {
-  flex: 1 1 auto;
-  border: none;
-  outline: none;
-  font-size: var(--paragraph---medium);
-  color: var(--gray--400);
-  min-width: 0;
-}
+  .search__field {
+    flex: 1 1 auto;
+    border: none;
+    outline: none;
+    font-size: var(--paragraph---small);
+    color: var(--gray--400);
+    min-width: 0;
+  }
 
-.search__button {
-  background: none;
-  border: none;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
+  .search__button {
+    background: none;
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
 }
 
 .user__utils {
@@ -73,6 +124,7 @@
 }
 
 .main-nav ul li a:hover,
-.user__utils li a:hover {
+.user__utils li a:hover,
+.main-nav ul li:hover {
   color: var(--primary);
 }

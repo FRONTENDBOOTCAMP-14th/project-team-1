@@ -1,4 +1,4 @@
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .product-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -10,19 +10,13 @@
   }
 
   .product-list__hidden {
-    display: inline-block;
-  }
-}
-
-@media (min-width:769px) {
-  .product-container {}
-
-  .product-list__hidden {
     display: none;
   }
 }
 
-
+.product-list__filter {
+  padding-right: 40px;
+}
 
 .footer__container.plus {
   width: 1050px;
@@ -30,7 +24,6 @@
 }
 
 .header_advertisement__text1 {
-
   display: inline-block;
 }
 
@@ -39,12 +32,10 @@
   margin-left: auto;
 }
 
-
-
 .header_advertisement__x {
   display: inline-block;
   font-size: 14px;
-  color: var(--gray--100)
+  color: var(--gray--100);
 }
 
 .header_advertisement {
@@ -52,24 +43,22 @@
   height: 50px;
   color: var(--white);
   background-color: #5f0080;
-  font-family: 'Pretendard', sans-serif;
+  font-family: 'Pretendard Variable', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
   line-height: 50px;
-
 }
 
-
-.footer {}
-
+.footer {
+}
 
 .product-list__title {
   height: 128px;
   text-align: center;
   padding-block: 48px;
-  font-family: 'Pretendard', sans-serif;
+  font-family: 'Pretendard Variable', sans-serif;
   font-weight: 600;
   font-size: 21.3px;
   line-height: 1.5;
@@ -77,22 +66,38 @@
 
 .header__wrapper {
   box-shadow: 0 2px 24px rgba(0, 0, 0, 0.1);
-
 }
 
-main {
+.product-list__container-wrapper {
   display: flex;
   max-width: 1050px;
   margin-inline: auto;
   margin-bottom: 24px;
+  padding-left: 50px;
 }
 
+@media (max-width: 768px) {
+  .product-list__filter {
+    width: 130px;
+    padding-right: 10px;
+    display: none;
+  }
 
+  .product-list-filter__list-group {
+    padding-inline: 20px;
+  }
 
-.product-list__filter {
-  width: 267px;
-  height: 364px;
-  padding-right: 47px;
+  .product-list-filter__reset {
+    margin-right: 80px;
+  }
+
+  .product-list__sum.summ {
+    display: none;
+  }
+
+  .product-list-filter__list {
+    padding-right: 20px;
+  }
 }
 
 .product-list-filter__list-group {
@@ -109,7 +114,7 @@ main {
   width: 220px;
   height: 52px;
   border-bottom: 1px solid var(--gray--100);
-  font-family: 'Pretendard', sans-serif;
+  font-family: 'Pretendard Variable', sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
@@ -117,7 +122,7 @@ main {
 
 .product-list-filter__reset {
   color: var(--gray--300);
-  font-family: 'Pretendard', sans-serif;
+  font-family: 'Pretendard Variable', sans-serif;
   font-weight: 600;
   font-size: 10px;
   line-height: 1.6;
@@ -129,12 +134,12 @@ main {
   width: 5px;
   height: 16px;
   margin-left: 8px;
-  font-family: 'Pretendard', sans-serif;
+  font-family: 'Pretendard Variable', sans-serif;
   font-weight: 600;
   font-size: 10px;
   line-height: 1.6;
   letter-spacing: normal;
-  color: var(--gray--300)
+  color: var(--gray--300);
 }
 
 .product-list__recommend {
@@ -180,12 +185,11 @@ main {
 
 .product-card__only {
   display: inline-block;
-  width: 65px;
   height: 26px;
   padding: 4px;
-  color: #5F0080;
+  color: #5f0080;
   background-color: var(--gray--100);
-  font-family: 'Pretendard', sans-serif;
+  font-family: 'Pretendard Variable', sans-serif;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.5;
@@ -195,12 +199,11 @@ main {
 
 .product-card__timeout {
   display: inline-block;
-  width: 50px;
   height: 26px;
   padding: 4px;
   color: var(--black);
   background-color: var(--gray--100);
-  font-family: 'Pretendard', sans-serif;
+  font-family: 'Pretendard Variable', sans-serif;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.5;
@@ -225,5 +228,21 @@ main {
   padding: 4px;
   border: 1px solid var(--gray--100);
   text-align: center;
+}
 
+.pagination__btn-anchor {
+  all: unset;
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  padding: 4px;
+  border: 1px solid var(--gray--100);
+  text-align: center;
+  line-height: 34px;
+  cursor: pointer;
+}
+
+.gnb {
+  border-bottom: 1px solid var(--gray--100);
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.1);
 }
