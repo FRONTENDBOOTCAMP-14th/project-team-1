@@ -298,6 +298,7 @@ button:focus {
     padding-right: 0.9375rem;
     flex-flow: column nowrap;
     justify-content: center;
+    gap: 0.625rem;
   }
   .product-desc {
     width: 100%;
