@@ -1,5 +1,5 @@
-button:focus {
-  outline: 3px solid black;
+button:focus-visible {
+  outline: 2px solid black;
   outline-offset: 0.125rem;
   border-radius: 0.125rem;
 }
