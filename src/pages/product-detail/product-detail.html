@@ -26,7 +26,6 @@
           <a href="/"><img src="../../assets/icon_down.svg" alt="공지사항" /></a>
         </li>
       </ul>
-
       <div class="header__middle">
         <div class="logo-area">
           <a href="#"><img src="../../assets/logo.svg" alt="/" /></a>
@@ -35,7 +34,7 @@
             <li class="new">
               <a class="gray" href="/">
                 뷰티칼리
-                <img class="new__icon" src="../../assets/icon_new.svg" alt="/" />
+                <img class="new__icon" src="../../assets/icon_new.svg" alt="/" loading="eager" />
               </a>
             </li>
           </ul>
@@ -64,7 +63,6 @@
         </ul>
       </div>
     </div>
-
     <nav class="main-nav">
       <ul>
         <li class="main-nav__hamburger">
@@ -150,30 +148,28 @@
       <li class="gnb__label"><a class="gnb__label__text" href="">특가/혜택</a></li>
     </ul>
   </nav>
-
   <!-- article -->
-
   <div class="product-wrapper">
     <div class="product-image">
-      <img src="../../assets/product01.png" alt="풀무원 탱탱쫄면 1봉지" />
+      <picture>
+        <source srcset="../../assets/product01.webp" type="image/webp" />
+        <img class="product-detail-image" src="../../assets/product01.png" alt="풀무원 탱탱쫄면 1봉지" loading="eager"
+          style="max-width:100%;height:auto;" />
+      </picture>
     </div>
     <div class="product-desc">
       <article class="product-detail">
-
         <span class="delivery-type">샛별배송</span>
         <section class="product-title">
           <h2 class="product-title__primary">[풀무원] 탱탱쫄면 (4개입)</h2>
           <p class="product-title__sub">튀기지 않아 부담 없는 매콤함</p>
         </section>
-
         <section class="price-info">
           <span class="price-info__number">4,980</span>
           <span class="price-info__unit">원</span>
         </section>
-
         <p class="login-benefit"><a href="/">로그인 후, 적립 혜택이 제공됩니다</a></p>
       </article>
-
       <!-- product spec -->
       <ul class="product-spec">
         <li class="spec-list">
@@ -182,18 +178,14 @@
             <p class="product-spec__desc">샛별 배송</p>
             <p class="product-spec__desc">
               23시 전 주문 시 내일 아침 7시 전 도착
-
               <br />(대구 부산 울산 샛별배송 운영시간 별도 확인)
             </p>
           </div>
         </li>
-
-
         <li class="spec-list">
           <span class="product-spec__title">판매자</span>
           <p class="product-spec__desc">칼리</p>
         </li>
-
         <li class="spec-list">
           <span class="product-spec__title">포장타입</span>
           <div class="multi-desc">
@@ -201,22 +193,18 @@
             <p class="product-spec__desc">택배배송은 에코 포장이 스티로폼으로 대체됩니다.</span>
           </div>
         </li>
-
         <li class="spec-list">
           <span class="product-spec__title">판매단위</span>
           <p class="product-spec__desc">1봉</p>
         </li>
-
         <li class="spec-list">
           <span class="product-spec__title">중량/용량</span>
           <p class="product-spec__desc">123g*4봉</p>
         </li>
-
         <li class="spec-list">
           <span class="product-spec__title">원산지</span>
           <p class="product-spec__desc">상세페이지 별도표기</p>
         </li>
-
         <li class="spec-list">
           <span class="product-spec__title">알레르기 정보</span>
           <div class="multi-desc">
@@ -269,9 +257,6 @@
               d="M28.9269 8.89295C28.3269 8.29261 27.6146 7.81636 26.8305 7.49144C26.0465 7.16651 25.2061 6.99927 24.3574 6.99927C23.5086 6.99927 22.6682 7.16651 21.8842 7.49144C21.1001 7.81636 20.3878 8.29261 19.7879 8.89295L17.9589 10.7209L16.1319 8.89295C14.9201 7.68091 13.2765 6.99989 11.5626 6.9997C9.84867 6.99951 8.2049 7.68017 6.99286 8.89195C5.78082 10.1037 5.0998 11.7473 5.09961 13.4612C5.09942 15.1751 5.78008 16.8189 6.99186 18.0309L8.81986 19.8599L17.2519 28.2939C17.4394 28.4814 17.6937 28.5867 17.9589 28.5867C18.224 28.5867 18.4783 28.4814 18.6659 28.2939L27.0989 19.8599L28.9269 18.0319C29.5271 17.432 30.0032 16.7198 30.328 15.9358C30.6528 15.1518 30.82 14.3115 30.82 13.4629C30.82 12.6144 30.6528 11.7741 30.328 10.9901C30.0032 10.2061 29.5271 9.49386 28.9269 8.89395V8.89295Z"
               stroke="#5F0080" stroke-width="1.7" stroke-linecap="round" />
           </svg>
-
-
-
         </button>
         <button class="button-group__notification">
           <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -282,7 +267,6 @@
               d="M29.2477 25.5803H6.75L6.76463 25.5465C6.85013 25.3946 7.2945 24.7545 8.09887 23.6239L8.94262 22.4426V14.9783C8.94262 9.93262 12.8104 5.82075 17.6512 5.63175L18 5.625C23.0018 5.625 27.0562 9.81225 27.0562 14.9783V22.4415L28.9766 25.1539C29.1712 25.4385 29.2624 25.5814 29.2489 25.5814L29.2477 25.5803Z"
               stroke="#E1E1E1" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
-
         </button>
         <button class="button-group__addcart">장바구니 담기</button>
       </div>
@@ -305,10 +289,16 @@
           aria-controls="tab-qna" id="tab-qna-btn">문의</button></li>
     </ul>
   </nav>
-
-  <img class="product-detail-image" src="../../assets/product-detail/product-detail-1.png" alt="상품 상세정보 첫번째 이미지" />
-  <img class="product-detail-image" src="../../assets/product-detail/product-detail-2.png" alt="상품 상세정보 두번째 이미지" />
-
+  <picture>
+    <source srcset="../../assets/product-detail/product-detail-1.webp" type="image/webp" />
+    <img class="product-detail-image" src="../../assets/product-detail/product-detail-1.png" alt="상품 상세정보 첫번째 이미지"
+      loading="lazy" style="max-width:100%;height:auto;" />
+  </picture>
+  <picture>
+    <source srcset="../../assets/product-detail/product-detail-2.webp" type="image/webp" />
+    <img class="product-detail-image" src="../../assets/product-detail/product-detail-2.png" alt="상품 상세정보 첫번째 이미지"
+      loading="lazy" style="max-width:100%;height:auto;" />
+  </picture>
   <section class="review-section">
     <div class="review-header-wrapper">
       <div class="review-header">
@@ -401,7 +391,6 @@
             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M14 10L22 18L14 26" stroke="#5F0080" stroke-width="1.2" />
             </svg>
-
           </button>
         </div>
       </div>
