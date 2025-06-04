@@ -102,6 +102,10 @@
     .gray {
       color: var(--gray--400);
     }
+
+    .gray:hover {
+      color: var(--primary);
+    }
   }
 
   .input__search-bar {
@@ -113,10 +117,6 @@
     font-size: var(--paragraph---large);
     align-items: center;
     transition: border-color 0.2s;
-  }
-
-  .input__search-bar:hover {
-    border-color: var(--blue--500);
   }
 
   .input__search-field {
