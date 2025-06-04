@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../styles/style.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Recent Product</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../styles/style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="component-wrapper">
+
+    <h1 class="component-name">Recent Product</h1>
 
     <div class="recent-product">
       <button class="icon-arrow-top">
@@ -42,40 +46,42 @@
         </svg>
       </button>
     </div>
+  </div>
 
-    <script>
-      const topBtn = document.querySelector('.icon-arrow-top');
-      const bottomBtn = document.querySelector('.icon-arrow-bottom');
-      const list = document.querySelector('.recent-product__item');
-      const scrollAmount = 100; // 한 번에 스크롤할 픽셀 수
+  <script>
+    const topBtn = document.querySelector('.icon-arrow-top');
+    const bottomBtn = document.querySelector('.icon-arrow-bottom');
+    const list = document.querySelector('.recent-product__item');
+    const scrollAmount = 100; // 한 번에 스크롤할 픽셀 수
 
-      topBtn.addEventListener('click', () => {
-        smoothScrollBy(list, -scrollAmount);
-      });
+    topBtn.addEventListener('click', () => {
+      smoothScrollBy(list, -scrollAmount);
+    });
 
-      bottomBtn.addEventListener('click', () => {
-        smoothScrollBy(list, scrollAmount);
-      });
+    bottomBtn.addEventListener('click', () => {
+      smoothScrollBy(list, scrollAmount);
+    });
 
-      function smoothScrollBy(element, amount, duration = 300) {
-        const start = element.scrollTop;
-        const end = start + amount;
-        const startTime = performance.now();
+    function smoothScrollBy(element, amount, duration = 300) {
+      const start = element.scrollTop;
+      const end = start + amount;
+      const startTime = performance.now();
 
-        function animateScroll(currentTime) {
-          const elapsed = currentTime - startTime;
-          const progress = Math.min(elapsed / duration, 1); // 0~1
-          const ease = 0.5 - Math.cos(progress * Math.PI) / 2; // easeInOut 함수
+      function animateScroll(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1); // 0~1
+        const ease = 0.5 - Math.cos(progress * Math.PI) / 2; // easeInOut 함수
 
-          element.scrollTop = start + (end - start) * ease;
+        element.scrollTop = start + (end - start) * ease;
 
-          if (progress < 1) {
-            requestAnimationFrame(animateScroll);
-          }
+        if (progress < 1) {
+          requestAnimationFrame(animateScroll);
         }
-
-        requestAnimationFrame(animateScroll);
       }
-    </script>
-  </body>
+
+      requestAnimationFrame(animateScroll);
+    }
+  </script>
+</body>
+
 </html>
