@@ -244,6 +244,15 @@ product-list__container {
   display: grid;
   gap: 16px;
   margin-inline: auto;
+
+  .product-card__image {
+    height: 320px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
 
 @media (min-width: 769px) {
