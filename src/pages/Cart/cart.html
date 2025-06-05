@@ -21,32 +21,11 @@
   <meta property="og:title" content="마켓 칼리 Market Karly" />
   <meta property="og:description" content="신선한 식품을 문 앞까지, 마켓 칼리!" />
   <meta property="og:image" content="../../assets/cover.jpg" />
-  <meta property="og:url" content="https://ui-team-1.netlify.app" />
+  <meta property="og:url" content="https://marketkarly.netlify.com" />
   <meta property="og:locale" content="ko_KR" />
 </head>
 
 <body>
-  <!-- 포트폴리오 안내 모달 -->
-  <dialog class="modal" id="disclaimerModal" role="dialog" aria-labelledby="modal__title" aria-modal="true">
-    <div class="modal__container">
-      <h2 class="modal__title">포트폴리오 면책 안내</h2>
-      <p class="modal__info">
-        해당 사이트는 가상의 사이트이며
-        <br />
-        <strong>비상업적 취업을 위한 포트폴리오</strong>
-        용으로만
-        <br />
-        사용하기 위해 제작된 사이트입니다.
-      </p>
-      <p class="modal__info">
-        실제 상품 판매나 결제 기능은 제공되지 않으며,
-        <br />
-        모든 콘텐츠는 데모 목적으로만 사용됩니다.
-      </p>
-
-      <button type="button" class="modal__check" onclick="closeModal()">확인했습니다</button>
-    </div>
-  </dialog>
   <div class="top__banner desktop-only">
     <div class="inner">
       <a href="../Register/Register.html">
@@ -445,6 +424,7 @@
   </nav>
 
   <main class="cart-page">
+    <h1 class="sr-only">칼리(Karly)</h1>
     <h2 class="cart__title">장바구니</h2>
     <section class="cart__component">
       <div class="cart-component-left">
@@ -979,30 +959,6 @@
     </footer>
   </div>
 
-
-
-  <!-- dialog -->
-  <script>
-    const modal = document.getElementById('disclaimerModal');
-
-    window.addEventListener('load', () => {
-      setTimeout(() => {
-        modal.showModal();
-      }, 100);
-    });
-
-    function closeModal() {
-      modal.close();
-      localStorage.setItem('disclaimerSeen', 'true');
-    }
-
-    // ESC 키로 닫기
-    modal.addEventListener('keydown', e => {
-      if (e.key === 'Escape') {
-        closeModal();
-      }
-    });
-  </script>
 
   <!-- top-banner hide -->
   <script>
