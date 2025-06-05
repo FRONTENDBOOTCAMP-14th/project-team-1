@@ -17,6 +17,7 @@ button:focus-visible {
   width: 25rem;
   height: 32.125rem;
   flex-shrink: 0;
+  margin: 0 auto;
 }
 .product-desc {
   width: 35rem;
@@ -33,6 +34,7 @@ button:focus-visible {
   font-weight: 700;
   line-height: 1.4;
 }
+
 .product-title__primary {
   font-size: var(--label---x-l);
   color: var(--content);

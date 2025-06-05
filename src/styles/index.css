@@ -597,8 +597,18 @@ code {
     gap: 2rem;
   }
 
+  .rules__flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2.5rem;
+    margin-top: 3.125rem;
+  }
+
   .rule__category {
     padding: 2.5rem;
+    width: clamp(400px, 50vw, 900px);
     background: #00000015;
     border: 1px solid #00000010;
     border-radius: 20px;
