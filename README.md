@@ -75,6 +75,20 @@
 <h2>🔸구현 화면</h2>
 
 <img src="https://media.discordapp.net/attachments/1311319579913490442/1379837230687719464/localhost_5173_src_pages_Main_main.htmlScreenshot_2.webp?ex=6841b10f&is=68405f8f&hm=02d2750628a7e52d33f209db55c0aff5a028191b0e6ac221b18740e93f8728f4&=&format=webp&width=607&height=906">
+<br>
+
+<h2>🔸lighthouse 성능 적합 검사</h2>
+
+| 페이지명       | Performance | Accessibility | Best Practices | SEO |
+| ---------- | ----------- | ------------- | -------------- | --- |
+| 기준 (우수점수)  | 90          | 90            | 90             | 90  |
+| 메인         | 98  ✅        | 89              | 100  ✅            | 100  ✅ |
+| 로그인        | 100  ✅         | 80              | 100  ✅            | 100  ✅ |
+| 레지스터       | 100  ✅         | 92  ✅            | 100  ✅            | 100  ✅ |
+| 상품목록       | 99  ✅          | 80            | 100  ✅            | 100  ✅ |
+| 상품상세       | 97  ✅          | 67            | 100  ✅            | 91  ✅  |
+| 장바구니       | 100  ✅         | 82            | 100  ✅            | 100  ✅ |
+
 
 
 <h2>🔸기술 스택</h2>
