@@ -43,6 +43,7 @@
 .banner {
   position: relative;
   overflow-x: hidden;
+  margin: 0;
 
   .banner__images {
     width: 1900px;
